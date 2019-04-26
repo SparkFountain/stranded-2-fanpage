@@ -8,6 +8,13 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { NewsComponent } from './news/news.component';
+import { StrandedIiComponent } from './stranded-ii/stranded-ii.component';
+import { DownloadContentComponent } from './download-content/download-content.component';
+import { ModificationsComponent } from './modifications/modifications.component';
+import { TipsTutorialsComponent } from './tips-tutorials/tips-tutorials.component';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +23,29 @@ import { NewsComponent } from './news/news.component';
     FooterComponent,
     ContentComponent,
     ButtonsComponent,
-    NewsComponent
+    NewsComponent,
+    StrandedIiComponent,
+    DownloadContentComponent,
+    ModificationsComponent,
+    TipsTutorialsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    }),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
+}

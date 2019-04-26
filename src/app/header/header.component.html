@@ -7,10 +7,6 @@
 <div class="menu-corner bottom left"></div>
 <div class="menu-corner bottom right"></div>
 
-<div class="navigation">
-  <a (click)="setActiveTab('nav-news')" [ngClass]="{'active': activeTab === 'nav-news'}">Neuigkeiten</a>
-  <a (click)="setActiveTab('nav-stranded-ii')" [ngClass]="{'active': activeTab === 'nav-stranded-ii'}">Stranded II</a>
-  <a (click)="setActiveTab('nav-download-content')" [ngClass]="{'active': activeTab === 'nav-download-content'}">Download-Material</a>
-  <a (click)="setActiveTab('nav-modifications')" [ngClass]="{'active': activeTab === 'nav-modifications'}">Modifikationen</a>
-  <a (click)="setActiveTab('nav-tips-tutorials')" [ngClass]="{'active': activeTab === 'nav-tips-tutorials'}">Tipps und Tutorials</a>
+<div class="navigation" *ngFor="let tab of tabs">
+  <a (click)="setActiveTab(tab)" [ngClass]="{'active': activeTab === tab}">{{'tab.' + tab | translate}}</a>
 </div>
