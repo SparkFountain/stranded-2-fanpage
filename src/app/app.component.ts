@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'stranded-fanpage-angular';
+  public tab: string;
+
+  constructor() {
+    this.tab = 'news';
+  }
 }
