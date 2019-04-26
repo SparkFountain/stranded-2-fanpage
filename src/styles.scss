@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'variables.scss';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: $dark;
+
+    cursor: url('/assets/gfx/sys/cursor.png'), auto;
+    font-family: $font;
+}
+
+body {
+    background: url('/assets/gfx/sys/background.jpg');
+    background-size: cover;
+}
+
+a {
+    color: #3f3112;
+    text-decoration: underline;
+    cursor: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+th, td {
+    padding: 10px 15px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.image-container img {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    max-height: 225px;
+    box-shadow: 0 0 5px 2px #333;
+}
+
+.at-char {
+    width: 10px;
+    height: 10px;
+    margin: 0 1px;
+}
+
+button {
+    border: none;
+    outline: none;
+    position: absolute;
+    cursor: inherit;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+}
+.button-large {
+    width: 190px;
+    height: 45px;
+    background: url('/assets/gfx/sys/button-large.png');
+}
+.button-large:hover {
+    background: url('/assets/gfx/sys/button-large-hover.png');
+}
+
+app-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  width: 75%;
+  max-width: 1440px;
+  height: 80px;
+  background: url('/assets/gfx/sys/woodback.png');
+  background-repeat: repeat;
+}
+
+app-content {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  width: 75%;
+  max-width: 1440px;
+  height: calc(100vh - 200px);
+  background: url('/assets/gfx/sys/paperback.png');
+  background-size: 100% 100%;
+}
