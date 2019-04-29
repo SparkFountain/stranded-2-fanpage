@@ -7,18 +7,14 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input() tabs: string[];
-  @Output() tab: EventEmitter<string> = new EventEmitter();
-
-  public activeTab: string;
+  @Input() activeTab: string;
+  @Output() selectTab: EventEmitter<string> = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit() {
-    this.activeTab = 'nav-news';
-  }
+  ngOnInit() {}
 
-  setActiveTab(tabName: string) {
-    this.activeTab = tabName;
-    this.tab.emit(tabName);
+  handleSelectTab(tabName: string): void {
+    this.selectTab.emit(tabName);
   }
 }

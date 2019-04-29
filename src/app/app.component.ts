@@ -7,11 +7,11 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public tab: string;
+  public activeTab: string;
   public tabs: string[];
 
   constructor(private i18n: TranslateService) {
-    this.tab = 'news';
+    this.activeTab = 'news';
     this.tabs = [
       'news',
       'stranded-ii',
@@ -25,5 +25,9 @@ export class AppComponent {
 
     const browserLang = this.i18n.getBrowserLang();
     this.i18n.use(browserLang.match(/en|de/) ? browserLang : 'en');
+  }
+
+  selectTab(tab: string) {
+      this.activeTab = tab;
   }
 }

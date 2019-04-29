@@ -8,5 +8,5 @@
 <div class="menu-corner bottom right"></div>
 
 <div class="navigation" *ngFor="let tab of tabs">
-  <a (click)="setActiveTab(tab)" [ngClass]="{'active': activeTab === tab}">{{'tab.' + tab | translate}}</a>
+  <a (click)="handleSelectTab(tab)" [ngClass]="{'active': activeTab === tab}">{{'tab.' + tab | translate}}</a>
 </div>

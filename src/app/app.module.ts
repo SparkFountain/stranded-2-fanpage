@@ -15,6 +15,7 @@ import { TipsTutorialsComponent } from './tips-tutorials/tips-tutorials.componen
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { GameComponent } from './game/game.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     StrandedIiComponent,
     DownloadContentComponent,
     ModificationsComponent,
-    TipsTutorialsComponent
+    TipsTutorialsComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,

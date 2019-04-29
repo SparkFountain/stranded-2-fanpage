@@ -24,7 +24,15 @@
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26",
     "@ngx-translate/core": "11.0.1",
-    "@ngx-translate/http-loader": "4.0.0"
+    "@ngx-translate/http-loader": "4.0.0",
+    "@babylonjs/core": "4.0.0-alpha.18",
+    "@babylonjs/materials": "4.0.0-alpha.18",
+    "@babylonjs/loaders": "4.0.0-alpha.18",
+    "@babylonjs/post-processes": "4.0.0-alpha.18",
+    "@babylonjs/procedural-textures": "4.0.0-alpha.18",
+    "@babylonjs/serializers": "4.0.0-alpha.18",
+    "@babylonjs/gui": "4.0.0-alpha.18",
+    "@babylonjs/inspector": "4.0.0-alpha.18"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
