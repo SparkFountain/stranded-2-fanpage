@@ -1,5 +1,6 @@
 import { Component, ViewChild, AfterViewInit, ElementRef, HostListener } from '@angular/core';
-import { Engine, Scene, Camera, ArcRotateCamera, Vector3, HemisphericLight, PointLight, MeshBuilder } from '@babylonjs/core';
+// tslint:disable-next-line: max-line-length
+import { Engine, Scene, Camera, ArcRotateCamera, Vector3, HemisphericLight, PointLight, MeshBuilder, StandardMaterial, CubeTexture, Texture } from '@babylonjs/core';
 
 @Component({
   selector: 'app-game',
@@ -23,6 +24,7 @@ export class GameComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.engine = new Engine(this.canvas.nativeElement, true); // Generate the BABYLON 3D engine
     this.createScene(); // Call the createScene function
+    this.createSkyBox();
 
     // Register a render loop to repeatedly render the scene
     this.engine.runRenderLoop(() => {
@@ -33,15 +35,20 @@ export class GameComponent implements AfterViewInit {
   createScene(): void {
     this.scene = new Scene(this.engine);
 
-    this.camera = new ArcRotateCamera('Camera', Math.PI / 2, Math.PI / 2, 2, new Vector3(0, 0, 5), this.scene);
+    this.camera = new ArcRotateCamera('Camera', (Math.PI / 4), (Math.PI / 4), 5, Vector3.Zero(), this.scene);
     this.camera.attachControl(this.canvas.nativeElement, true);
 
-    // Add lights to the scene
-    let light1 = new HemisphericLight('light1', new Vector3(1, 1, 0), this.scene);
-    let light2 = new PointLight('light2', new Vector3(0, 1, -1), this.scene);
 
-    // Add and manipulate meshes in the scene
-    let sphere = MeshBuilder.CreateSphere('sphere', { diameter: 2 }, this.scene);
+  }
+
+  createSkyBox() {
+    const skybox = MeshBuilder.CreateBox('skyBox', { size: 1.0 }, this.scene);
+    const skyboxMaterial = new StandardMaterial('skyBox', this.scene);
+    skyboxMaterial.backFaceCulling = false;
+    skyboxMaterial.reflectionTexture = new CubeTexture('/assets/textures/TropicalSunnyDay', this.scene);
+    skyboxMaterial.reflectionTexture.coordinatesMode = Texture.SKYBOX_MODE;
+    skyboxMaterial.disableLighting = true;
+    skybox.material = skyboxMaterial;
   }
 
 }
