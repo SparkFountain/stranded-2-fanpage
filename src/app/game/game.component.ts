@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 // tslint:disable-next-line: max-line-length
-import { ArcRotateCamera, Camera, CubeTexture, Engine, MeshBuilder, Scene, StandardMaterial, Texture, Vector3, SceneLoader, AssetsManager, MeshAssetTask, AbstractMesh, Color3, Mesh } from '@babylonjs/core';
+import { ArcRotateCamera, Camera, CubeTexture, Engine, MeshBuilder, Scene, StandardMaterial, Texture, Vector3, SceneLoader, AssetsManager, MeshAssetTask, AbstractMesh, Color3, Mesh, Light, DirectionalLight, FlyCamera, HemisphericLight } from '@babylonjs/core';
 import '@babylonjs/loaders/OBJ';
 
 @Component({
@@ -16,6 +16,8 @@ export class GameComponent implements AfterViewInit {
   public camera: Camera;
 
   public assetsManager: AssetsManager;
+
+  public sun: HemisphericLight;
 
   @HostListener('window:resize', ['$event'])
   onResize() {
@@ -33,20 +35,26 @@ export class GameComponent implements AfterViewInit {
   createScene(): void {
     this.scene = new Scene(this.engine);
 
-    this.camera = new ArcRotateCamera('Camera', (Math.PI / 4), (Math.PI / 4), 5, Vector3.Zero(), this.scene);
+    this.camera = new FlyCamera('Camera', Vector3.Zero(), this.scene);
     this.camera.attachControl(this.canvas.nativeElement, true);
 
+    this.sun = new HemisphericLight('Sun', new Vector3(0, -1, 0), this.scene);
+    this.sun.groundColor = new Color3(1, 1, 1);
+
     this.assetsManager = new AssetsManager(this.scene);
-    let meshTask = this.assetsManager.addMeshTask("skull task", "", "/assets/objects/", "palmtree01.obj");
+    const meshTask = this.assetsManager.addMeshTask('skull task', '', '/assets/objects/', 'palmtree01.obj');
 
     meshTask.onSuccess = (task: MeshAssetTask) => {
       task.loadedMeshes.forEach((mesh: Mesh) => {
         mesh.position = new Vector3(0, -10, 10);
-        mesh.scaling = new Vector3(0.1, 0.1, 0.1);
-        console.info(mesh.material);
-        mesh.material.ambientColor = new Color3(1, 1, 1);
+        mesh.scaling = new Vector3(0.25, 0.25, 0.25);
+        const material: StandardMaterial = mesh.material as StandardMaterial;
+        // material.ambientColor = new Color3(1, 1, 1);
+        // material.specularColor = new Color3(1, 1, 1);
+        material.backFaceCulling = false;
+        material.diffuseTexture.hasAlpha = true;
       });
-    }
+    };
 
     this.assetsManager.onFinish = (tasks) => {
       // Register a render loop to repeatedly render the scene
