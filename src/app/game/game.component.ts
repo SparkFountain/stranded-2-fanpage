@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 // tslint:disable-next-line: max-line-length
-import { ArcRotateCamera, Camera, CubeTexture, Engine, MeshBuilder, Scene, StandardMaterial, Texture, Vector3, SceneLoader, AssetsManager, MeshAssetTask, AbstractMesh, Color3, Mesh, Light, DirectionalLight, FlyCamera, HemisphericLight, ShadowGenerator, AbstractAssetTask } from '@babylonjs/core';
+import { ArcRotateCamera, Camera, CubeTexture, Engine, MeshBuilder, Scene, StandardMaterial, Texture, Vector3, SceneLoader, AssetsManager, MeshAssetTask, AbstractMesh, Color3, Mesh, Light, DirectionalLight, FlyCamera, HemisphericLight, ShadowGenerator, AbstractAssetTask, Plane } from '@babylonjs/core';
 import '@babylonjs/loaders/OBJ';
 
 @Component({
@@ -20,6 +20,8 @@ export class GameComponent implements AfterViewInit {
   public ambientLight: HemisphericLight;
   public sun: DirectionalLight;
   public terrain: Mesh;
+  public ocean: Mesh;
+
   public shadowGenerator: ShadowGenerator;
 
   @HostListener('window:resize', ['$event'])
@@ -34,6 +36,7 @@ export class GameComponent implements AfterViewInit {
     this.createScene(); // Call the createScene function
     this.createSkyBox();
     this.createTerrain();
+    this.createOcean();
   }
 
   createScene(): void {
@@ -50,7 +53,7 @@ export class GameComponent implements AfterViewInit {
 
     // Create Sun Light and Shadow Generator
     const sunLightDirection: Vector3 = new Vector3(-1, -1, -1);
-    const sunPosition: Vector3 = new Vector3(0, 30, 10);
+    const sunPosition: Vector3 = new Vector3(0, 30, 50);
     this.sun = new DirectionalLight('Sun', sunLightDirection, this.scene);
     this.sun.position = sunPosition;
     const sunBall = MeshBuilder.CreateSphere('SunBall', {}, this.scene);
@@ -63,7 +66,7 @@ export class GameComponent implements AfterViewInit {
 
     meshTask.onSuccess = (task: MeshAssetTask) => {
       task.loadedMeshes.forEach((mesh: Mesh) => {
-        mesh.position = new Vector3(0, 0, 10);
+        mesh.position = new Vector3(0, 0, 50);
         mesh.scaling = new Vector3(0.25, 0.25, 0.25);
         const material: StandardMaterial = mesh.material as StandardMaterial;
         material.backFaceCulling = false;
@@ -117,6 +120,20 @@ export class GameComponent implements AfterViewInit {
 
         this.terrain.receiveShadows = true;
       });
+  }
+
+  createOcean() {
+    this.ocean = MeshBuilder.CreatePlane('plane', {}, this.scene);
+    const oceanMaterial: StandardMaterial = new StandardMaterial('ocean', this.scene);
+    const oceanTexture: Texture = new Texture('/assets/textures/ocean.jpg', this.scene);
+    oceanTexture.uScale = 15;
+    oceanTexture.vScale = 15;
+    oceanMaterial.diffuseTexture = oceanTexture;
+    oceanMaterial.alpha = 0.5;
+    this.ocean.material = oceanMaterial;
+    this.ocean.position = new Vector3(0, 2, 0);
+    this.ocean.rotation = new Vector3(Math.PI / 2, 0, 0);
+    this.ocean.scaling = new Vector3(200, 200, 200);
   }
 
 }
