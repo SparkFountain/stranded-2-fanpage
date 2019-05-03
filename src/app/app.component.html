@@ -8,4 +8,4 @@
 
 <app-footer></app-footer> -->
 
-<app-game></app-game>
+<app-game *ngIf="playingStranded2Online" (quitGame)="playingStranded2Online = false"></app-game>

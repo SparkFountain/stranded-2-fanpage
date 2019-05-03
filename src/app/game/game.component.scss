@@ -3,3 +3,34 @@ canvas {
   width: 100vw;
   height: 100vh;
 }
+
+#main-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+
+  button {
+    display: block;
+    left: 50px;
+    margin-bottom: 15px;
+    pointer-events: auto;
+  }
+
+  #stranded-ii-logo {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+    width: 539px;
+    height: 239px;
+
+    background: url('../../assets/gfx/sys/title.png');
+  }
+}

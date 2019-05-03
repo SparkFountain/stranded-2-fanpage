@@ -9,6 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   public activeTab: string;
   public tabs: string[];
+  public playingStranded2Online: boolean;
 
   constructor(private i18n: TranslateService) {
     this.activeTab = 'news';
@@ -20,6 +21,8 @@ export class AppComponent {
       'tips-and-tutorials'
     ];
 
+    this.playingStranded2Online = true;
+
     this.i18n.addLangs(['en', 'de']);
     this.i18n.setDefaultLang('en');
 
@@ -28,6 +31,6 @@ export class AppComponent {
   }
 
   selectTab(tab: string) {
-      this.activeTab = tab;
+    this.activeTab = tab;
   }
 }

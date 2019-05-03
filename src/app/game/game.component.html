@@ -1,1 +1,22 @@
 <canvas #gameCanvas touch-action="none" oncontextmenu="return false;"></canvas>
+
+<div id="main-menu">
+  <div id="buttons-top">
+    <button class="button-large" (click)="adventure()">{{'game.main-menu.adventure' | translate}}</button>
+    <button class="button-large" (click)="randomIsland()">{{'game.main-menu.random-island' | translate}}</button>
+    <button class="button-large" (click)="singleIsland()">{{'game.main-menu.single-island' | translate}}</button>
+    <button class="button-large" (click)="loadIsland()">{{'game.main-menu.load' | translate}}</button>
+  </div>
+
+  <div id="buttons-middle">
+    <button class="button-large" (click)="options()">{{'game.main-menu.options' | translate}}</button>
+    <button class="button-large" (click)="editor()">{{'game.main-menu.editor' | translate}}</button>
+    <button class="button-large" (click)="credits()">{{'game.main-menu.credits' | translate}}</button>
+  </div>
+
+  <div id="buttons-bottom">
+    <button class="button-large" (click)="quit()">{{'game.main-menu.quit' | translate}}</button>
+  </div>
+
+  <div id="stranded-ii-logo"></div>
+</div>

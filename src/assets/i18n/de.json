@@ -5,5 +5,17 @@
     "download-content": "Download-Material",
     "modifications": "Modifikationen",
     "tips-and-tutorials": "Tipps und Tutorials"
+  },
+  "game": {
+    "main-menu": {
+      "adventure": "Abenteuer",
+      "random-island": "Zufallsinsel",
+      "single-island": "Einzelinsel",
+      "load": "Laden",
+      "options": "Optionen",
+      "editor": "Editor",
+      "credits": "Credits",
+      "quit": "Beenden"
+    }
   }
 }
