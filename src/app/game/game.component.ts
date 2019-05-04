@@ -269,6 +269,8 @@ export class GameComponent implements AfterViewInit {
   corona(x: number, z: number, radius?: number, red?: number, green?: number, blue?: number, speed?: number, unitId?: number) {}
   cos(value: number, factor: number) {}
   count(className: string, type: any) {}
+  count_behaviourinrange(className: string, behaviour: any, radius?: number, secondClassName?: string, secondId?: number) {}
+  count_inrange(className: string, type: any, radius?: number, secondClassName?: string, secondId?: number) {}
 
 
   /* Scripts */
