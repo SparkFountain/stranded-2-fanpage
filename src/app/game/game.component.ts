@@ -26,9 +26,9 @@ export class GameComponent implements AfterViewInit {
 
   public shadowGenerator: ShadowGenerator;
 
-  public time: number;
+  public inGameTime: number;
   public hourFactor: number;
-  public day: number;
+  public inGameDay: number;
   public lightColors: Array<{ r: number, g: number, b: number }>;
 
   public gameVariables: Array<any>;
@@ -45,14 +45,14 @@ export class GameComponent implements AfterViewInit {
 
   constructor() {
     this.hourFactor = 60;
-    this.time = 8 * this.hourFactor;
-    this.day = 1;
+    this.inGameTime = 8 * this.hourFactor;
+    this.inGameDay = 1;
 
     setInterval(() => {
-      this.time++;
-      if (this.time >= 24 * this.hourFactor) {
-        this.time = 0;
-        this.day++;
+      this.inGameTime++;
+      if (this.inGameTime >= 24 * this.hourFactor) {
+        this.inGameTime = 0;
+        this.inGameDay++;
       }
       this.dayNightCycle();
     }, 1000);
@@ -194,8 +194,8 @@ export class GameComponent implements AfterViewInit {
   }
 
   dayNightCycle() {
-    const fullHour: number = Math.floor(this.time / this.hourFactor);
-    const minuteFactor: number = (this.time % this.hourFactor) / this.hourFactor;
+    const fullHour: number = Math.floor(this.inGameTime / this.hourFactor);
+    const minuteFactor: number = (this.inGameTime % this.hourFactor) / this.hourFactor;
 
     const currentSunLight: Color3 = Color3.FromInts(
       (1 - minuteFactor) * this.lightColors[fullHour].r + minuteFactor * this.lightColors[(fullHour + 1) % 24].r,
@@ -211,9 +211,9 @@ export class GameComponent implements AfterViewInit {
     this.sun.specular = currentSunLight;
     this.sun.diffuse = currentSunLight;
 
-    if (this.time <= 4 * this.hourFactor) {
+    if (this.inGameTime <= 4 * this.hourFactor) {
       this.skyBox.material.alpha = 0.1;
-    } else if (this.time > 4 * this.hourFactor && this.time <= 5 * this.hourFactor) {
+    } else if (this.inGameTime > 4 * this.hourFactor && this.inGameTime <= 5 * this.hourFactor) {
       this.skyBox.material.alpha = 0.2;
     } else {
       this.skyBox.material.alpha = 1;
@@ -234,43 +234,171 @@ export class GameComponent implements AfterViewInit {
   ai_eater() { }
   ai_mode(unitId: number, mode: any, targetClass?: any, targetId?: any) { }
   ai_signal(aiSignal: any, radius?: number, className?: string, id?: number) { }
-  ai_stay(unitId: number, mode?: any) {}
-  ai_typesignal(aiSignal: any, type: any, radius?: number, className?: string, id?: number) {}
-  alpha(value: number, className: string, id: number) {}
-  alteritem(amount: number, type: any, newAmount?: number, newType?: any) {}
-  alterobject(objectId: number, objectType: any) {}
-  ambientsfx(fileName: string) {}
-  animate(unitId: number, startFrame: number, endFrame: number, speed: number, mode?: any) {}
-  areal_event(event: any, x: number, y: number, z: number, radius?: number, eventLimit?: any) {}
-  areal_state(state: any, x: number, y: number, z: number, radius?: number) {}
-  autoload() {}
-  autosave() {}
-  behaviour(className: string, typId: number) {}
-  blend(mode: any, className?: string, id?: number) {}
-  blur(value: number) {}
-  buffer() {}
-  buildsetup(id: number, cameraHeight?: number) {}
-  builtat(objectId: number) {}
-  button(id: number, text: string, icon?: any, script?: any) {}
-  callscript(server: any, path: string, execute?: boolean) {}
-  camfollow(time: any, className: string, id: number, x: number, y: number, z: number) {}
-  cammode(time: any, mode: any, className?: string, id?: number) {}
-  campath(time: any, stepTime: any, ids: number[]) {}
-  clear() {}
-  climate() {}
-  closemenu() {}
-  color(red: number, green: number, blue: number, className?: string, id?: number) {}
-  compare_behaviour(className: string, id: number, behaviour: any) {}
-  compare_material(className: string, id: number, material: any) {}
-  compass(show: boolean) {}
-  con(command: any) {}
-  consume(energy?: number, hunger?: number, thirst?: number, exhaustion?: number) {}
-  copychildren(className: string, id: number, variables?: any, items?: any, states?: any, script?: any, add?: any) {}
-  corona(x: number, z: number, radius?: number, red?: number, green?: number, blue?: number, speed?: number, unitId?: number) {}
-  cos(value: number, factor: number) {}
-  count(className: string, type: any) {}
-  count_behaviourinrange(className: string, behaviour: any, radius?: number, secondClassName?: string, secondId?: number) {}
-  count_inrange(className: string, type: any, radius?: number, secondClassName?: string, secondId?: number) {}
+  ai_stay(unitId: number, mode?: any) { }
+  ai_typesignal(aiSignal: any, type: any, radius?: number, className?: string, id?: number) { }
+  alpha(value: number, className: string, id: number) { }
+  alteritem(amount: number, type: any, newAmount?: number, newType?: any) { }
+  alterobject(objectId: number, objectType: any) { }
+  ambientsfx(fileName: string) { }
+  animate(unitId: number, startFrame: number, endFrame: number, speed: number, mode?: any) { }
+  areal_event(event: any, x: number, y: number, z: number, radius?: number, eventLimit?: any) { }
+  areal_state(state: any, x: number, y: number, z: number, radius?: number) { }
+  autoload() { }
+  autosave() { }
+  behaviour(className: string, typId: number) { }
+  blend(mode: any, className?: string, id?: number) { }
+  blur(value: number) { }
+  buffer() { }
+  buildsetup(id: number, cameraHeight?: number) { }
+  builtat(objectId: number) { }
+  button(id: number, text: string, icon?: any, script?: any) { }
+  callscript(server: any, path: string, execute?: boolean) { }
+  camfollow(time: any, className: string, id: number, x: number, y: number, z: number) { }
+  cammode(time: any, mode: any, className?: string, id?: number) { }
+  campath(time: any, stepTime: any, ids: number[]) { }
+  clear() { }
+  climate() { }
+  closemenu() { }
+  color(red: number, green: number, blue: number, className?: string, id?: number) { }
+  compare_behaviour(className: string, id: number, behaviour: any) { }
+  compare_material(className: string, id: number, material: any) { }
+  compass(show: boolean) { }
+  con(command: any) { }
+  consume(energy?: number, hunger?: number, thirst?: number, exhaustion?: number) { }
+  copychildren(className: string, id: number, variables?: any, items?: any, states?: any, script?: any, add?: any) { }
+  corona(x: number, z: number, radius?: number, red?: number, green?: number, blue?: number, speed?: number, unitId?: number) { }
+  cos(value: number, factor: number) { }
+  count(className: string, type: any) { }
+  count_behaviourinrange(className: string, behaviour: any, radius?: number, secondClassName?: string, secondId?: number) { }
+  count_inrange(className: string, type: any, radius?: number, secondClassName?: string, secondId?: number) { }
+  count_state(state: any) { }
+  count_stored(className: string, id: number, type?: any) { }
+  cracklock(text: string, mode: any, combination: any) { }
+  create(className: string, type: any, x?: number, z?: number, amount?: number) { }
+  credits() { }
+  cscr(image?: any, closeable?: boolean) { }
+  cscr_image(image: any, x: number, y: number, tooltip?: any, script?: any) { }
+  cscr_text(text: string, x: number, y: number, color?: any, align?: any, tooltip?: any, script?: any) { }
+  currentclass() { }
+  currentid() { }
+  damage(className: string, id: number, amount: number) { }
+  day() { }
+  debug(classOrMode: any, id?: number) { }
+  decisionwin(text: string, font?: any, cancel?: any, okay?: any, image?: any) { }
+  defparam(className: string, type: any, parameter: any) { }
+  def_extend(className: string, type: any, source: any) { }
+  def_free(className: string, type: any) { }
+  def_override(className: string, type: any, source: any) { }
+  dialogue(startPage: any, source: any) { }
+  diary(title: string, source?: any) { }
+  distance(firstClassName: string, firstId: number, secondClassName: string, secondId: number) { }
+  downloadfile(server: any, path: string, file: any) { }
+  drink(energy?: number, hunger?: number, thirst?: number, exhaustion?: number) { }
+  eat(energy?: number, hunger?: number, thirst?: number, exhaustion?: number) { }
+  echo(text: string) { }
+  equip(itemType: any) { }
+  event(eventName: any, className: string, id: number) { }
+  exchange(className: string, id: number, store?: boolean, itemTypes?: any[]) { }
+  exec(command: any) { }
+  exists(className: string, id: number) { }
+  exit() { }
+  explosion(x: number, y: number, z: number, radius?: number, damage?: number, style?: any) { }
+  extendentry(title: string, source?: any) { }
+  extendscript(className: string, id: number, source?: any) { }
+  extract(string: string, start: number, length?: number) { }
+  fademusic(duration: number) { }
+  fileexists(path: string) { }
+  find(itemType: any, amount?: number) { }
+  flash(red: number, green: number, blue: number, speed?: number, alpha?: number) { }
+  free(className: string, id: number, amount?: number) { }
+  freebutton(id: number) { }
+  freeentry(title?: string) { }
+  freescript(className: string, id: number) { }
+  freescripts() { }
+  freeskill(skill: any) { }
+  freespace(x: number, y: number, z: number, radius?: number, objects?: boolean, units?: boolean, items?: boolean, infos?: boolean) { }
+  freestate(className: string, id: number, state?: any) { }
+  freestored(className: string, id: number, type: any, amount?: number) { }
+  freetext(id: number) { }
+  freetimers(className: string, id: number, source?: any) { }
+  freeunitpath(unitId: number) { }
+  freevar(variables: any[]) { }
+  freevars(locals?: boolean) { }
+  freeze(unitId?: number, mode?: any) { }
+  fry() { }
+  fx(mode: any, className?: string, id?: number) { }
+  getamount(id: number) { }
+  getlocal(className: string, id: number, variable: any) { }
+  getoff() { }
+  getpitch(className: string, id: number) { }
+  getplayerammo() { }
+  getplayervalue(value: number) { }
+  getplayerweapon() { }
+  getroll(className: string, id: number) { }
+  getsetting(settingName: string) { }
+  getstatevalue(className: string, id: number, state: any, value?: number) { }
+  getstored(className: string, id: number, type?: any) { }
+  getweather() { }
+  getx(className: string, id: number) { }
+  gety(className: string, id: number) { }
+  getyaw(className: string, id: number) { }
+  getz(className: string, id: number) { }
+  gotskill(skill: any) { }
+  gotstate(className: string, id: number, state: any) { }
+  grasscolor(red: number, green: number, blue: number) { }
+  growtime(type: any) { }
+  gt() { }
+  heal(className: string, id: number, value: number) { }
+  health(className: string, id: number, change?: number) { }
+  hidebar(time: any) { }
+  hideindicator(id: number) { }
+  hideindicators() { }
+  hit_damage() { }
+  hit_weapon() { }
+  hour() { }
+  image(id: number, image: any, x: number, y: number, masked?: boolean) { }
+  imagewin(image: any) { }
+  impact_amount() { }
+  impact_class() { }
+  impact_first() { }
+  impact_ground() { }
+  impact_id() { }
+  impact_kill() { }
+  impact_x() { }
+  impact_y() { }
+  impact_z() { }
+  inarea(className: string, id: number) { }
+  inarea_dig(className: string, id: number) { }
+  inarea_fish(className: string, id: number) { }
+  inarea_freshwater(className: string, id: number) { }
+  incskill(skill: any, amount?: number, description?: any) { }
+  info_loudspeaker(infoId: number, file: string, radius?: number) { }
+  info_spawncontrol(infoId: number, radius: number, className: string, type: any, part: number, maximumParts: number, days: number) { }
+  info_sprite(infoId: number, file?: any, x?: number, y?: number, r?: number, g?: number, b?: number, alpha?: number, blend?: any, fix?: any) { }
+  inputwin(text: string, font?: any, cancel?: any, okay?: any, image?: any) { }
+  inrange(className: string, id: number, radius?: number, secondClassName?: string, secondId?: number) { }
+  int(number: number) { }
+  intersect(firstClassName: string, firstId: number, secondClassName?: string, secondId?: number) { }
+  inview(className: string, id: number) { }
+  jade(amount: number) { }
+  join(values: any[]) { }
+  jumpfactor(factor: number) { }
+  jumptime(time: number) { }
+  kill(id: number) { }
+  lastbuildingsite() { }
+  length(string: string) { }
+  lensflares(enabled: boolean) { }
+  lives(className: string, id: number) { }
+  loadani(unitType: any, startFrame: any, endFrame: any) { }
+  loadfile(file: any, range?: any) { }
+  loadmap(map: any, skills?: any, items?: any, variables?: any, diary?: any, states?: any, buildLocks?: any) { }
+  loadmaptakeover() { }
+  loadvars(file?: any) { }
+  lockbuilding(buildingId: number) { }
+  lockbuildings() { }
+  lockcombi(combinationId: number) { }
+  lockcombis() { }
+  locked(buildingOrCombinationId: number) { }
 
 
   /* Scripts */
@@ -304,10 +432,6 @@ export class GameComponent implements AfterViewInit {
   }
 
   editor() {
-
-  }
-
-  credits() {
 
   }
 
