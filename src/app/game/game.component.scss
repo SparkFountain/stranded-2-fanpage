@@ -4,7 +4,7 @@ canvas {
   height: 100vh;
 }
 
-#main-menu {
+.menu {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,9 @@ canvas {
     margin-bottom: 15px;
     pointer-events: auto;
   }
+}
 
+#main {
   #stranded-ii-logo {
     position: fixed;
     top: 100px;
@@ -33,4 +35,12 @@ canvas {
 
     background: url('../../assets/gfx/sys/title.png');
   }
+}
+
+.right-window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100vw - 300px);
+  height: 100vh;
 }

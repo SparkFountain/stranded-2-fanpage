@@ -4,9 +4,15 @@
     "stranded-ii": "Stranded II",
     "download-content": "Download-Material",
     "modifications": "Modifikationen",
-    "tips-and-tutorials": "Tipps und Tutorials"
+    "tips-and-tutorials": "Tipps und Tutorials",
+    "options": "Optionen"
   },
   "game": {
+    "button": {
+      "cancel": "Abbrechen",
+      "okay": "Okay",
+      "apply": "Übernehmen"
+    },
     "main-menu": {
       "adventure": "Abenteuer",
       "random-island": "Zufallsinsel",
@@ -16,6 +22,13 @@
       "editor": "Editor",
       "credits": "Credits",
       "quit": "Beenden"
+    },
+    "options-menu": {
+      "controls": "Steuerung",
+      "graphics": "Grafik",
+      "sound": "Sound",
+      "action": "Aktion",
+      "key": "Taste"
     }
   }
 }

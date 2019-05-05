@@ -31,7 +31,15 @@ export class GameComponent implements AfterViewInit {
   public inGameDay: number;
   public lightColors: Array<{ r: number, g: number, b: number }>;
 
-  public gameVariables: Array<any>;
+  public activeMenu: string;
+
+  public game: {
+    units: any[],
+    objects: any[],
+    items: any[],
+    sounds: any[],
+    variables: Array<any>
+  }
 
   @HostListener('window:resize', ['$event'])
   onResize() {
@@ -44,6 +52,16 @@ export class GameComponent implements AfterViewInit {
   }
 
   constructor() {
+    this.activeMenu = 'main';
+
+    this.game = {
+      units: [],
+      objects: [],
+      items: [],
+      sounds: [],
+      variables: []
+    };
+
     this.hourFactor = 60;
     this.inGameTime = 8 * this.hourFactor;
     this.inGameDay = 1;
@@ -267,7 +285,9 @@ export class GameComponent implements AfterViewInit {
   consume(energy?: number, hunger?: number, thirst?: number, exhaustion?: number) { }
   copychildren(className: string, id: number, variables?: any, items?: any, states?: any, script?: any, add?: any) { }
   corona(x: number, z: number, radius?: number, red?: number, green?: number, blue?: number, speed?: number, unitId?: number) { }
-  cos(value: number, factor: number) { }
+  cos(value: number, useFactor100: boolean) {
+    return useFactor100 ? Math.cos(value) * 100 : Math.cos(value);
+  }
   count(className: string, type: any) { }
   count_behaviourinrange(className: string, behaviour: any, radius?: number, secondClassName?: string, secondId?: number) { }
   count_inrange(className: string, type: any, radius?: number, secondClassName?: string, secondId?: number) { }
@@ -377,7 +397,9 @@ export class GameComponent implements AfterViewInit {
   info_sprite(infoId: number, file?: any, x?: number, y?: number, r?: number, g?: number, b?: number, alpha?: number, blend?: any, fix?: any) { }
   inputwin(text: string, font?: any, cancel?: any, okay?: any, image?: any) { }
   inrange(className: string, id: number, radius?: number, secondClassName?: string, secondId?: number) { }
-  int(number: number) { }
+  int(value: any) {
+    return parseInt(value);
+  }
   intersect(firstClassName: string, firstId: number, secondClassName?: string, secondId?: number) { }
   inview(className: string, id: number) { }
   jade(amount: number) { }
@@ -491,7 +513,9 @@ export class GameComponent implements AfterViewInit {
   showentry(title: string, sfx?: any) { }
   showindicator(id: number) { }
   showindicators() { }
-  sin(value: number, factor: number) { }
+  sin(value: number, useFactor100?: boolean) {
+    return useFactor100 ? Math.sin(value) * 100 : Math.sin(value);
+  }
   skillname(skill: string, description: string) { }
   skillvalue(skill: string) { }
   skip() { }
@@ -503,55 +527,57 @@ export class GameComponent implements AfterViewInit {
   snowratio(percent: number) { }
   spawntimer(objectId: number, value?: number) { }
   speech(file: string, cancel?: any, number?: any) { }
-  split(string: string, delimiter: string, part: number) {}
-  starttrigger(id: number) {}
-  starttriggers() {}
-  state() {}
-  statecolor(className: string, id: number, state: any, red: number, green: number, blue: number) {}
-  statesize(className: string, id: number, state: any, size: number) {}
-  statevalue(className: string, id: number, state: any, value: number) {}
-  stopmusic() {}
-  stopsounds() {}
-  stoptrigger(id: number) {}
-  stoptriggers() {}
-  storage(className: string, id: number, mode?: any) {}
-  store(itemId: number, className: string, id: number, outside: number) {}
-  tan(value: number, factor?: number) {}
-  targetclass() {}
-  targetdistance() {}
-  targetid() {}
-  targetx() {}
-  targety() {}
-  targetz() {}
-  tempall() {}
-  terrain(x: number, z: number, mode: any, height?: number) {}
-  terraintexture(file: string, grass?: any) {}
-  terrainy(x: number, z: number) {}
-  text(id: number, text: string, font?: any, x?: number, y?: number, align?: any) {}
-  text3d(className: string, id: number, text: string, font?: any, offset?: number, viewRange?: number) {}
-  texture(texture: any, className?: string, id?: number) {}
-  thunder() {}
-  timedcampath(time: any, steps: {stepTime: any, id: any}[]) {}
-  timer(className: string, id: number, duration: number, loops?: any, source?: any) {}
-  timercount(className: string, id: number) {}
-  trigger(id: number) {}
-  trim(string: string) {}
-  type(className: string, id: number) {}
-  unitpath(unitId: number, pathIds: number[]) {}
-  unlockbuilding(buildingId: number) {}
-  unlockbuildings() {}
-  unlockcombi(combinationId: number) {}
-  unlockcombis() {}
-  unstore(itemId: number, amount?: number) {}
-  use_x() {}
-  use_y() {}
-  use_z() {}
-  varexists(variableName: string) {}
-  viewline(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number) {}
-  vomit(unitId: number) {}
-  wateralpha(alpha: number) {}
-  watertexture(textureName: string) {}
-  weather(value: number) {}
+  split(string: string, delimiter: string, part: number) { }
+  starttrigger(id: number) { }
+  starttriggers() { }
+  state() { }
+  statecolor(className: string, id: number, state: any, red: number, green: number, blue: number) { }
+  statesize(className: string, id: number, state: any, size: number) { }
+  statevalue(className: string, id: number, state: any, value: number) { }
+  stopmusic() { }
+  stopsounds() { }
+  stoptrigger(id: number) { }
+  stoptriggers() { }
+  storage(className: string, id: number, mode?: any) { }
+  store(itemId: number, className: string, id: number, outside: number) { }
+  tan(value: number, useFactor100?: boolean) {
+    return useFactor100 ? Math.tan(value) * 100 : Math.tan(value);
+  }
+  targetclass() { }
+  targetdistance() { }
+  targetid() { }
+  targetx() { }
+  targety() { }
+  targetz() { }
+  tempall() { }
+  terrain(x: number, z: number, mode: any, height?: number) { }
+  terraintexture(file: string, grass?: any) { }
+  terrainy(x: number, z: number) { }
+  text(id: number, text: string, font?: any, x?: number, y?: number, align?: any) { }
+  text3d(className: string, id: number, text: string, font?: any, offset?: number, viewRange?: number) { }
+  texture(texture: any, className?: string, id?: number) { }
+  thunder() { }
+  timedcampath(time: any, steps: { stepTime: any, id: any }[]) { }
+  timer(className: string, id: number, duration: number, loops?: any, source?: any) { }
+  timercount(className: string, id: number) { }
+  trigger(id: number) { }
+  trim(string: string) { }
+  type(className: string, id: number) { }
+  unitpath(unitId: number, pathIds: number[]) { }
+  unlockbuilding(buildingId: number) { }
+  unlockbuildings() { }
+  unlockcombi(combinationId: number) { }
+  unlockcombis() { }
+  unstore(itemId: number, amount?: number) { }
+  use_x() { }
+  use_y() { }
+  use_z() { }
+  varexists(variableName: string) { }
+  viewline(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number) { }
+  vomit(unitId: number) { }
+  wateralpha(alpha: number) { }
+  watertexture(textureName: string) { }
+  weather(value: number) { }
 
 
 
@@ -581,11 +607,8 @@ export class GameComponent implements AfterViewInit {
 
   }
 
-  options() {
-
-  }
-
-  editor() {
-
+  saveOptions() {
+    //todo
+    this.activeMenu = 'main';
   }
 }
