@@ -36,16 +36,6 @@
 
   <div class="right-window">
     <app-header [tabs]="['options']"></app-header>
-
-    <app-content [tab]="activeTab">
-      <table>
-        <thead>
-          <tr>
-            <th>{{'game.options-menu.action' | translate}}</th>
-            <th>{{'game.options-menu.key' | translate}}</th>
-          </tr>
-        </thead>
-      </table>
-    </app-content>
+    <app-content [tab]="'options'"></app-content>
   </div>
 </div>

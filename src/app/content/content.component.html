@@ -13,4 +13,20 @@
   <app-download-content *ngSwitchCase="'download-content'"></app-download-content>
   <app-modifications *ngSwitchCase="'modifications'"></app-modifications>
   <app-tips-tutorials *ngSwitchCase="'tips-and-tutorials'"></app-tips-tutorials>
+
+  <div *ngSwitchCase="'options'">
+    <table>
+      <thead>
+        <tr>
+          <th>{{'game.controls.action' | translate}}</th>
+          <th>{{'game.controls.key' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{'game.controls.' | translate}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
