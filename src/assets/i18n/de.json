@@ -116,6 +116,26 @@
         "name": "Bitterwurzel",
         "info": "Ein extrem bitteres Wurzelgewächs."
       },
+      "21": {
+        "name": "Kieselsteine",
+        "info": "Kleine Kieselsteine - die geben sicher eine gute Munition ab. Fehlt nur noch was zum Verschießen."
+      },
+      "23": {
+        "name": "Stein",
+        "info": "Ein dicker Stein, mit dem sich nützliche Sachen basteln lassen."
+      },
+      "24": {
+        "name": "Ast",
+        "info": "Sehr praktisch zur Herstellung der verschiedensten Dinge. Kann auch mit Wasser biegbar gemacht oder am Feuer angezündet werden."
+      },
+      "25": {
+        "name": "Biegbarer Ast",
+        "info": "Ein Ast, welcher mittels Wasser weich und biegsam gemacht wurde."
+      },
+      "26": {
+        "name": "Liane",
+        "info": "Eine lange Liane. Ich kann sie unter anderem als Peitsche benutzen, um Tiere durch die Gegend zu treiben."
+      },
       "27": {
         "name": "Kokosnuss",
         "info": "Eine Kokosnuss. Aufgrund der harten Hülle wird es allerdings lange dauern, sie zu essen."
@@ -188,6 +208,18 @@
         "name": "Saft",
         "info": "Gesunder Saft aus leckeren Früchten."
       },
+      "48": {
+        "name": "Wolle",
+        "info": "Tolle Wolle. Leider keine Zuckerwatte. Ich kann sie benutzen, um Schnur daraus zu spinnen."
+      },
+      "49": {
+        "name": "Schnur",
+        "info": "Eine reißfeste Schnur - damit lassen sich Netze weben, um Fische oder Schmetterlinge zu fangen."
+      },
+      "57": {
+        "name": "Feder",
+        "info": "Federn von irgendwelchen Vögeln."
+      },
       "66": {
         "name": "Keks",
         "info": "Kekse mit Schokostückchen! Yay!"
@@ -232,6 +264,14 @@
         "name": "Hanfblatt",
         "info": "Hanf mit berauschender Wirkung..."
       },
+      "85": {
+        "name": "Eisen",
+        "info": "Ein Klumpen Eisen. Mittels Hammer lässt er sich zu einer Eisenstange umformen. Aber auch direkt in Klumpenform kann ich Werkzeuge daraus herstellen."
+      },
+      "86": {
+        "name": "Eisenstange",
+        "info": "Eine robuste Eisenstange. Wichtiger Rohstoff für diverse Werkzeuge!"
+      },
       "89": {
         "name": "Fisch",
         "info": "Ein roher Fisch. Kann im Sushi-Style gegessen oder auch gebraten werden."
@@ -243,6 +283,18 @@
       "91": {
         "name": "Joint",
         "info": "Ein Joint, der ordentlich reinhaut. Ich sollte ihn schnellstmöglich entsorgen - Drogen sind böse! Pfui!"
+      },
+      "94": {
+        "name": "Zahn",
+        "info": "Ein spitzer Zahn."
+      },
+      "95": {
+        "name": "Kralle",
+        "info": "Eine scharfe Kralle von irgendwelchen bedrohlichen Tieren."
+      },
+      "96": {
+        "name": "Haut",
+        "info": "Haut- und Fell-Gedöns von irgendwelchem Viehzeug. In Kombination mit Ästen könnte ich daraus sicherlich ein Zelt basteln."
       },
       "97": {
         "name": "Zelt",
@@ -275,6 +327,10 @@
       "106": {
         "name": "Flasche",
         "info": "Eine leere Glasflasche, welche an sprudelnden Quellen mit Wasser aufgefüllt werden kann."
+      },
+      "107": {
+        "name": "Rinde",
+        "info": "Ein Stück Baumrinde. Wenn ich es richtig anstelle, kann ich damit vielleicht Feuer machen..."
       },
       "108": {
         "name": "Perle",

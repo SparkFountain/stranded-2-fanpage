@@ -694,51 +694,43 @@
     },
     {
       "id": 21,
-      "name": "Kieselsteine",
       "icon": "pebbles.bmp",
       "model": "pebbles.obj",
       "scale": 0.4,
       "behaviour": "ammo: 51",
       "mat": "stone",
       "weight": 50,
-      "info": "kleine Kieselsteine - die geben sicher eine gute Munition ab",
       "healthchange": 0,
       "damage": 5
     },
     {
       "id": 23,
-      "name": "Stein",
       "icon": "stone04.bmp",
       "model": "stone04.obj",
       "scale": 1.4,
       "mat": "stone",
       "weight": 1500,
-      "info": "ein dicker Stein",
       "healthchange": 0
     },
     {
       "id": 24,
-      "name": "Ast",
+      "name": "",
       "icon": "branch.bmp",
       "model": "branch.obj",
       "scale": 0.4,
       "mat": "wood",
-      "weight": 200,
-      "info": "darf ich mich vorstellen? Mein Name ist Ast - Mr. Ast. Sehr praktisch zur Herstellung der verschiedensten Dinge. Kann auch mit Wasser biegbar gemacht werden oder an Feuer angezündet werden"
+      "weight": 200
     },
     {
       "id": 25,
-      "name": "biegbarer Ast",
       "icon": "bendablebranch.bmp",
       "model": "bendablebranch.obj",
       "scale": 0.8,
       "mat": "wood",
-      "weight": 200,
-      "info": "ein Ast, welcher mittels Wasser weich und biegsam gemacht wurde"
+      "weight": 200
     },
     {
       "id": 26,
-      "name": "Liane",
       "icon": "liana.bmp",
       "model": "liana.obj",
       "scale": 0.4,
@@ -746,43 +738,35 @@
       "weight": 300,
       "behaviour": "fastblade",
       "damage": 0,
-      "rate": 1000,
-      "info": "eine lange Liane. Ich kann sie als Peitsche benutzen, um Tiere durch die Gegend zu treiben"
+      "rate": 1000
     },
     {
       "id": 48,
-      "name": "Wolle",
       "icon": "wool.bmp",
       "model": "wool.obj",
       "scale": 0.6,
       "mat": "none",
-      "weight": 30,
-      "info": "tolle Wolle. Leider keine Zuckerwatte. Ich kann sie benutzen, um Schnur daraus zu spinnen"
+      "weight": 30
     },
     {
       "id": 49,
-      "name": "Schnur",
       "icon": "cord.bmp",
       "model": "cord.obj",
       "scale": 0.4,
       "mat": "none",
-      "weight": 5,
-      "info": "eine Schnur. Nicht mehr und nicht weniger"
+      "weight": 5
     },
     {
       "id": 57,
-      "name": "Feder",
       "icon": "feather.bmp",
       "model": "feather.obj",
       "fx": 16,
       "scale": 0.5,
       "mat": "none",
-      "weight": 1,
-      "info": "Federn von irgendwelchen Vögeln"
+      "weight": 1
     },
     {
       "id": 85,
-      "name": "Eisen",
       "icon": "iron.bmp",
       "model": "nugget.obj",
       "color": [
@@ -794,24 +778,20 @@
       "scale": 2,
       "mat": "metal",
       "weight": 350,
-      "info": "ein Klumpen Eisen. Mittels Hammer l‰sst er sich zu einer Eisenstange umformen. Aber auch direkt in Klumpenform lassen sich Werkzeuge daraus herstellen",
       "healthchange": -0.1
     },
     {
       "id": 86,
-      "name": "Eisenstange",
       "icon": "ironbar.bmp",
       "model": "ironbar.obj",
       "shine": 1,
       "scale": 0.9,
       "mat": "metal",
       "weight": 300,
-      "info": "eine robuste Eisenstange. Wichtiger Rohstoff für Werkzeuge",
       "healthchange": -0.1
     },
     {
       "id": 94,
-      "name": "Zahn",
       "icon": "tooth.bmp",
       "model": "tooth.obj",
       "scale": 0.4,
@@ -820,12 +800,10 @@
       "drag": 0.25,
       "mat": "stone",
       "weight": 5,
-      "info": "ein spitzer Zahn",
       "healthchange": 0
     },
     {
       "id": 95,
-      "name": "Kralle",
       "icon": "claw.bmp",
       "model": "claw.obj",
       "scale": 0.7,
@@ -834,29 +812,24 @@
       "drag": 0.5,
       "mat": "stone",
       "weight": 10,
-      "info": "eine scharfe Kralle von irgendwelchen bedrohlichen Tieren",
       "healthchange": 0
     },
     {
       "id": 96,
-      "name": "Haut",
       "icon": "skin.bmp",
       "model": "skin.obj",
       "scale": 1,
       "fx": 16,
       "mat": "none",
-      "weight": 500,
-      "info": "Haut- und Fell-Gedöhns von irgendwelchem Viehzeugs. In Kombination mit Ästen könnte ich daraus sicherlich ein Zelt basteln"
+      "weight": 500
     },
     {
       "id": 107,
-      "name": "Rinde",
       "icon": "bark.bmp",
       "model": "bark.obj",
       "scale": 0.4,
       "fx": 16,
-      "weight": 40,
-      "info": "ein Stück Rinde... wenn ich es richtig anstelle, kann ich damit vielleicht Feuer machen"
+      "weight": 40
     },
     {}
   ],
