@@ -836,20 +836,17 @@
   "tool": [
     {
       "id": 22,
-      "name": "Feuerstein",
       "icon": "firestone.bmp",
       "model": "firestone.obj",
       "scale": 0.5,
       "behaviour": "blade",
       "mat": "stone",
       "weight": 500,
-      "info": "wenn ich zwei davon habe, kann ich Fackeln und Feuerstellen damit anzünden, in dem ich sie dagegen schlage. Ein einzelner ist wertlos",
       "damage": 5,
       "healthchange": 0
     },
     {
       "id": 30,
-      "name": "Hammer",
       "icon": "hammer.bmp",
       "model": "hammer.obj",
       "scale": 0.6,
@@ -857,36 +854,30 @@
       "mat": "stone",
       "weight": 1000,
       "damage": 6,
-      "info": "damit kann ich Sachen bauen oder ihn einfach nur als Waffe benutzen. Außerdem wird er bei Kombinationen mit Eisen benötigt, um dieses bearbeiten zu können",
       "healthchange": 0
     },
     {
       "id": 50,
-      "name": "Angel",
       "icon": "fishingrod.bmp",
       "model": "fishingrod.obj",
       "scale": 1.4,
       "mat": "wood",
       "weight": 1000,
-      "info": "ne Angel. Damit kann ich *tadaa* angeln! Durch h‰ufiges Angeln erhöhe ich meine F‰higkeiten und somit auch meine Erfolgschancen",
       "behaviour": "fishingrod",
       "damage": 3
     },
     {
       "id": 65,
-      "name": "Uhr",
       "icon": "watch.bmp",
       "model": "watch.obj",
       "scale": 0.32,
       "behaviour": "watch",
       "mat": "metal",
       "weight": 40,
-      "info": "das Ding zeigt mir die genaue Uhrzeit an!",
       "healthchange": 0
     },
     {
       "id": 73,
-      "name": "Landkarte",
       "icon": "map.bmp",
       "model": "map.obj",
       "scale": 0.5,
@@ -894,20 +885,17 @@
       "behaviour": "map",
       "mat": "none",
       "weight": 10,
-      "info": "eine Landkarte! Endlich nicht mehr ahnungslos durch die Gegend irren!",
       "health": 100000,
       "healthchange": 0
     },
     {
       "id": 84,
-      "name": "Spaten",
       "icon": "spade.bmp",
       "model": "spade.obj",
       "fx": 16,
       "mat": "metal",
       "scale": 0.75,
       "weight": 800,
-      "info": "damit kann ich Sch‰tze und wertloses Zeug ausgraben oder Tieren eins damit überbraten",
       "behaviour": "spade",
       "damage": 5
     },

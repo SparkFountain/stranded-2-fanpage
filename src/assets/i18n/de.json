@@ -120,6 +120,10 @@
         "name": "Kieselsteine",
         "info": "Kleine Kieselsteine - die geben sicher eine gute Munition ab. Fehlt nur noch was zum Verschießen."
       },
+      "22": {
+        "name": "Feuerstein",
+        "info": "Wenn ich zwei davon habe, kann ich Fackeln und Feuerstellen damit anzünden, indem ich sie gegeneinander schlage. Ein einzelner ist wertlos..."
+      },
       "23": {
         "name": "Stein",
         "info": "Ein dicker Stein, mit dem sich nützliche Sachen basteln lassen."
@@ -139,6 +143,10 @@
       "27": {
         "name": "Kokosnuss",
         "info": "Eine Kokosnuss. Aufgrund der harten Hülle wird es allerdings lange dauern, sie zu essen."
+      },
+      "30": {
+        "name": "Hammer",
+        "info": "Damit kann ich Sachen bauen oder ihn einfach nur als Waffe benutzen. Außerdem wird er bei Kombinationen mit Eisen benötigt, um dieses bearbeiten zu können."
       },
       "31": {
         "name": "Pilz",
@@ -216,9 +224,17 @@
         "name": "Schnur",
         "info": "Eine reißfeste Schnur - damit lassen sich Netze weben, um Fische oder Schmetterlinge zu fangen."
       },
+      "50": {
+        "name": "Angel",
+        "info": "Eine krumme Angel, mit der ich mir Fische besorgen kann! Durch häufiges Angeln erhöhe ich meine Fähigkeiten und somit auch meine Erfolgschancen."
+      },
       "57": {
         "name": "Feder",
         "info": "Federn von irgendwelchen Vögeln."
+      },
+      "65": {
+        "name": "Uhr",
+        "info": "Sie zeigt mir die genaue Uhrzeit an."
       },
       "66": {
         "name": "Keks",
@@ -248,6 +264,10 @@
         "name": "Exkrement",
         "info": "Ein formschönes Exkrement. Im Volksmund auch Kacke oder Scheiße genannt. Das Zeug stinkt so sehr, dass ich damit vermutlich Tiere vergiften könnte..."
       },
+      "73": {
+        "name": "Landkarte",
+        "info": "Eine Landkarte! Endlich nicht mehr ahnungslos durch die Gegend irren."
+      },
       "77": {
         "name": "Volleyball",
         "info": "Ja supi! Jetzt brauche ich nur noch ein Netz und einen Gegner."
@@ -263,6 +283,10 @@
       "83": {
         "name": "Hanfblatt",
         "info": "Hanf mit berauschender Wirkung..."
+      },
+      "84": {
+        "name": "Spaten",
+        "info": "Damit kann ich Schätze und Kleinkram ausgraben oder Tieren eins überbraten."
       },
       "85": {
         "name": "Eisen",
