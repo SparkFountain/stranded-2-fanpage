@@ -38,6 +38,284 @@
       "jump": "Springen / Menü schließen",
       "sprint": "Sprinten",
       "attack": "Angreifen"
+    },
+    "items": {
+      "1": {
+        "name": "Beutel",
+        "info": "Ein praktischer kleiner Beutel. Schade, dass nichts drin ist..."
+      },
+      "2": {
+        "name": "Kleiner Kristall",
+        "info": "Ein kleiner Kristall. Sieht ganz hübsch aus."
+      },
+      "3": {
+        "name": "Kristall",
+        "info": "Ein funkelnder Kristall. Wofür auch immer der gut sein soll..."
+      },
+      "4": {
+        "name": "Goldnugget",
+        "info": "Ein dickes Goldnugget! Ich bin reich! (Auch wenn ich mir auf diesem Eiland dafür wohl nix kaufen kann.)"
+      },
+      "5": {
+        "name": "Goldbeutel",
+        "info": "Ein Beutel voller Gold! Na prima, und was nützt mir das auf einer einsamen Insel?"
+      },
+      "7": {
+        "name": "Baumstamm",
+        "info": "Ein schwerer Baumstamm. Wieso muss ich den mit mir rumschleppen?"
+      },
+      "8": {
+        "name": "Bambus",
+        "info": "Praktisch, so ein hartes Zeug! Daraus lassen sich bestimmt prima Bolzen schneiden, die ich mit einer Armbrust verschießen kann."
+      },
+      "9": {
+        "name": "Fleisch",
+        "info": "Ein saftiges Stück rohes Fleisch. Ich kann es braten, roh essen oder in die Hand nehmen und wilden Tieren zuwerfen."
+      },
+      "10": {
+        "name": "Fleisch (gebraten)",
+        "info": "Ein großes Stück gebratenes Fleisch."
+      },
+      "11": {
+        "name": "Kleines Fleisch",
+        "info": "Ein Stückchen rohes Fleisch. Essbar, bratbar und werfbar."
+      },
+      "12": {
+        "name": "Kleines Fleisch (gebraten)",
+        "info": "Ein gebratenes Stückchen Fleisch."
+      },
+      "13": {
+        "name": "Blaublüte",
+        "info": "Eine Pflanze mit blauen Blüten. Sie kann benutzt werden, um Blutungen zu stoppen."
+      },
+      "14": {
+        "name": "Banane",
+        "info": "Eine köstliche Banane. Schmeckt nicht nur mir, sondern auch Affen!"
+      },
+      "15": {
+        "name": "Blatt",
+        "info": "Ein grünes Blatt. Wenn ich viele davon habe, kann ich mittels eines Steins Wasser aus ihnen pressen."
+      },
+      "16": {
+        "name": "Blutblatt",
+        "info": "Eine Pflanze mit blutroten Blättern."
+      },
+      "17": {
+        "name": "Heilkraut",
+        "info": "Ein Kraut mit heilender Wirkung."
+      },
+      "18": {
+        "name": "Starkes Heilkraut",
+        "info": "Ein Heilkraut mit besonders starker Wirkung."
+      },
+      "19": {
+        "name": "Goldkraut",
+        "info": "Ein goldgelbes Kraut. Hilft gut gegen Benommenheit."
+      },
+      "20": {
+        "name": "Bitterwurzel",
+        "info": "Ein extrem bitteres Wurzelgewächs."
+      },
+      "27": {
+        "name": "Kokosnuss",
+        "info": "Eine Kokosnuss. Aufgrund der harten Hülle wird es allerdings lange dauern, sie zu essen."
+      },
+      "31": {
+        "name": "Pilz",
+        "info": "Ein Pilz."
+      },
+      "32": {
+        "name": "Großer Pilz",
+        "info": "Ein großer Pilz."
+      },
+      "33": {
+        "name": "Braunpilz",
+        "info": "Ein brauner Pilz."
+      },
+      "34": {
+        "name": "Giftpilz",
+        "info": "Ein grüner Giftpilz. Nicht sehr bekömmlich, aber mittels eines Steins sollte sich das Gift herauspressen lassen."
+      },
+      "35": {
+        "name": "Zwergenhut",
+        "info": "Ein kleiner Pilz, welcher aufgrund seines Aussehens auch Zwergenhut genannt wird."
+      },
+      "36": {
+        "name": "Heiltrank",
+        "info": "Ein Heiltrank, welcher den Spieler 30 Sekunden lang heilt."
+      },
+      "37": {
+        "name": "Gift",
+        "info": "Giftgrünes Gift (toller Wortwitz). Wie das wohl schmeckt? Vielleicht sollte ich mal kosten..."
+      },
+      "38": {
+        "name": "Wasser",
+        "info": "Frisches Trinkwasser. Kann auch zum Löschen in die Hand genommen und dann auf Feuer geworfen werden."
+      },
+      "39": {
+        "name": "Wein",
+        "info": "Wohlschmeckender Wein. Sollte nicht in zu großen Mengen konsumiert werden..."
+      },
+      "40": {
+        "name": "Flaschenpost",
+        "info": "Eine Flasche mit einer Nachricht drin. Was dort wohl drin steht?"
+      },
+      "41": {
+        "name": "Getreidegarbe",
+        "info": "Ich muss dieses Getreidebündel benutzen, um die Körner rauszuschütteln. In diesem Zustand bringt es mir nichts."
+      },
+      "42": {
+        "name": "Körner",
+        "info": "Lassen sich mit einem Stein mahlen oder in die Hand nehmen und dann durch Benutzen des Bodens einpflanzen."
+      },
+      "43": {
+        "name": "Mehl",
+        "info": "Ein Haufen Mehl. Mit Wasser sollte es sich zu Teig verarbeiten lassen."
+      },
+      "44": {
+        "name": "Brot",
+        "info": "Ein Laib Brot. Extrem sättigend!"
+      },
+      "45": {
+        "name": "Weintrauben",
+        "info": "Sie können pur gegessen oder auch zu Wein verarbeitet werden. Wenn ich sie in die Hand nehme und dann den Boden benutze, kann ich sie einpflanzen."
+      },
+      "46": {
+        "name": "Beeren",
+        "info": "Süße rote Beeren."
+      },
+      "47": {
+        "name": "Saft",
+        "info": "Gesunder Saft aus leckeren Früchten."
+      },
+      "66": {
+        "name": "Keks",
+        "info": "Kekse mit Schokostückchen! Yay!"
+      },
+      "67": {
+        "name": "Kakaofrucht",
+        "info": "Eine Kakaofrucht."
+      },
+      "68": {
+        "name": "Kakao",
+        "info": "Trockenes Kakaopulver."
+      },
+      "69": {
+        "name": "Schmetterlinge",
+        "info": "Diese Schmetterlinge fliegen rum und helfen mir so beim Tragen von schwerem Zeug. Danke, liebe Schmetterlinge! Ihr habt was bei mir gut!"
+      },
+      "70": {
+        "name": "Kaffeekirschen",
+        "info": "Koffeinhaltige Kaffeekirschen."
+      },
+      "71": {
+        "name": "Knochen",
+        "info": "Ihhhh - ein Knochen. Ich bin doch kein Hund! Was soll ich damit?"
+      },
+      "72": {
+        "name": "Exkrement",
+        "info": "Ein formschönes Exkrement. Im Volksmund auch Kacke oder Scheiße genannt. Das Zeug stinkt so sehr, dass ich damit vermutlich Tiere vergiften könnte..."
+      },
+      "77": {
+        "name": "Volleyball",
+        "info": "Ja supi! Jetzt brauche ich nur noch ein Netz und einen Gegner."
+      },
+      "78": {
+        "name": "Wilson",
+        "info": "Mein bester Freund Wilson. Hoffentlich werde ich dafür nicht von den 'Cast Away'-Leuten verklagt..."
+      },
+      "82": {
+        "name": "Teig",
+        "info": "Einfacher Teig aus Mehl und Wasser. Ich kann ihn in der Nähe von Feuer benutzen, um ihn zu backen."
+      },
+      "83": {
+        "name": "Hanfblatt",
+        "info": "Hanf mit berauschender Wirkung..."
+      },
+      "89": {
+        "name": "Fisch",
+        "info": "Ein roher Fisch. Kann im Sushi-Style gegessen oder auch gebraten werden."
+      },
+      "90": {
+        "name": "Fisch (gebraten)",
+        "info": "Ein gebratener Fisch."
+      },
+      "91": {
+        "name": "Joint",
+        "info": "Ein Joint, der ordentlich reinhaut. Ich sollte ihn schnellstmöglich entsorgen - Drogen sind böse! Pfui!"
+      },
+      "97": {
+        "name": "Zelt",
+        "info": "Ein Zelt, welches ich mit einem Hammer aufbauen kann. Bei Bedarf kann ich es einfach wieder abbauen und woanders erneut errichten!"
+      },
+      "98": {
+        "name": "Insektenteile",
+        "info": "Knusprige Insektenteile, welche auch als Köder benutzt werden können, wenn ich angle."
+      },
+      "99": {
+        "name": "Schleim",
+        "info": "Ekelhafter, klebriger Schleim."
+      },
+      "100": {
+        "name": "Explosiver Köder",
+        "info": "Ein explosiver Köder, welcher per Fernsteuerung gezündet wird. Ich kann ihn in die Hand nehmen, um ihn dann Tieren zuzuwerfen."
+      },
+      "101": {
+        "name": "Fernzünder",
+        "info": "Ein Fernzünder für explosive Köder."
+      },
+      "102": {
+        "name": "Muschel",
+        "info": "Eine Muschel. Was da wohl drin ist?"
+      },
+      "103": {
+        "name": "Seestern",
+        "info": "Ein Seestern. Ich taufe ihn Patrick. Juhu!"
+      },
+      "106": {
+        "name": "Flasche",
+        "info": "Eine leere Glasflasche, welche an sprudelnden Quellen mit Wasser aufgefüllt werden kann."
+      },
+      "108": {
+        "name": "Perle",
+        "info": "Eine glänzende Perle!"
+      },
+      "109": {
+        "name": "Seetang",
+        "info": "Schleimiges, grünes Seegras."
+      },
+      "112": {
+        "name": "Trank der Hast",
+        "info": "Ein Trank, der die Bewegungsgeschwindigkeit für eine Minute verdoppelt."
+      },
+      "113": {
+        "name": "Unsterblichkeitstrank",
+        "info": "Dieser Trank macht mich für eine halbe Minute unsterblich!"
+      },
+      "114": {
+        "name": "Lufttrank",
+        "info": "Ein spezielles Luftgemisch, das während des Tauchens getrunken werden kann und Atemluft für bis zu 20 Sekunden gibt."
+      },
+      "115": {
+        "name": "Schokoteig",
+        "info": "Ein Teig mit Kakaopulver drin. Ich kann ihn in der Nähe von Feuer benutzen, um ihn zu backen."
+      },
+      "116": {
+        "name": "Pflaumen",
+        "info": "Pflaumen! Gut für die Verdauung! Hihihi..."
+      },
+      "117": {
+        "name": "Bandage",
+        "info": "Eine Bandage zum Verbinden von Wunden - damit kann ich Blutungen stoppen."
+      },
+      "118": {
+        "name": "Erste-Hilfe-Kasten",
+        "info": "Mit diesem Teil können Blutungen und Brüche behandelt werden. Außerdem enthält es eine Reihe an Medikamenten gegen Vergiftungen. Es kann unbegrenzt oft eingesetzt werden."
+      },
+      "119": {
+        "name": "Wurm",
+        "info": "Ein kleiner Wurm. Wenn ich damit angle, steigt meine Chance auf einen dicken Fang!"
+      }
     }
   }
 }

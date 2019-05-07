@@ -2,13 +2,11 @@
   "food": [
     {
       "id": 9,
-      "name": "Fleisch",
       "icon": "meat.bmp",
       "model": "meat.obj",
       "scale": 0.15,
       "mat": "flesh",
       "weight": 500,
-      "info": "ein saftiges Stück rohes Fleisch. Ich kann es braten, roh essen oder es in die Hand nehmen und wilden Tieren zuwerfen...",
       "behaviour": "throw",
       "damage": 0,
       "speed": 15,
@@ -17,18 +15,15 @@
     },
     {
       "id": 10,
-      "name": "Fleisch (gebraten)",
       "icon": "friedmeat.bmp",
       "model": "friedmeat.obj",
       "scale": 0.15,
       "mat": "flesh",
       "weight": 500,
-      "info": "ein großes Stück gebratenes Fleisch",
       "rate": 3000
     },
     {
       "id": 11,
-      "name": "kl. Fleisch",
       "icon": "smallmeat.bmp",
       "model": "clod.obj",
       "color": [
@@ -39,7 +34,6 @@
       "scale": 2,
       "mat": "flesh",
       "weight": 250,
-      "info": "ein Stückchen rohes Fleisch. Essbar, bratbar und werfbar",
       "behaviour": "throw",
       "damage": 0,
       "speed": 15,
@@ -48,7 +42,6 @@
     },
     {
       "id": 12,
-      "name": "kl. Fleisch (gebraten)",
       "icon": "smallmeatfried.bmp",
       "model": "clod.obj",
       "color": [
@@ -58,19 +51,16 @@
       ],
       "scale": 2,
       "mat": "flesh",
-      "weight": 250,
-      "info": "ein gebratenes Stückchen Fleisch"
+      "weight": 250
     },
     {
       "id": 14,
-      "name": "Banane",
       "icon": "banana.bmp",
       "model": "banana.obj",
       "fx": 16,
       "scale": 0.3,
       "mat": "fruit",
       "weight": 200,
-      "info": "eine kösteliche Banane. Schmeckt nicht nur mir sondern auch Affen!",
       "behaviour": "throw",
       "damage": 0,
       "speed": 15,
@@ -79,55 +69,47 @@
     },
     {
       "id": 16,
-      "name": "Blutblatt",
       "icon": "bloodleaf.bmp",
       "model": "bloodleaf.obj",
       "scale": 0.5,
       "fx": 16,
       "mat": "leaf",
       "weight": 50,
-      "info": "eine Pflanze mit blutroten Blättern",
       "healthchange": 0
     },
     {
       "id": 17,
-      "name": "Heilkraut",
+      "name": "",
       "icon": "herb01.bmp",
       "model": "herb01.obj",
       "scale": 0.3,
       "fx": 16,
       "mat": "leaf",
       "weight": 50,
-      "info": "ein Kraut mit heilender Wirkung",
       "healthchange": 0
     },
     {
       "id": 18,
-      "name": "Starkes Heilkraut",
       "icon": "herb02.bmp",
       "model": "herb02.obj",
       "scale": 0.5,
       "fx": 16,
       "mat": "leaf",
       "weight": 100,
-      "info": "ein Heilkraut mit besonders starker Wirkung",
       "healthchange": 0
     },
     {
       "id": 19,
-      "name": "Goldkraut",
       "icon": "herb03.bmp",
       "model": "herb03.obj",
       "scale": 0.7,
       "fx": 16,
       "mat": "leaf",
       "weight": 80,
-      "info": "ein goldgelbes Kraut. Gut gegen Benommenheit",
       "healthchange": 0
     },
     {
       "id": 20,
-      "name": "Bitterwurzel",
       "icon": "herb04.bmp",
       "model": "herb04.obj",
       "scale": 0.5,
@@ -135,108 +117,88 @@
       "alpha": 0.8,
       "mat": "leaf",
       "weight": 70,
-      "info": "ein extrem bitteres Wurzelgewächs",
       "healthchange": 0
     },
     {
       "id": 27,
-      "name": "Kokosnuss",
       "icon": "coconut.bmp",
       "model": "coconut.obj",
       "scale": 0.30,
       "mat": "wood",
       "weight": 300,
-      "info": "eine Kokosnuss. Aufgrund der harten Hülle wird es allerdings lange dauern, sie zu essen",
       "behaviour": "ammo: 81"
     },
     {
       "id": 31,
-      "name": "Pilz",
       "icon": "fungus01.bmp",
       "model": "fungus01.obj",
       "scale": 0.3,
       "mat": "fruit",
       "weight": 50,
-      "info": "ein Pilz",
       "healthchange": 0
     },
     {
       "id": 32,
-      "name": "großer Pilz",
       "icon": "fungus04.bmp",
       "model": "fungus04.obj",
       "scale": 0.3,
       "mat": "fruit",
       "weight": 90,
-      "info": "ein großer Pilz",
       "healthchange": 0
     },
     {
       "id": 33,
-      "name": "Braunpilz",
       "icon": "fungus02.bmp",
       "model": "fungus02.obj",
       "scale": 0.3,
       "mat": "fruit",
       "weight": 50,
-      "info": "ein brauner Pilz",
       "healthchange": 0
     },
     {
       "id": 34,
-      "name": "Giftpilz",
       "icon": "fungus03.bmp",
       "model": "fungus03.obj",
       "scale": 0.3,
       "mat": "fruit",
       "weight": 50,
-      "info": "ein grüner Giftpilz. Nicht sehr bekömmlich, aber mittels eines Steins sollte sich das Gift herauspressen lassen",
       "healthchange": 0
     },
     {
       "id": 35,
-      "name": "Zwergenhut",
       "icon": "fungus05.bmp",
       "model": "fungus05.obj",
       "scale": 0.3,
       "mat": "fruit",
       "weight": 50,
-      "info": "ein kleiner Pilz, welcher auf Grund seines Aussehens auch Zwergenhut genannt wird",
       "healthchange": 0
     },
     {
       "id": 42,
-      "name": "Körner",
       "icon": "grainpile.bmp",
       "model": "grainpile.obj",
       "scale": 0.65,
       "mat": "dust",
-      "weight": 50,
-      "info": "lassen sich mit einem Stein mahlen oder in die Hand nehmen und dann durch Benutzen des Bodens einpflanzen"
+      "weight": 50
     },
     {
       "id": 43,
-      "name": "Mehl",
       "icon": "flour.bmp",
       "model": "flour.obj",
       "scale": 0.65,
       "mat": "dust",
-      "weight": 250,
-      "info": "ein Haufen Mehl. Mit Wasser sollte es sich zu Teig verarbeiten lassen"
+      "weight": 250
     },
     {
       "id": 44,
-      "name": "Brot",
       "icon": "bread.bmp",
       "model": "bread.obj",
       "scale": 0.6,
       "mat": "dust",
-      "weight": 350,
-      "info": "ein Laib Brot. Extrem sättigend!"
+      "weight": 350
     },
     {
       "id": 45,
-      "name": "Weintrauben",
       "icon": "grape.bmp",
       "model": "berries.obj",
       "color": [
@@ -248,12 +210,10 @@
       "mat": "fruit",
       "weight": 10,
       "behaviour": "ammo: 51",
-      "damage": 1,
-      "info": "die können so gegessen werden oder auch zu Wein verarbeitet werden. Wenn ich sie in die Hand nehme und dann den Boden benutze, kann ich sie einpflanzen"
+      "damage": 1
     },
     {
       "id": 46,
-      "name": "Beeren",
       "icon": "berries.bmp",
       "model": "berries.obj",
       "color": [
@@ -265,42 +225,34 @@
       "mat": "fruit",
       "weight": 10,
       "behaviour": "ammo: 51",
-      "damage": 1,
-      "info": "süße rote Beeren"
+      "damage": 1
     },
     {
       "id": 66,
-      "name": "Keks",
       "icon": "cookie.bmp",
       "model": "cookie.obj",
       "scale": 0.35,
       "mat": "dust",
-      "weight": 25,
-      "info": "Kekse mit Schokostückchen! Yay!"
+      "weight": 25
     },
     {
       "id": 67,
-      "name": "Kakaofrucht",
       "icon": "cacaofruit.bmp",
       "model": "cacaofruit.obj",
       "scale": 0.40,
       "mat": "fruit",
-      "weight": 100,
-      "info": "eine Kakaofrucht"
+      "weight": 100
     },
     {
       "id": 68,
-      "name": "Kakao",
       "icon": "cacao.bmp",
       "model": "cacao.obj",
       "scale": 0.65,
       "mat": "dust",
-      "weight": 300,
-      "info": "trockenes Kakaopulver"
+      "weight": 300
     },
     {
       "id": 70,
-      "name": "Kaffeekirschen",
       "icon": "coffeefruits.bmp",
       "model": "berries.obj",
       "color": [
@@ -312,80 +264,65 @@
       "mat": "fruit",
       "weight": 50,
       "behaviour": "ammo: 51",
-      "damage": 1,
-      "info": "koffeinhaltige Kaffeekirschen"
+      "damage": 1
     },
     {
       "id": 82,
-      "name": "Teig",
       "icon": "paste.bmp",
       "model": "paste.obj",
       "scale": 0.65,
       "mat": "dirt",
-      "weight": 350,
-      "info": "einfacher Teig aus Mehl und Wasser. Ich kann ihn in der Nähe von Feuer benutzen, um ihn zu backen"
+      "weight": 350
     },
     {
       "id": 89,
-      "name": "Fisch",
       "icon": "fishitem.bmp",
       "model": "fishitem.obj",
       "fx": 16,
       "mat": "flesh",
-      "weight": 300,
-      "info": "Fisch. Kann im Sushi-Style gegessen oder auch gebraten werden"
+      "weight": 300
     },
     {
       "id": 90,
-      "name": "Fisch (gebraten)",
       "icon": "friedfishitem.bmp",
       "model": "friedfishitem.obj",
       "fx": 16,
       "mat": "flesh",
-      "weight": 250,
-      "info": "ein gebratener Fisch"
+      "weight": 250
     },
     {
       "id": 98,
-      "name": "Insektenteile",
       "icon": "insects.bmp",
       "mat": "flesh",
-      "weight": 5,
-      "info": "köstliche Insektenteile, welche auch als Köder benutzt werden, wenn ich angel"
+      "weight": 5
     },
     {
       "id": 99,
-      "name": "Schleim",
       "icon": "slime.bmp",
       "mat": "water",
-      "weight": 10,
-      "info": "ekelhafter, klebriger Schleim"
+      "weight": 10
     },
     {
       "id": 109,
-      "name": "Seetang",
       "icon": "seaweed.bmp",
       "model": "seaweeditem.obj",
       "mat": "leaf",
       "fx": 16,
       "scale": 1.7,
       "alpha": 0.8,
-      "weight": 20,
-      "info": "schleimig-grünes Seegras"
+      "weight": 20
     },
     {
       "id": 115,
-      "name": "Schokoteig",
       "icon": "chocopaste.bmp",
       "model": "chocopaste.obj",
       "scale": 0.65,
       "mat": "dirt",
-      "weight": 350,
-      "info": "ein Teig mit Kakaopulver drin. Ich kann ihn in der Nähe von Feuer benutzen, um ihn zu backen"
+      "weight": 350
     },
     {
       "id": 116,
-      "name": "Pflaumen",
+      "name": "",
       "icon": "plums.bmp",
       "model": "plums.obj",
       "color": [
@@ -397,39 +334,32 @@
       "mat": "fruit",
       "weight": 30,
       "behaviour": "ammo: 51",
-      "damage": 1,
-      "info": "Pflaumen! Gut für die Verdauung! Hihihi..."
+      "damage": 1
     },
     {
       "id": 119,
-      "name": "Wurm",
       "icon": "worm.bmp",
       "mat": "flesh",
-      "weight": 10,
-      "info": "ein kleiner Wurm. Wenn ich damit angel, steigt meine Chance auf einen dicken Fang!"
+      "weight": 10
     }
   ],
   "potion": [
     {
       "id": 36,
-      "name": "Heiltrank",
       "icon": "healthpotion.bmp",
       "model": "healthpotion.obj",
       "scale": 0.3,
       "mat": "glass",
       "weight": 100,
-      "info": "ein Heiltrank, welcher den Spieler 30 Sekunden lang heilt",
       "healthchange": 0
     },
     {
       "id": 38,
-      "name": "Wasser",
       "icon": "water.bmp",
       "model": "water.obj",
       "scale": 0.3,
       "mat": "glass",
       "weight": 500,
-      "info": "frisches Trinkwasser. Kann auch zum Löschen in die Hand genommen und dann auf Feuer geworfen werden",
       "behaviour": "killthrow",
       "damage": 0,
       "speed": 15,
@@ -438,215 +368,175 @@
     },
     {
       "id": 39,
-      "name": "Wein",
       "icon": "wine.bmp",
       "model": "wine.obj",
       "scale": 0.28,
       "mat": "glass",
-      "weight": 450,
-      "info": "wohlschmeckender Wein. Sollte nicht in zu grossen Mengen konsumiert werden ..."
+      "weight": 450
     },
     {
       "id": 47,
-      "name": "Saft",
       "icon": "juice.bmp",
       "model": "juice.obj",
       "scale": 0.28,
       "mat": "glass",
-      "weight": 450,
-      "info": "gesunder Saft aus Früchten"
+      "weight": 450
     },
     {
       "id": 112,
-      "name": "Trank der Hast",
       "icon": "speedpotion.bmp",
       "model": "speedpotion.obj",
       "scale": 0.28,
       "mat": "glass",
       "weight": 450,
-      "healthchange": 0,
-      "info": "ein Trank, der die Bewegungsgeschwindigkeit für eine Minute verdoppelt"
+      "healthchange": 0
     },
     {
       "id": 113,
-      "name": "Unsterblichkeitstrank",
       "icon": "immortalpotion.bmp",
       "model": "immortalpotion.obj",
       "scale": 0.28,
       "mat": "glass",
       "weight": 450,
-      "healthchange": 0,
-      "info": "dieser Trank macht mich für eine halbe Minute unsterblich"
+      "healthchange": 0
     },
     {
       "id": 114,
-      "name": "Lufttrank",
       "icon": "airpotion.bmp",
       "model": "airpotion.obj",
       "scale": 0.28,
       "mat": "glass",
       "weight": 450,
-      "healthchange": 0,
-      "info": "ein spezielles Luftgemisch, das während des Tauchens getrunken werden kann und Atemluft für bis zu 20 Sekunden gibt"
+      "healthchange": 0
     }
   ],
   "stuff": [
     {
       "id": 83,
-      "name": "Hanfblatt",
       "icon": "hempleaf.bmp",
       "model": "hempleaf.obj",
       "fx": 16,
       "mat": "leaf",
-      "weight": 10,
-      "info": "Hanf mit berauschender Wirkung ..."
+      "weight": 10
     },
     {
       "id": 91,
-      "name": "Joint",
       "icon": "joint.bmp",
       "model": "joint.obj",
       "scale": 0.65,
       "mat": "leaf",
-      "weight": 40,
-      "info": "ein Joint, der ordentlich reinhaut. Ich sollte ihn schnellstmöglich entsorgen! Drogen sind böse! Pfui!"
+      "weight": 40
     },
     {
       "id": 1,
-      "name": "Beutel",
       "icon": "bag.bmp",
       "model": "bag.obj",
       "mat": "dust",
       "weight": 100,
-      "info": "Ohne Beutel keine Competition! Einfach schön das Teil",
       "healthchange": 0
     },
     {
       "id": 5,
-      "name": "Goldbeutel",
       "icon": "goldbag.bmp",
       "model": "goldbag.obj",
       "mat": "dust",
       "weight": 350,
-      "info": "ein Beutel voller Gold! Na super ...",
       "healthchange": 0
     },
     {
       "id": 13,
-      "name": "Blaublüte",
       "icon": "blueblossom.bmp",
       "model": "blueblossom.obj",
       "fx": 16,
       "mat": "leaf",
-      "weight": 50,
-      "info": "eine Blüte die blau ist und daher Blaublüte heisst. Genial. Sie kann benutzt werden, um Blutungen zu stoppen"
+      "weight": 50
     },
     {
       "id": 37,
-      "name": "Gift",
       "icon": "poison.bmp",
       "model": "poison.obj",
       "scale": 0.3,
       "mat": "glass",
       "weight": 50,
-      "info": "giftgrünes Gift welches tats‰chlich sowohl giftig als auch grün zu sein scheint. Wie das wohl schmeckt? Vielleicht sollte ich mal kosten!",
       "healthchange": 0
     },
     {
       "id": 40,
-      "name": "Flaschenpost",
       "icon": "bottlemessage.bmp",
       "model": "bottlemessage.obj",
       "scale": 0.3,
       "mat": "glass",
       "weight": 200,
-      "info": "eine Flasche mit einer Nachricht drin. Auch Flaschenpost genannt",
       "healthchange": 0,
       "health": 100
     },
     {
       "id": 41,
-      "name": "Getreidegarbe",
       "icon": "grainbundle.bmp",
       "model": "grainbundle.obj",
       "behaviour": "plague_target",
       "fx": 16,
       "scale": 0.7,
       "mat": "dust",
-      "weight": 50,
-      "info": "Ich muss dieses Getreidebündel benutzen, um die Körner rauszuschütteln"
+      "weight": 50
     },
     {
       "id": 69,
-      "name": "Schmetterlinge",
       "icon": "butterflies.bmp",
       "mat": "none",
       "weight": -500,
-      "info": "diese Schmetterlinge fliegen rum und helfen mir so beim Tragen von schwerem Zeugs. Danke liebe Schmetterlinge! Ihr habt was bei mir gut!",
       "healthchange": 0
     },
     {
       "id": 71,
-      "name": "Knochen",
       "icon": "bone.bmp",
       "model": "bone.obj",
       "scale": 0.24,
       "mat": "stone",
       "weight": 100,
-      "info": "Ihhhh ein Knochen. Ich bin doch kein Hund. Was soll ich damit?",
       "healthchange": 0
     },
     {
       "id": 72,
-      "name": "Exkrement",
       "icon": "excrement.bmp",
       "model": "excrement.obj",
       "scale": 0.39,
       "mat": "dirt",
       "weight": 100,
-      "info": "ein köstliches Exkrement. Im Volksmund auch Kacke oder Scheisse genannt. Das Zeug stinkt so sehr, dass ich damit vermutlich Leute vergiften könnte ...",
       "weaponstate": "intoxication",
       "behaviour": "asmoke: 128,64,0,0 ammo: 51"
     },
     {
       "id": 77,
-      "name": "Volleyball",
       "icon": "ball.bmp",
       "model": "ball.obj",
       "mat": "none",
       "weight": 200,
-      "info": "Ja Supi! Jetzt brauche ich nur noch ein Netz und einen Gegner",
       "healthchange": 0
     },
     {
       "id": 78,
-      "name": "Wilson",
       "icon": "wilson.bmp",
       "model": "wilson.obj",
       "fx": 16,
       "mat": "none",
       "weight": 300,
-      "info": "mein bester Freund Wilson. Hoffentlich werde ich dafür nicht von den 'Cast Away'-Leuten verklagt *zitter*",
       "healthchange": 0
     },
     {
       "id": 97,
-      "name": "Zelt",
       "icon": "tentitem.bmp",
       "model": "tentitem.obj",
       "scale": 3.5,
       "weight": 3000,
-      "info": "ein Zelt, welches ich mit einem Hammer aufbauen kann. Bei Bedarf kann ich es einfach wieder abbauen und woanders erneut errichten!",
       "healthchange": 0
     },
     {
       "id": 100,
-      "name": "explosiver Köder",
       "icon": "explosivebait.bmp",
       "model": "explosivebait.obj",
       "scale": 0.6,
       "weight": 50,
-      "info": "ein explosiver Köder welcher per Fernsteuerung gezündet wird. Ich kann ihn in die Hand nehmen, um ihn dann Tieren zuzuwerfen.",
       "healthchange": 0,
       "behaviour": "throw",
       "damage": 0,
@@ -656,30 +546,25 @@
     },
     {
       "id": 101,
-      "name": "Fernzünder",
       "icon": "remotetrigger.bmp",
       "model": "remotetrigger.obj",
       "scale": 1,
       "weight": 100,
       "health": 100000,
-      "info": "ein Fernzünder für explosive Köder",
       "healthchange": 0
     },
     {
       "id": 102,
-      "name": "Muschel",
       "icon": "shell.bmp",
       "model": "shell.obj",
       "scale": 0.15,
       "fx": 16,
       "shine": 0.5,
       "weight": 50,
-      "healthchange": 0,
-      "info": "eine Muschel. Was da wohl drin ist?"
+      "healthchange": 0
     },
     {
       "id": 103,
-      "name": "Seestern",
       "icon": "seastar.bmp",
       "model": "seastar.obj",
       "scale": 0.15,
@@ -690,60 +575,51 @@
       "damage": 5,
       "speed": 10,
       "drag": 1,
-      "rate": 500,
-      "info": "ein Seestern. Ich taufe ihn Patrick! Juhu!"
+      "rate": 500
     },
     {
       "id": 106,
-      "name": "Flasche",
       "icon": "bottle.bmp",
       "model": "bottle.obj",
       "scale": 0.08,
       "fx": 16,
       "shine": 0.7,
       "weight": 50,
-      "mat": "glass",
-      "info": "eine leere Glasflasche"
+      "mat": "glass"
     },
     {
       "id": 108,
-      "name": "Perle",
       "icon": "pearl.bmp",
       "model": "pearl.obj",
       "shine": 0.9,
       "mat": "stone",
       "weight": 10,
-      "scale": 0.5,
-      "info": "eine gl‰nzende Perle"
+      "scale": 0.5
     },
     {
       "id": 117,
-      "name": "Bandage",
       "icon": "bandage.bmp",
       "model": "bandage.obj",
       "mat": "dust",
       "scale": 0.75,
       "weight": 200,
-      "info": "eine Bandage zum Verbinden von Wunden - damit kann ich Blutungen stoppen",
       "healthchange": 0
     },
     {
       "id": 118,
-      "name": "Erste-Hilfe Set",
       "icon": "medikit.bmp",
       "model": "medikit.obj",
       "scale": 0.8,
       "mat": "metal",
       "weight": 2500,
       "health": 200,
-      "info": "mit diesem Set können Blutungen und Brüche behandelt werden. Außerdem enth‰lt es eine Reihe an Medikamenten gegen Vergiftungen. Es kann unbegrenzt oft eingesetzt werden",
       "healthchange": 0
     }
   ],
   "material": [
     {
       "id": 2,
-      "name": "kl. Kristall",
+      "name": "",
       "icon": "crystal01.bmp",
       "model": "crystal01.obj",
       "color": [
@@ -756,12 +632,10 @@
       "scale": 2,
       "mat": "stone",
       "weight": 200,
-      "info": "ein kleiner Kristall ... hm ...",
       "healthchange": 0
     },
     {
       "id": 3,
-      "name": "Kristall",
       "icon": "crystal02.bmp",
       "model": "crystal02.obj",
       "color": [
@@ -774,12 +648,10 @@
       "scale": 2,
       "mat": "stone",
       "weight": 500,
-      "info": "ein funkelnder Kristall. Wofür auch immer der gut sein soll ...",
       "healthchange": 0
     },
     {
       "id": 4,
-      "name": "Goldnugget",
       "icon": "goldnugget.bmp",
       "model": "nugget.obj",
       "color": [
@@ -792,40 +664,33 @@
       "behaviour": "ammo: 51",
       "mat": "metal",
       "weight": 350,
-      "info": "ein dickes Goldnugget! Ich bin reich!",
       "healthchange": 0
     },
     {
       "id": 7,
-      "name": "Baumstamm",
       "icon": "trunk.bmp",
       "model": "trunk.obj",
       "mat": "wood",
       "weight": 10000,
-      "info": "ein schwerer Baumstamm. Wieso muss ich den hier mit mir rumschleppen?",
       "healthchange": 0
     },
     {
       "id": 8,
-      "name": "Bambus",
       "icon": "bambooitem.bmp",
       "model": "bambooitem.obj",
       "fx": 16,
       "scale": 0.3,
       "mat": "wood",
-      "weight": 100,
-      "info": "hier so Bambuszeug und so. Hm!"
+      "weight": 100
     },
     {
       "id": 15,
-      "name": "Blatt",
       "icon": "leaf.bmp",
       "model": "leaf.obj",
       "fx": 16,
       "scale": 0.6,
       "mat": "leaf",
-      "weight": 30,
-      "info": "ein wunderbares Blatt. Wenn ich viele davon habe, kann ich Mittels eines Steins Wasser aus ihnen pressen."
+      "weight": 30
     },
     {
       "id": 21,
