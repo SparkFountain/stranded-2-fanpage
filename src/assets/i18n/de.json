@@ -144,6 +144,14 @@
         "name": "Kokosnuss",
         "info": "Eine Kokosnuss. Aufgrund der harten Hülle wird es allerdings lange dauern, sie zu essen."
       },
+      "28": {
+        "name": "Machete",
+        "info": "Eine scharfe Machete. Sie eignet sich gut für den Nahkampf. Wenn ich damit auf Bäume einschlage, kann ich besonders leicht Rinde abtrennen."
+      },
+      "29": {
+        "name": "Kugel",
+        "info": "Gute Munition für Schusswaffen."
+      },
       "30": {
         "name": "Hammer",
         "info": "Damit kann ich Sachen bauen oder ihn einfach nur als Waffe benutzen. Außerdem wird er bei Kombinationen mit Eisen benötigt, um dieses bearbeiten zu können."
@@ -228,9 +236,61 @@
         "name": "Angel",
         "info": "Eine krumme Angel, mit der ich mir Fische besorgen kann! Durch häufiges Angeln erhöhe ich meine Fähigkeiten und somit auch meine Erfolgschancen."
       },
+      "51": {
+        "name": "Steinschleuder",
+        "info": "Eine Steinschleuder zum Verschießen von kleinem Zeug wie Kieselsteinen."
+      },
+      "52": {
+        "name": "Speer",
+        "info": "Ein spitzer Wurfspeer, der starken Schaden bei Tieren verursacht, aber nur einmal geworfen werden kann - es sei denn ich bin ein geübter Jäger."
+      },
+      "53": {
+        "name": "Pfeil",
+        "info": "Ein Pfeil mit harter Spitze - verursacht erhöhten Schaden."
+      },
+      "54": {
+        "name": "Holzpfeil",
+        "info": "Ein einfacher Holzpfeil - verursacht durschnittlichen Schaden."
+      },
+      "55": {
+        "name": "Giftpfeil",
+        "info": "Dieser Pfeil vergiftet das Ziel. Wenn das Opfer kein Gegenmittel hat, wird es daran früher oder später verenden."
+      },
+      "56": {
+        "name": "Feuerpfeil",
+        "info": "Damit lassen sich wunderbar Sachen aus der Ferne anzünden - böse Tiere inbegriffen. Der eigentliche Treffer verursacht kaum Schaden - dafür das Feuer um so mehr."
+      },
       "57": {
         "name": "Feder",
         "info": "Federn von irgendwelchen Vögeln."
+      },
+      "58": {
+        "name": "Pistole",
+        "info": "Diese Pistole hat eine sehr hohe Reichweite und Zielgenauigkeit."
+      },
+      "59": {
+        "name": "Bogen",
+        "info": "Ein einfacher Bogen zum Verschießen von Pfeilen."
+      },
+      "60": {
+        "name": "Langbogen",
+        "info": "Ein großer Bogen mit besonders hoher Reichweite."
+      },
+      "61": {
+        "name": "Goldbogen",
+        "info": "Ein edler Bogen aus Gold - verursacht viel Schaden!"
+      },
+      "62": {
+        "name": "Bolzen",
+        "info": "Ein Bolzen aus Holz, der zum Beispiel mit einer Armbrust verschossen werden kann."
+      },
+      "63": {
+        "name": "Eisenbolzen",
+        "info": "Ein spitzer Eisenbolzen. Tut ziemlich weh, wenn man den abbekommt..."
+      },
+      "64": {
+        "name": "Armbrust",
+        "info": "Eine hölzerne Armbrust zum Verschießen von Bolzen. Die abgeschossenen Projektile fliegen schneller und weiter als bei Bögen."
       },
       "65": {
         "name": "Uhr",
@@ -268,6 +328,18 @@
         "name": "Landkarte",
         "info": "Eine Landkarte! Endlich nicht mehr ahnungslos durch die Gegend irren."
       },
+      "74": {
+        "name": "Schwert",
+        "info": "Ein einfaches Schwert, wie im Mittelalter. Ob es da auch schon Gestrandete gab?"
+      },
+      "75": {
+        "name": "Breitschwert",
+        "info": "Ein Schwert mit besonders breiter Klinge - für noch mehr Mittelalter-Feeling in den Tropen..."
+      },
+      "76": {
+        "name": "Kristallklinge",
+        "info": "Ein Schwert mit einer Klinge aus unglaublich hartem und scharfem Kristall. Gehört zur Grundausrüstung eines jeden Survival-Experten..."
+      },
       "77": {
         "name": "Volleyball",
         "info": "Ja supi! Jetzt brauche ich nur noch ein Netz und einen Gegner."
@@ -275,6 +347,18 @@
       "78": {
         "name": "Wilson",
         "info": "Mein bester Freund Wilson. Hoffentlich werde ich dafür nicht von den 'Cast Away'-Leuten verklagt..."
+      },
+      "79": {
+        "name": "Rakete",
+        "info": "Flugkörper für einen Raketenwerfer - verursacht beim Einschlag gigantischen Schaden!"
+      },
+      "80": {
+        "name": "Giftgas-Rakete",
+        "info": "Kein Wunder, warum solche Spielzeuge selbst im Krieg verboten sind. Alles in ihrem Umkreis wird sofort vergiftet und erholt sich nicht mehr von selbst."
+      },
+      "81": {
+        "name": "Raketenwerfer",
+        "info": "Das Teil ist höllisch schwer und auf einer einsamen Insel völlig überflüssig... Es sei denn, ich finde keinen besseren Weg um Feuer zu machen."
       },
       "82": {
         "name": "Teig",
@@ -296,6 +380,14 @@
         "name": "Eisenstange",
         "info": "Eine robuste Eisenstange. Wichtiger Rohstoff für diverse Werkzeuge!"
       },
+      "87": {
+        "name": "Axt",
+        "info": "Alles was aus Holz ist, kann ich damit recht schnell umhauen."
+      },
+      "88": {
+        "name": "Spitzhacke",
+        "info": "Eignet sich hervorragend, um Mineralien aus Gesteinen zu hauen oder Felsen zu beseitigen."
+      },
       "89": {
         "name": "Fisch",
         "info": "Ein roher Fisch. Kann im Sushi-Style gegessen oder auch gebraten werden."
@@ -307,6 +399,14 @@
       "91": {
         "name": "Joint",
         "info": "Ein Joint, der ordentlich reinhaut. Ich sollte ihn schnellstmöglich entsorgen - Drogen sind böse! Pfui!"
+      },
+      "92": {
+        "name": "Schlüssel",
+        "info": "Ein kleiner Schlüssel - wahrscheinlich passt er zu einer geheimen Schatztruhe im Sand..."
+      },
+      "93": {
+        "name": "Dietrich",
+        "info": "Ein Werkzeug, mit dem ich Schlösser knacken kann."
       },
       "94": {
         "name": "Zahn",
@@ -348,6 +448,14 @@
         "name": "Seestern",
         "info": "Ein Seestern. Ich taufe ihn Patrick. Juhu!"
       },
+      "104": {
+        "name": "Netz",
+        "info": "Damit kann man kleine Tiere fangen, die in der Gegend herumfliegen."
+      },
+      "105": {
+        "name": "Sense",
+        "info": "Hervorragend geeignet, um schneller Getreide zu ernten, aber auch effektiv gegen Tiere und vor allem Büsche. Allerdings ist es recht anstrengend, mit ihr auszuholen."
+      },
       "106": {
         "name": "Flasche",
         "info": "Eine leere Glasflasche, welche an sprudelnden Quellen mit Wasser aufgefüllt werden kann."
@@ -363,6 +471,14 @@
       "109": {
         "name": "Seetang",
         "info": "Schleimiges, grünes Seegras."
+      },
+      "110": {
+        "name": "Schrotflinte",
+        "info": "Das Ding haut ordentlich rein! Dafür streut es aber auch so sehr, dass ich mich schon direkt vor's Ziel stellen muss, um damit überhaupt treffen zu können!"
+      },
+      "111": {
+        "name": "Fackel",
+        "info": "Erhellt die Umgebung und kann andere Objekte in Brand setzen, wenn man mit ihr auf sie einschlägt."
       },
       "112": {
         "name": "Trank der Hast",
@@ -395,6 +511,10 @@
       "119": {
         "name": "Wurm",
         "info": "Ein kleiner Wurm. Wenn ich damit angle, steigt meine Chance auf einen dicken Fang!"
+      },
+      "120": {
+        "name": "Klauen-Speer",
+        "info": "Ein Speer mit scharfen Klauen, welcher einmalig geworfen wird und beim Ziel schwere blutende Wunden verursacht."
       }
     }
   }

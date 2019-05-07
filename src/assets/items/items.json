@@ -79,7 +79,6 @@
     },
     {
       "id": 17,
-      "name": "",
       "icon": "herb01.bmp",
       "model": "herb01.obj",
       "scale": 0.3,
@@ -322,7 +321,6 @@
     },
     {
       "id": 116,
-      "name": "",
       "icon": "plums.bmp",
       "model": "plums.obj",
       "color": [
@@ -619,7 +617,6 @@
   "material": [
     {
       "id": 2,
-      "name": "",
       "icon": "crystal01.bmp",
       "model": "crystal01.obj",
       "color": [
@@ -714,7 +711,6 @@
     },
     {
       "id": 24,
-      "name": "",
       "icon": "branch.bmp",
       "model": "branch.obj",
       "scale": 0.4,
@@ -901,57 +897,48 @@
     },
     {
       "id": 87,
-      "name": "Axt",
       "icon": "axe.bmp",
       "model": "axe.obj",
       "scale": 0.6,
       "behaviour": "blade",
       "mat": "stone",
       "weight": 1000,
-      "info": "alles was aus Holz ist, kann ich damit recht schnell umhauen",
       "damage": 5,
       "healthchange": 0
     },
     {
       "id": 88,
-      "name": "Spitzhacke",
       "icon": "pickaxe.bmp",
       "model": "pickaxe.obj",
       "scale": 0.93,
       "behaviour": "blade",
       "mat": "stone",
       "weight": 1000,
-      "info": "eignet sich um Mineralien aus Gestein zu hauen oder Felsen zu beseitigen",
       "damage": 2,
       "healthchange": 0
     },
     {
       "id": 92,
-      "name": "Schlüssel",
       "icon": "key.bmp",
       "model": "key.obj",
       "scale": 1.4,
       "mat": "metal",
       "weight": 100,
-      "info": "ein Schlüssel",
       "health": 100000,
       "healthchange": 0
     },
     {
       "id": 93,
-      "name": "Dietrich",
       "icon": "lockpick.bmp",
       "model": "lockpick.obj",
       "scale": 1.4,
       "mat": "metal",
       "weight": 100,
-      "info": "ein Werkzeug mit dem ich Schlösser knacken kann",
       "health": 100000,
       "healthchange": 0
     },
     {
       "id": 104,
-      "name": "Netz",
       "icon": "net.bmp",
       "model": "net.obj",
       "scale": 0.9,
@@ -959,7 +946,6 @@
       "behaviour": "net",
       "mat": "wood",
       "weight": 600,
-      "info": "damit kann man kleine Tiere fangen",
       "damage": 0,
       "rate": 500,
       "range": 150,
@@ -967,21 +953,18 @@
     },
     {
       "id": 105,
-      "name": "Sense",
       "icon": "scythe.bmp",
       "model": "scythe.obj",
       "scale": 0.75,
       "behaviour": "blade",
       "mat": "metal",
       "weight": 1200,
-      "info": "hervorragend geeignet um schneller Getreide zu ernten, aber auch effektiv gegen Tiere und vor allem Büsche. Allerdings ist es recht anstrengend mit ihr auszuholen",
       "damage": 2,
       "healthchange": 0,
       "rate": 800
     },
     {
       "id": 111,
-      "name": "Fackel",
       "icon": "torchitem.bmp",
       "model": "torchitem.obj",
       "scale": 0.75,
@@ -990,39 +973,33 @@
       "weight": 500,
       "rate": 1000,
       "damage": 0,
-      "info": "erhellt die Umgebung und kann andere Objekte in Brand setzen, wenn man mit ihr auf sie einschl‰gt",
       "healthchange": 0
     }
   ],
   "weapon": [
     {
       "id": 28,
-      "name": "Machete",
       "icon": "matchet.bmp",
       "model": "matchet.obj",
       "scale": 0.2,
       "behaviour": "blade",
       "mat": "metal",
       "weight": 1000,
-      "info": "eine scharfe Machete. Sie eignet sich gut für den Nahkampf. Wenn ich damit auf B‰ume einschlage, kann ich besonders leicht Rinde abtrennen.",
       "damage": 9,
       "healthchange": 0
     },
     {
       "id": 29,
-      "name": "Kugel",
       "icon": "bullet.bmp",
       "model": "bullet.obj",
       "scale": 0.1,
       "behaviour": "ammo: 58,ammo: 110",
       "mat": "metal",
       "weight": 2,
-      "info": "Munition für Schusswaffen",
       "healthchange": 0
     },
     {
       "id": 51,
-      "name": "Steinschleuder",
       "icon": "slingshot.bmp",
       "model": "slingshot.obj",
       "scale": 0.5,
@@ -1032,19 +1009,16 @@
       "rate": 750,
       "mat": "wood",
       "weight": 400,
-      "info": "eine Steinschleuder zum Verschießen von kleinem Zeug",
       "damage": 1,
       "healthchange": 0
     },
     {
       "id": 52,
-      "name": "Speer",
       "icon": "spear.bmp",
       "model": "spear.obj",
       "scale": 1.3,
       "mat": "wood",
       "weight": 500,
-      "info": "ein spitzer Wurfspeer, der starken Schaden bei Tieren verursacht, aber nur einmal geworfen werden kann - es sei denn ich bin ein geübter J‰ger",
       "behaviour": "spear",
       "damage": 2,
       "speed": 13,
@@ -1054,7 +1028,6 @@
     },
     {
       "id": 58,
-      "name": "Pistole",
       "icon": "pistol.bmp",
       "model": "pistol.obj",
       "scale": 0.335,
@@ -1063,13 +1036,11 @@
       "rate": 700,
       "mat": "metal",
       "weight": 1800,
-      "info": "*BANG* ... also zumindest wenn ich Kugeln habe. Diese Pistole hat eine sehr hohe Reichweite und Zielgenauigkeit",
       "damage": 5,
       "healthchange": 0
     },
     {
       "id": 59,
-      "name": "Bogen",
       "icon": "bow.bmp",
       "model": "bow.obj",
       "scale": 1.2,
@@ -1079,12 +1050,10 @@
       "drag": 0.59,
       "mat": "wood",
       "weight": 800,
-      "info": "ein Bogen zum verschiessen von Pfeilen",
       "healthchange": 0
     },
     {
       "id": 60,
-      "name": "Langbogen",
       "icon": "longbow.bmp",
       "model": "longbow.obj",
       "scale": 1.2,
@@ -1095,12 +1064,10 @@
       "rate": 600,
       "mat": "wood",
       "weight": 1000,
-      "info": "ein großer Bogen mit besonders hoher Reichweite",
       "healthchange": 0
     },
     {
       "id": 61,
-      "name": "Goldbogen",
       "icon": "goldbow.bmp",
       "model": "goldbow.obj",
       "scale": 1.2,
@@ -1111,12 +1078,10 @@
       "rate": 450,
       "mat": "metal",
       "weight": 3500,
-      "info": "ein edler Bogen aus Gold - verursacht viel Schaden",
       "healthchange": 0
     },
     {
       "id": 64,
-      "name": "Armbrust",
       "icon": "arbalest.bmp",
       "model": "arbalest.obj",
       "scale": 1.4,
@@ -1127,12 +1092,10 @@
       "rate": 750,
       "mat": "wood",
       "weight": 2500,
-      "info": "eine hölzerne Armbrust zum Verschießen von Bolzen. Die abgeschossenen Projektile fliegen schneller und weiter als bei Bögen",
       "healthchange": 0
     },
     {
       "id": 74,
-      "name": "Schwert",
       "icon": "sword.bmp",
       "model": "sword.obj",
       "scale": 1.6,
@@ -1140,12 +1103,10 @@
       "mat": "metal",
       "weight": 1000,
       "damage": 3,
-      "info": "ein einfaches Schwert",
       "healthchange": 0
     },
     {
       "id": 75,
-      "name": "Breitschwert",
       "icon": "broadsword.bmp",
       "model": "broadsword.obj",
       "scale": 1.6,
@@ -1153,12 +1114,10 @@
       "mat": "metal",
       "weight": 1250,
       "damage": 5,
-      "info": "ein Schwert mit besonders breiter Klinge",
       "healthchange": 0
     },
     {
       "id": 76,
-      "name": "Kristallklinge",
       "icon": "crystalblade.bmp",
       "model": "crystalblade.obj",
       "scale": 1.6,
@@ -1166,12 +1125,10 @@
       "mat": "metal",
       "weight": 1500,
       "damage": 45,
-      "info": "ein Schwert mit einer Klinge aus unglaublich hartem und scharfem Kristall",
       "healthchange": 0
     },
     {
       "id": 81,
-      "name": "Raketenwerfer",
       "icon": "rocketlauncher.bmp",
       "model": "rocketlauncher.obj",
       "fx": 16,
@@ -1182,12 +1139,10 @@
       "rate": 1000,
       "mat": "metal",
       "weight": 8500,
-      "info": "ein schwerer Raketenwerfer",
       "healthchange": 0
     },
     {
       "id": 110,
-      "name": "Schrotflinte",
       "icon": "shotgun.bmp",
       "model": "shotgun.obj",
       "scale": 0.335,
@@ -1196,19 +1151,16 @@
       "rate": 800,
       "mat": "metal",
       "weight": 2500,
-      "info": "das Ding haut ordentlich rein, dafür streut es aber auch so sehr, dass ich mich schnon direkt vor's Ziel stellen muss, um damit überhaupt treffen zu können!",
       "damage": 10,
       "healthchange": 0
     },
     {
       "id": 120,
-      "name": "Klauen-Speer",
       "icon": "clawspear.bmp",
       "model": "clawspear.obj",
       "scale": 1.3,
       "mat": "wood",
       "weight": 240,
-      "info": "ein Speer mit scharfen Klauen, welcher einmalig geworfen wird und beim Ziel schwere Wunden verursacht",
       "behaviour": "spear",
       "damage": 2,
       "speed": 13,
@@ -1220,7 +1172,6 @@
   "ammo": [
     {
       "id": 53,
-      "name": "Pfeil",
       "icon": "arrow.bmp",
       "model": "arrow.obj",
       "fx": 16,
@@ -1228,13 +1179,11 @@
       "scale": 0.5,
       "mat": "wood",
       "weight": 5,
-      "info": "ein Pfeil mit harter Spitze - verursacht erhöhten Schaden",
       "damage": 16,
       "healthchange": 0
     },
     {
       "id": 54,
-      "name": "Holzpfeil",
       "icon": "arrow_wood.bmp",
       "model": "arrow_wood.obj",
       "fx": 16,
@@ -1242,13 +1191,11 @@
       "scale": 0.5,
       "mat": "wood",
       "weight": 3,
-      "info": "ein einfacher Holzpfeil - verursacht durschnittlichen Schaden",
       "damage": 12,
       "healthchange": 0
     },
     {
       "id": 55,
-      "name": "Giftpfeil",
       "icon": "arrow_poison.bmp",
       "model": "arrow_poison.obj",
       "fx": 16,
@@ -1257,13 +1204,11 @@
       "scale": 0.5,
       "mat": "wood",
       "weight": 10,
-      "info": "dieser Pfeil vergiftet das Ziel. Wenn das Opfer kein Gegenmittel hat, wird es daran früher oder sp‰ter verenden",
       "damage": 5,
       "healthchange": 0
     },
     {
       "id": 56,
-      "name": "Feuerpfeil",
       "icon": "arrow_fire.bmp",
       "model": "arrow_fire.obj",
       "fx": 16,
@@ -1272,13 +1217,11 @@
       "scale": 0.5,
       "mat": "wood",
       "weight": 15,
-      "info": "damit lassen sich wunderbar Sachen anzünden. Böse Tiere inbegriffen. Der eigentliche Treffer verursacht kaum Schaden - dafür das Feuer um so mehr",
       "damage": 3,
       "healthchange": 0
     },
     {
       "id": 62,
-      "name": "Bolzen",
       "icon": "bolt.bmp",
       "model": "bolt.obj",
       "scale": 0.35,
@@ -1286,12 +1229,10 @@
       "behaviour": "ammo: 64",
       "mat": "wood",
       "weight": 1,
-      "info": "ein Bolzen aus Holz",
       "healthchange": 0
     },
     {
       "id": 63,
-      "name": "Eisenbolzen",
       "icon": "ironbolt.bmp",
       "model": "ironbolt.obj",
       "scale": 0.35,
@@ -1299,12 +1240,10 @@
       "damage": 16,
       "behaviour": "ammo: 64",
       "weight": 2,
-      "info": "ein spitzer Eisenbolzen",
       "healthchange": 0
     },
     {
       "id": 79,
-      "name": "Rakete",
       "icon": "rocket.bmp",
       "model": "rocket.obj",
       "fx": 16,
@@ -1317,14 +1256,12 @@
     },
     {
       "id": 80,
-      "name": "Giftgas Rakete",
       "icon": "toxicrocket.bmp",
       "model": "toxicrocket.obj",
       "fx": 16,
       "behaviour": "toxicrocket ammo: 81",
       "mat": "metal",
       "weight": 1000,
-      "info": "eine Rakete mit giftigem Gas",
       "healthchange": 0,
       "damage": 20
     }
