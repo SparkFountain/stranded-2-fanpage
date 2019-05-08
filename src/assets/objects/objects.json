@@ -1,0 +1,1822 @@
+{
+  "building": [
+    {
+      id=150
+name=Baustelle
+icon=gfx\buildplace.bmp
+model=gfx\buildplace.b3d
+behaviour=buildingsite
+col=2
+health=100
+mat=wood
+maxweight=1000000000
+    },
+    {
+      id=151
+name=Baustelle
+icon=gfx\buildplace_water.bmp
+model=gfx\buildplace_water.b3d
+behaviour=buildingsite_water
+col=2
+health=100
+mat=wood
+maxweight=1000000000
+swayspeed=3
+swaypower=2
+    },
+    {
+id=160
+name=Bambush¸tte
+group=building
+icon=gfx\bamboohut01.bmp
+model=gfx\bamboohut01.b3d
+fx=16
+health=200
+mat=wood
+behaviour=cover
+description=start
+Bietet Schutz zum Schlafen.
+description=end
+    },
+    {
+      id=161
+name=Bambush¸tte
+group=building
+icon=gfx\bamboohut02.bmp
+model=gfx\bamboohut02.b3d
+health=200
+mat=wood
+behaviour=cover
+description=start
+Bietet Schutz zum Schlafen.
+description=end
+    },
+    {
+id=162
+name=Bambush¸tte
+group=building
+icon=gfx\bamboohut03.bmp
+model=gfx\bamboohut03.b3d
+health=200
+mat=wood
+behaviour=cover
+description=start
+Bietet Schutz zum Schlafen.
+description=end
+    },
+    {
+id=163
+name=Zaun
+group=building
+icon=gfx\fence01.bmp
+model=gfx\fence01.b3d
+scale=1
+health=150
+mat=wood
+col=3
+    },
+    {
+id=164
+name=Zaun
+group=building
+icon=gfx\fence02.bmp
+model=gfx\fence02.b3d
+scale=1
+health=150
+mat=wood
+col=3
+    },
+    {
+id=165
+name=Unterstand
+group=building
+icon=gfx\shelter01.bmp
+model=gfx\shelter01.b3d
+fx=16
+health=100
+mat=wood
+behaviour=cover
+description=start
+Bietet Schutz zum Schlafen.
+description=end
+    },
+    {
+id=166
+name=Fackel
+group=building
+icon=gfx\torch01.bmp
+model=gfx\torch01.b3d
+scale=0.6
+health=100
+mat=wood
+behaviour=torch
+state=0,
+39,
+0
+    },
+    {
+      id=167
+name=Fackel
+group=building
+icon=gfx\torch02.bmp
+model=gfx\torch02.b3d
+scale=0.6
+fx=16
+state=random
+health=100
+mat=wood
+behaviour=torch
+state=0,
+      43,
+      0
+    },
+    {
+id=168
+name=Bretterwand
+group=building
+icon=gfx\boardwall.bmp
+model=gfx\boardwall.b3d
+scale=2
+health=1500
+mat=wood
+col=3
+    },
+    {
+id=169
+name=Bretterwand
+group=building
+icon=gfx\boardwallpart.bmp
+model=gfx\boardwallpart.b3d
+scale=2
+health=250
+mat=wood
+col=3
+    },
+    {
+id=170
+name=Bretter
+group=building
+icon=gfx\boards.bmp
+model=gfx\boards.b3d
+scale=2
+health=100
+mat=wood
+    },
+    {
+id=171
+name=Lagerfeuer
+group=building
+icon=gfx\fire01.bmp
+model=gfx\fire01.b3d
+scale=1.6
+state=0,
+5,
+0
+health=250
+mat=wood
+behaviour=fireplace
+description=start
+Hier kann Feuer zum Braten/Backen gemacht werden.
+description=end
+    },
+    {
+id=172
+name=Lagerfeuer
+group=building
+icon=gfx\fire02.bmp
+model=gfx\fire02.b3d
+scale=1.6
+state=0,
+5,
+0
+health=300
+mat=wood
+behaviour=fireplace
+description=start
+Hier kann Feuer zum Braten/Backen gemacht werden.
+description=end
+    },
+    {
+id=173
+name=Schild
+group=building
+icon=gfx\sign.bmp
+model=gfx\sign.b3d
+scale=1.2
+fx=16
+health=150
+mat=wood
+    },
+    {
+id=174
+name=Wegweiser
+group=building
+icon=gfx\guidepost01.bmp
+model=gfx\guidepost01.b3d
+scale=1.2
+health=150
+mat=wood
+    },
+    {
+id=175
+name=Wegweiser
+group=building
+icon=gfx\guidepost02.bmp
+model=gfx\guidepost02.b3d
+scale=1.2
+health=150
+mat=wood
+    },
+    {
+id=178
+name=Steg
+group=building
+icon=gfx\jetty01.bmp
+model=gfx\jetty01.b3d
+scale=1.7
+health=500
+mat=wood
+behaviour=aligntowater
+col=3
+    },
+    {
+id=179
+name=Steg
+group=building
+icon=gfx\jetty02.bmp
+model=gfx\jetty02.b3d
+scale=1.7
+health=500
+mat=wood
+behaviour=aligntowater
+col=3
+    },
+    {
+id=180
+name=Steg
+group=building
+icon=gfx\jetty03.bmp
+model=gfx\jetty03.b3d
+scale=1.7
+health=500
+mat=wood
+behaviour=aligntowater
+col=3
+    },
+    {
+      id=181
+name=Lager
+group=building
+icon=gfx\storage.bmp
+model=gfx\storage.b3d
+health=400
+scale=2.2
+mat=wood
+maxweight=50000
+description=start
+Ermˆglicht das Einlagern von Gegenst‰nden.
+description=end
+    },
+    {
+id=182
+name=groﬂer Zaun
+group=building
+icon=gfx\fence03.bmp
+model=gfx\fence03.b3d
+scale=1
+health=500
+mat=wood
+col=3
+    },
+    {
+id=183
+name=Metall Zaun
+group=building
+icon=gfx\fence04.bmp
+model=gfx\fence04.b3d
+scale=3
+health=3000
+mat=metal
+col=3
+    },
+    {
+id=184
+name=Zelt
+group=building
+icon=gfx\tent.bmp
+model=gfx\tent.b3d
+scale=2
+health=150
+mat=none
+behaviour=cover
+description=start
+Bietet Schutz zum Schlafen und kann abgebaut werden, um es an einem anderen Wort wieder aufzubauen.
+description=end
+    },
+    {
+id=187
+name=Wasserleitung
+group=building
+icon=gfx\waterpipe_empty.bmp
+model=gfx\waterpipe_empty.b3d
+scale=2.5
+health=300
+mat=wood
+behaviour=waterpipe_empty
+    },
+    {
+id=188
+name=Wasserleitung
+group=building
+icon=gfx\waterpipe_full.bmp
+model=gfx\waterpipe_full.b3d
+scale=2.5
+health=300
+mat=wood
+behaviour=waterpipe_full
+    },
+    {
+id=189
+name=Brunnen
+group=building
+icon=gfx\well.bmp
+model=gfx\well.b3d
+scale=0.9
+health=2000
+mat=stone
+behaviour=watersource
+description=start
+Bietet Trinkwasser.
+description=end
+    },
+    {
+id=190
+name=Baumhaus
+group=building
+icon=gfx\treehouse.bmp
+model=gfx\treehouse.b3d
+scale=1.5
+health=500
+mat=wood
+behaviour=cover
+description=start
+Bietet Schutz zum Schlafen.
+description=end
+    },
+    {
+id=191
+name=Reuse
+group=building
+icon=gfx\bownet.bmp
+model=gfx\bownet.b3d
+scale=1.7
+health=300
+swayspeed=1.8
+swaypower=5
+mat=wood
+fx=16
+behaviour=aligntowater
+description=start
+F‰ngt automatisch ¸ber Nacht Fische und andere Dinge.
+description=end
+    },
+    {
+      id=192
+name=Zielscheibe
+group=building
+icon=gfx\target.bmp
+model=gfx\target.b3d
+detailtex=1
+health=5
+mat=wood
+scale=1.0
+    },
+    {
+id=193
+name=Bambusturm
+group=building
+icon=gfx\bambootower.bmp
+model=gfx\bambootower.b3d
+health=50000
+mat=wood
+y=1.4
+fx=16
+    },
+    {
+      id=194
+name=Haus
+group=building
+icon=gfx\house.bmp
+model=gfx\house.b3d
+health=100000
+mat=stone
+scale=2.4
+autofade=3000
+behaviour=cover
+description=start
+Bietet Schutz zum Schlafen.
+description=end
+    },
+    {
+id=200
+name=Hochsitz
+group=building
+icon=gfx\stance.bmp
+model=gfx\stance.b3d
+health=500
+mat=wood
+col=4
+behaviour=cover
+description=start
+Bietet Schutz zum Schlafen und kann als Aussichtsturm genutzt werden.
+description=end
+    },
+    {
+      id=201
+name=Kiwizucht
+group=building
+icon=gfx\kiwibreeding.bmp
+model=gfx\kiwibreeding.b3d
+health=100
+mat=wood
+fx=16
+description=start
+Hier entsteht alle zwei N‰chte ein Kiwi-Vogel, bis maximal 3 vorhanden sind.
+description=end
+    },
+    {
+id=203
+name=Abdeckung
+group=building
+icon=gfx\covering.bmp
+model=gfx\covering.b3d
+health=100
+mat=wood
+fx=16
+    },
+    {
+      id=205
+name=Falle
+group=building
+icon=gfx\trap.bmp
+model=gfx\trap.b3d
+health=300
+mat=wood
+fx=16
+scale=1.3
+description=start
+Kann ¸ber Nacht ein kleines Tier fangen, wenn sie offen steht.
+description=end
+    },
+    {
+      id=206
+name=H¸tte
+group=building
+icon=gfx\hut.bmp
+model=gfx\hut.b3d
+health=5000
+mat=wood
+scale=1.7
+behaviour=cover
+description=start
+Bietet Schutz zum Schlafen.
+description=end
+    },
+    {
+id=207
+name=Kr‰uterbeet
+group=building
+icon=gfx\herbalgarden.bmp
+model=gfx\herbalgarden.b3d
+health=1000
+mat=dirt
+col=3
+scale=1.5
+description=start
+Hier wachsen ¸ber Nacht Kr‰uter.
+description=end
+    },
+    {
+id=208
+name=kaputter Brunnen
+group=building
+icon=gfx\broken_well.bmp
+model=gfx\broken_well.b3d
+scale=0.9
+health=2000
+mat=stone
+description=start
+Ein Brunnen, welcher erst freigeschaufelt werden muss, bevor er genutzt werden kann.
+description=end
+    },
+    {
+      id=209
+name=kaputte Reuse
+group=building
+icon=gfx\broken_bownet.bmp
+model=gfx\broken_bownet.b3d
+scale=1.7
+health=300
+swayspeed=1.8
+swaypower=5
+mat=wood
+fx=16
+behaviour=aligntowater
+description=start
+Ist nicht funktionst¸chtig aber bringt bei Benutzung ein paar Gegenst‰nde.
+description=end
+    },
+    {
+id=211
+name=Tisch
+group=building
+icon=gfx\table.bmp
+model=gfx\table.b3d
+health=300
+mat=wood
+col=3
+    },
+    {
+      id=212
+name=Schreibtisch
+group=building
+icon=gfx\desk.bmp
+model=gfx\desk.b3d
+health=300
+mat=wood
+col=3
+    },
+    {
+     id=214
+name=groﬂes Lager
+group=building
+icon=gfx\bigstorage.bmp
+model=gfx\bigstorage.b3d
+health=700
+scale=2.2
+mat=wood
+maxweight=250000
+description=start
+Ermˆglicht das Einlagern von Gegenst‰nden.
+description=end
+    },
+    {
+id=215
+name=Garten
+group=building
+icon=gfx\butterflygarden.bmp
+model=gfx\butterflygarden.b3d
+health=1000
+mat=dirt
+fx=16
+scale=1.5
+description=start
+Erzeugt Schmetterlinge
+description=end
+    },
+    {
+id=216
+name=H‰ngematte
+group=building
+icon=gfx\hammock.bmp
+model=gfx\hammock.b3d
+scale=2
+health=150
+mat=none
+behaviour=cover
+fx=16
+description=start
+Ein super Schlafplatz
+description=end
+    },
+    {
+id=217
+name=Affen-Schule
+group=building
+icon=gfx\monkeyschool.bmp
+model=gfx\monkeyschool.b3d
+scale=2
+health=500
+mat=wood
+    },
+    {
+      id=218
+name=Palisadenwall
+group=building
+icon=gfx\palisade.bmp
+model=gfx\palisade.b3d
+scale=2
+health=8000
+mat=wood
+col=3
+    },
+    {
+      id=219
+name=Tor
+group=building
+icon=gfx\gate.bmp
+model=gfx\gate.b3d
+scale=2
+health=8000
+mat=wood
+col=3
+    },
+    {
+      id=220
+name=Holzlager
+group=building
+icon=gfx\woodstorage.bmp
+model=gfx\woodstorage.b3d
+fx=16
+health=3000
+mat=wood
+maxweight=500000
+description=start
+Hier kˆnnen Baumst‰mme, ƒste und Rinde gelagert werden
+description=end
+    },
+    {
+      id=222
+name=Steinlager
+group=building
+icon=gfx\stonestorage.bmp
+model=gfx\stonestorage.b3d
+fx=16
+health=3000
+mat=wood
+maxweight=300000
+description=start
+Hier kˆnnen Steine gelagert werden
+description=end
+    },
+    {
+      id=223
+name=Abwehrturm
+group=building
+icon=gfx\defensetower.bmp
+model=gfx\defensetower.b3d
+scale=1.2
+y=2
+health=3000
+mat=wood
+state=0,
+      28,
+      0
+description=start
+Nimmt automatisch Feinde im Umkreis unter Beschuss
+description=end
+    }
+  ],
+  "bush": [
+    {
+id=30
+name=kahler Busch
+group=bush
+icon=gfx\baldbush01.bmp
+model=gfx\baldbush01.b3d
+fx=16
+col=2
+health=100
+find=24,
+90,
+5
+autofade=300
+mat=leaf
+growtime=5
+    },
+    {
+id=31
+name=Busch
+group=bush
+icon=gfx\bush01.bmp
+model=gfx\bush01.b3d
+fx=16
+col=2
+health=50
+find=15,
+50,
+1
+autofade=300
+mat=leaf
+swayspeed=2
+swaypower=1
+growtime=5
+    },
+    {
+      id=32
+name=Busch
+group=bush
+icon=gfx\bush02.bmp
+model=gfx\bush02.b3d
+fx=16
+col=2
+health=90
+find=15,
+      50,
+      1
+autofade=300
+mat=leaf
+swayspeed=2
+swaypower=1
+growtime=5
+    },
+    {
+      id=33
+name=Busch
+group=bush
+icon=gfx\bush03.bmp
+model=gfx\bush03.b3d
+fx=16
+col=2
+health=50
+find=15,
+      50,
+      1
+autofade=300
+mat=leaf
+swayspeed=2
+swaypower=1
+growtime=5
+    },
+    {
+      id=34
+name=Busch
+group=bush
+icon=gfx\bush04.bmp
+model=gfx\bush04.b3d
+fx=16
+col=2
+health=70
+find=15,
+      50,
+      3
+find=24,
+      40,
+      2
+autofade=300
+mat=leaf
+swayspeed=2
+swaypower=1
+growtime=5
+    },
+    {
+      id=35
+name=Blaubluete
+group=bush
+icon=gfx\bush05.bmp
+model=gfx\bush05.b3d
+fx=16
+col=2
+health=30
+find=15,
+      20,
+      1
+find=13,
+      50,
+      1
+autofade=300
+mat=leaf
+growtime=5
+description=start
+Liefert Blaubl¸ten.
+description=end
+    },
+    {
+      id=36
+name=Busch
+group=bush
+icon=gfx\bush06.bmp
+model=gfx\bush06.b3d
+fx=16
+col=2
+health=70
+find=15,
+      50,
+      1
+autofade=300
+mat=leaf
+growtime=5
+    },
+    {
+id=37
+name=Busch
+group=bush
+icon=gfx\bush07.bmp
+model=gfx\bush07.b3d
+fx=16
+col=0
+health=50
+find=15,
+50,
+1
+autofade=300
+mat=leaf
+growtime=5
+    },
+    {
+id=38
+name=Busch
+group=bush
+icon=gfx\bush08.bmp
+model=gfx\bush08.b3d
+fx=16
+col=2
+health=70
+find=15,
+50,
+1
+autofade=300
+mat=leaf
+growtime=5
+    },
+    {
+id=39
+name=Busch
+group=bush
+icon=gfx\bush09.bmp
+model=gfx\bush09.b3d
+fx=16
+col=2
+health=70
+find=15,
+20,
+1
+autofade=300
+mat=leaf
+growtime=5
+    },
+    {
+id=40
+name=Busch
+group=bush
+icon=gfx\bush10.bmp
+model=gfx\bush10.b3d
+fx=16
+scale=0.5
+col=2
+health=70
+find=15,
+50,
+1
+autofade=300
+mat=leaf
+growtime=5
+    },
+    {
+id=41
+name=Busch
+group=bush
+icon=gfx\bush11.bmp
+model=gfx\bush11.b3d
+fx=16
+scale=0.65
+col=2
+health=70
+find=15,
+40,
+1
+find=24,
+40,
+1
+autofade=300
+mat=leaf
+growtime=5
+    },
+    {
+id=42
+name=Busch
+group=bush
+icon=gfx\bush12.bmp
+model=gfx\bush12.b3d
+fx=16
+scale=0.5
+col=2
+health=50
+find=15,
+15,
+1
+autofade=300
+mat=leaf
+growtime=5
+    },
+    {
+      id=43
+name=Schilf
+group=bush
+icon=gfx\reed.bmp
+model=gfx\reed.b3d
+fx=16
+col=2
+health=60
+find=15,
+      20,
+      1
+autofade=300
+mat=leaf
+growtime=5
+    },
+    {
+      id=44
+name=Weinrebe
+group=stuff
+icon=gfx\grapevine.bmp
+model=gfx\grapevine.b3d
+fx=16
+scale=1.15
+col=2
+health=100
+autofade=300
+spawn=45,
+      3,
+      4,
+      5,
+      18,
+      3,
+      5
+mat=leaf
+growtime=5
+description=start
+Hier wachsen Weintrauben.
+description=end
+    },
+    {
+      id=45
+name=Busch
+group=bush
+icon=gfx\bush13.bmp
+model=gfx\bush13.b3d
+fx=16
+col=2
+health=200
+find=15,
+      40,
+      1
+autofade=300
+swayspeed=2.5
+swaypower=2
+mat=leaf
+growtime=5
+    },
+    {
+      id=46
+name=Beerenbusch
+group=bush
+icon=gfx\berrybush.bmp
+model=gfx\bush12.b3d
+fx=16
+scale=0.5
+col=0
+health=150
+find=15,
+      20,
+      1
+autofade=300
+spawn=46,
+      3,
+      10,
+      5,
+      10,
+      3,
+      5
+mat=leaf
+growtime=10
+description=start
+Hier wachsen Beeren.
+description=end
+    },
+    {
+      id=47
+name=Baumwollpflanze
+group=stuff
+icon=gfx\cottonplant.bmp
+model=gfx\cottonplant.b3d
+fx=16
+scale=2.3
+col=2
+health=150
+find=48,
+      75,
+      5
+autofade=300
+mat=leaf
+swayspeed=3
+swaypower=2
+growtime=5
+description=start
+Liefert Wolle.
+description=end
+    },
+    {
+      id=48
+name=Seetang
+group=stuff
+icon=gfx\seaweed.bmp
+model=gfx\seaweed.b3d
+fx=16
+scale=2.3
+col=2
+shine=0.2
+alpha=0.6
+health=100
+autofade=300
+mat=leaf
+swayspeed=6
+swaypower=10
+find=109,
+      25,
+      1
+script=start
+	// Spawn Seaweed Item
+	on:kill {
+		create "item",
+        109,getx("self"),getz("self"),
+        5;
+		corona getx("self"),getz("self");
+      }
+script=end
+growtime=5
+    },
+    {
+      id=49
+name=Luftalge
+group=stuff
+icon=gfx\airweed.bmp
+model=gfx\seaweed.b3d
+fx=16
+scale=2.3
+col=2
+shine=0.2
+health=100
+autofade=300
+mat=leaf
+color=0,
+      50,
+      255
+alpha=0.6
+swayspeed=7
+swaypower=15
+script=start
+	on:load {
+		blend 3;
+      }
+
+	on:use {
+		air 20000;
+		play "blubber.wav";
+      }
+script=end
+description=start
+Der Spieler bekommt neue Luft, wenn er es beim Tauchen benutzt.
+description=end
+    },
+    {
+id=185
+name=Busch
+group=bush
+icon=gfx\bush14.bmp
+model=gfx\bush14.b3d
+scale=1.5
+fx=16
+col=2
+health=200
+find=15,
+40,
+1
+autofade=300
+mat=leaf
+swayspeed=2
+swaypower=1
+growtime=5
+    },
+    {
+id=186
+name=Knallpilz
+group=stuff
+icon=gfx\bangfungus.bmp
+model=gfx\bangfungus.b3d
+scale=2.
+health=1
+autofade=300
+mat=leaf
+behaviour=closekill
+var=radius,Explosionsradius,
+65,
+0
+var=damage,Schaden,
+25,
+0
+growtime=3
+description=start
+Explodiert, sobald der Spieler in der N‰he ist.
+description=end
+    }
+  ],
+  "flower": [
+    {
+id=100
+name=Blumen
+group=flower
+icon=gfx\flowers01.bmp
+model=gfx\flowers01.b3d
+fx=16
+scale=0.5
+col=0
+health=5
+autofade=200
+    },
+    {
+      id=101
+name=Blumen
+group=flower
+icon=gfx\flowers02.bmp
+model=gfx\flowers02.b3d
+fx=16
+scale=0.5
+col=0
+health=5
+autofade=200
+    },
+    {
+      id=102
+name=Blumen
+group=flower
+icon=gfx\flowers03.bmp
+model=gfx\flowers03.b3d
+fx=16
+scale=0.5
+col=0
+health=5
+autofade=200
+    },
+    {
+      id=103
+name=Blumen
+group=flower
+icon=gfx\flowers04.bmp
+model=gfx\flowers04.b3d
+fx=16
+scale=0.5
+col=0
+health=5
+autofade=200
+    },
+    {
+id=104
+name=Blumen
+group=flower
+icon=gfx\flowers05.bmp
+model=gfx\flowers05.b3d
+fx=16
+scale=0.5
+col=0
+health=5
+autofade=200
+    },
+    {
+id=105
+name=Blumen
+group=flower
+icon=gfx\flowers06.bmp
+model=gfx\flowers06.b3d
+fx=16
+scale=0.35
+col=0
+health=5
+autofade=200
+    },
+    {
+id=106
+name=Blumen
+group=flower
+icon=gfx\flowers07.bmp
+model=gfx\flowers07.b3d
+fx=16
+scale=0.35
+col=0
+health=5
+autofade=200
+    },
+    {
+id=107
+name=Blumen
+group=flower
+icon=gfx\flowers08.bmp
+model=gfx\flowers08.b3d
+fx=16
+scale=0.35
+col=0
+health=5
+autofade=200
+    },
+    {
+id=108
+name=Blumen
+group=flower
+icon=gfx\flowers09.bmp
+model=gfx\flowers09.b3d
+fx=16
+scale=0.35
+col=0
+health=5
+autofade=200
+    },
+    {
+id=109
+name=Blumen
+group=flower
+icon=gfx\flowers10.bmp
+model=gfx\flowers10.b3d
+fx=16
+scale=0.35
+col=0
+health=5
+autofade=200
+    },
+    {
+id=110
+name=Giftblume
+group=flower
+icon=gfx\poisonflower.bmp
+model=gfx\poisonflower.b3d
+fx=16
+scale=1.1
+health=70
+state=0,
+5,
+0
+col=2
+mat=leaf
+behaviour=closetrigger
+    }
+  ],
+  "grass": [
+    {
+      id=50
+name=Gras
+group=grass
+icon=gfx\gras01.bmp
+model=gfx\gras01.b3d
+alpha=0.4
+fx=16
+col=0
+health=5
+    },
+    {
+id=51
+name=Gras
+group=grass
+icon=gfx\gras02.bmp
+model=gfx\gras02.b3d
+alpha=0.4
+fx=16
+col=0
+health=5
+    },
+    {
+id=52
+name=Gras
+group=grass
+icon=gfx\gras02.bmp
+model=gfx\gras03.b3d
+alpha=0.4
+fx=16
+col=0
+health=5
+    },
+    {
+id=53
+name=Wiese
+group=grass
+icon=gfx\meadow01.bmp
+model=gfx\meadow01.b3d
+alpha=0.4
+fx=16
+col=0
+health=30
+    }
+  ],
+  "palm": [
+    {
+id=1
+name=Palme
+group=palm
+icon=gfx\palm01.bmp
+model=gfx\palm01.b3d
+swayspeed=2
+swaypower=2
+fx=16
+scale=2.3
+mat=wood
+health=300
+find=15,
+15,
+3
+behaviour=tree
+healthchange=15
+    },
+    {
+      id=2
+name=Palme
+group=palm
+icon=gfx\palm02.bmp
+model=gfx\palm02.b3d
+swayspeed=1
+swaypower=2
+fx=16
+scale=2.5
+mat=wood
+health=200
+find=15,
+      10,
+      3
+behaviour=tree
+healthchange=15
+    },
+    {
+id=3
+name=Palme
+group=palm
+icon=gfx\palm03.bmp
+model=gfx\palm03.b3d
+swayspeed=1
+swaypower=2
+fx=16
+scale=2.5
+mat=wood
+health=300
+find=15,
+20,
+3
+behaviour=tree
+healthchange=15
+    },
+    {
+id=4
+name=Palme
+group=palm
+icon=gfx\palm04.bmp
+model=gfx\palm04.b3d
+swayspeed=1
+swaypower=2
+fx=16
+scale=2.5
+mat=wood
+health=350
+find=15,
+20,
+3
+behaviour=tree
+healthchange=15
+    },
+    {
+id=5
+name=Palme
+group=palm
+icon=gfx\palm05.bmp
+model=gfx\palm05.b3d
+swayspeed=1
+swaypower=2
+fx=16
+scale=2.5
+mat=wood
+health=300
+find=15,
+15,
+3
+behaviour=tree
+healthchange=15
+    },
+    {
+id=6
+name=Palme
+group=palm
+icon=gfx\palm06.bmp
+model=gfx\palm06.b3d
+swayspeed=1.5
+swaypower=2
+fx=16
+scale=2.5
+mat=wood
+health=400
+behaviour=tree
+healthchange=15
+    },
+    {
+id=7
+name=grosse Palme
+group=palm
+icon=gfx\hugepalm01.bmp
+model=gfx\hugepalm01.b3d
+swayspeed=1
+swaypower=3
+fx=16
+mat=wood
+health=500
+behaviour=tree
+healthchange=15
+    },
+    {
+id=8
+name=Bananenpalme
+group=palm
+icon=gfx\bananapalm.bmp
+model=gfx\bananapalm.b3d
+fx=16
+scale=2.5
+y=4
+mat=wood
+health=300
+find=15,
+10,
+3
+spawn=14,
+3,
+15,
+3,
+125,
+3,
+1
+behaviour=tree
+healthchange=15
+growtime=15
+var=max,Affen maximal,
+1,
+0
+description=start
+Hier wachsen Bananen.
+description=end
+    },
+    {
+id=9
+name=Kokosnusspalme
+group=palm
+icon=gfx\coconutpalm.bmp
+model=gfx\coconutpalm.b3d
+fx=16
+scale=1.5
+mat=wood
+health=300
+find=15,
+10,
+3
+spawn=27,
+3,
+15,
+5,
+126,
+3,
+1
+behaviour=tree
+healthchange=15
+growtime=15
+description=start
+Hier wachsen Kokosn¸sse.
+description=end
+    },
+    {
+      id=213
+name=Lianenpalme
+group=palm
+icon=gfx\lianapalm.bmp
+model=gfx\lianapalm.b3d
+swayspeed=2
+swaypower=2
+fx=16
+scale=2.3
+mat=wood
+health=300
+find=15,
+      15,
+      3
+find=26,
+      60,
+      3
+behaviour=tree
+healthchange=15
+    }
+  ],
+  "stone": [
+    {
+id=60
+name=Stein
+group=stone
+icon=gfx\stone01.bmp
+model=gfx\stone01.b3d
+scale=1.3
+mat=stone
+health=150
+autofade=350
+    },
+    {
+id=61
+name=Stein
+group=stone
+icon=gfx\stone02.bmp
+model=gfx\stone02.b3d
+scale=1.3
+mat=stone
+health=200
+autofade=350
+    },
+    {
+id=62
+name=Stein
+group=stone
+icon=gfx\stone03.bmp
+model=gfx\stone03.b3d
+scale=1.3
+mat=stone
+health=100
+autofade=350
+    },
+    {
+id=63
+name=Felsen
+group=stone
+icon=gfx\rock01.bmp
+model=gfx\rock01.b3d
+scale=4
+detailtex=1
+mat=stone
+health=1500
+find=23,
+90,
+2
+find=21,
+90,
+7
+find=23,
+300,
+1,
+1,
+88
+    },
+    {
+id=64
+name=Felsen
+group=stone
+icon=gfx\rock02.bmp
+model=gfx\rock02.b3d
+detailtex=1
+mat=stone
+health=30000
+find=23,
+90,
+2
+find=21,
+90,
+7
+find=23,
+300,
+1,
+1,
+88
+    },
+    {
+id=65
+name=Felsen
+group=stone
+icon=gfx\rock03.bmp
+model=gfx\rock03.b3d
+scale=0.8
+detailtex=1
+mat=stone
+health=1500
+find=23,
+90,
+2
+find=21,
+90,
+7
+find=23,
+300,
+1,
+1,
+88
+    },
+    {
+id=66
+name=Stein
+group=stone
+icon=gfx\stone05.bmp
+model=gfx\stone05.b3d
+scale=0.55
+health=1500
+mat=stone
+    },
+    {
+id=67
+name=Felsen
+group=stone
+icon=gfx\rock04.bmp
+model=gfx\rock04.b3d
+scale=1.1
+detailtex=1
+mat=stone
+health=3000
+find=23,
+90,
+2
+find=21,
+90,
+7
+find=23,
+300,
+1,
+1,
+88
+    },
+    {
+id=68
+name=Felsen
+group=stone
+icon=gfx\rock05.bmp
+model=gfx\rock05.b3d
+scale=1.2
+detailtex=1
+mat=stone
+health=3000
+find=23,
+90,
+2
+find=21,
+90,
+7
+find=23,
+300,
+1,
+1,
+88
+    },
+    {
+id=69
+name=Felsen
+group=stone
+icon=gfx\rock06.bmp
+model=gfx\rock06.b3d
+detailtex=1
+mat=stone
+health=3000
+find=23,
+90,
+2
+find=21,
+90,
+7
+find=23,
+300,
+1,
+1,
+88
+    },
+    {
+      id=70
+name=Metall-Felsen
+group=stone
+icon=gfx\metalrock.bmp
+model=gfx\metalrock.b3d
+mat=stone
+health=10000
+find=23,
+      40,
+      1
+find=21,
+      50,
+      5
+find=85,
+      30,
+      1
+find=85,
+      200,
+      1,
+      1,
+      88
+description=start
+Liefert Eisen. Mit einer Spitzhacke kann dieses besonders gut abgebaut werden.
+description=end
+    },
+    {
+id=71
+name=Gold-Felsen
+group=stone
+icon=gfx\goldrock.bmp
+model=gfx\goldrock.b3d
+mat=stone
+health=1000
+find=23,
+40,
+1
+find=21,
+60,
+5
+find=4,
+30,
+1,
+1,
+88
+description=start
+Mit einer Spitzhacke kann hier Gold abgebaut werden.
+description=end
+    },
+    {
+id=72
+name=Kristall-Felsen
+group=stone
+icon=gfx\crystalrock.bmp
+model=gfx\crystalrock.b3d
+mat=stone
+health=1000
+find=23,
+40,
+1
+find=21,
+60,
+5
+find=3,
+30,
+1,
+1,
+88
+description=start
+Mit einer Spitzhacke kˆnnen hier Kristalle abgebaut werden.
+description=end
+    },
+    {
+id=73
+name=Wasser-Felsen
+group=stone
+icon=gfx\waterrock.bmp
+model=gfx\waterrock.b3d
+mat=stone
+scale=1.6
+health=1000
+find=23,
+90,
+2
+find=21,
+90,
+7
+find=23,
+300,
+1,
+1,
+88
+var=water,Wasser,
+5,
+0
+behaviour=watersource
+description=start
+Ein mit Regenwasser gef¸llter Felsen. Ist nach 5x trinken leer, bis es wieder regnet.
+description=end
+    },
+    {
+id=74
+name=Wasser-Felsen (leer)
+group=stone
+icon=gfx\waterrock0.bmp
+model=gfx\waterrock0.b3d
+mat=stone
+scale=1.6
+health=1000
+find=23,
+90,
+2
+find=21,
+90,
+7
+find=23,
+300,
+1,
+1,
+88
+description=start
+Ein mit Felsen, in dem sich Regenwasser sammelt, sobald es regnet.
+description=end
+    },
+    {
+id=75
+name=Quelle
+group=stone
+icon=gfx\fountain.bmp
+model=gfx\fountain.b3d
+mat=stone
+scale=1.6
+health=5000
+find=23,
+90,
+2
+find=21,
+90,
+7
+find=23,
+300,
+1,
+1,
+88
+behaviour=fountain
+description=start
+Eine Quelle, welche unbegrenzt Wasser liefert.
+description=end
+    }
+  ]
+}
