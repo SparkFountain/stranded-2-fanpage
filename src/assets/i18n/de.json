@@ -516,6 +516,20 @@
         "name": "Klauen-Speer",
         "info": "Ein Speer mit scharfen Klauen, welcher einmalig geworfen wird und beim Ziel schwere blutende Wunden verursacht."
       }
+    },
+    "objects": {
+      "160": {
+        "info": "Bietet Schutz zum Schlafen."
+      },
+      "161": {
+        "info": "Bietet Schutz zum Schlafen."
+      },
+      "162": {
+        "info": "Bietet Schutz zum Schlafen."
+      },
+      "165": {
+        "info": "Bietet Schutz zum Schlafen."
+      }
     }
   }
 }
