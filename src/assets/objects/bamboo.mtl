@@ -9,7 +9,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\bamboo.jpg
+map_Kd ../textures/.\bamboo.jpg
 
 newmtl leaf
 illum 2
@@ -18,7 +18,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\leaf04_a.png
+map_Kd ../textures/.\leaf04_a.png
 
 newmtl Material01
 illum 2
@@ -27,4 +27,4 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\leaves02_a.png
+map_Kd ../textures/.\leaves02_a.png

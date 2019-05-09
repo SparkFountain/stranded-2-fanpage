@@ -9,7 +9,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\leaf01_a.png
+map_Kd ../textures/.\leaf01_a.png
 
 newmtl flower
 illum 2
@@ -18,7 +18,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\flowers01_a.png
+map_Kd ../textures/.\flowers01_a.png
 
 newmtl green
 illum 2

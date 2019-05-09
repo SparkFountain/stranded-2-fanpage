@@ -9,7 +9,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\wood01.jpg
+map_Kd ../textures/.\wood01.jpg
 
 newmtl feather
 illum 2
@@ -18,7 +18,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\feather_a.png
+map_Kd ../textures/.\feather_a.png
 
 newmtl wool
 illum 2
@@ -27,4 +27,4 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\struc5.bmp
+map_Kd ../textures/.\struc5.bmp

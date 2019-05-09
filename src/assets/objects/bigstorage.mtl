@@ -9,7 +9,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\planks.jpg
+map_Kd ../textures/.\planks.jpg
 
 newmtl Material02
 illum 2
@@ -18,7 +18,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\wood01.jpg
+map_Kd ../textures/.\wood01.jpg
 
 newmtl Material03
 illum 2
@@ -27,7 +27,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\struc2.bmp
+map_Kd ../textures/.\struc2.bmp
 
 newmtl Material02
 illum 2
@@ -36,7 +36,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\wood01.jpg
+map_Kd ../textures/.\wood01.jpg
 
 newmtl Material04
 illum 2
@@ -45,7 +45,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\barrelend.bmp
+map_Kd ../textures/.\barrelend.bmp
 
 newmtl Material01
 illum 2
@@ -54,4 +54,4 @@ Ka 0.286275 0.286275 0.286275
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\struc4.bmp
+map_Kd ../textures/.\struc4.bmp

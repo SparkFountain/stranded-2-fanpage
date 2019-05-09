@@ -9,7 +9,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\leaves03_a.png
+map_Kd ../textures/.\leaves03_a.png
 
 newmtl Material01
 illum 2
@@ -18,4 +18,4 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\butterflyskin.jpg
+map_Kd ../textures/.\butterflyskin.jpg

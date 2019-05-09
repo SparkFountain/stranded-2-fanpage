@@ -9,7 +9,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd wood01.jpg
+map_Kd ../textures/wood01.jpg
 
 newmtl Material02
 illum 2
@@ -18,7 +18,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd blackboard.jpg
+map_Kd ../textures/blackboard.jpg
 
 newmtl stump
 illum 2
@@ -27,7 +27,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\stump.bmp
+map_Kd ../textures/.\stump.bmp
 
 newmtl Material03
 illum 2
@@ -44,4 +44,4 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd struc3.bmp
+map_Kd ../textures/struc3.bmp

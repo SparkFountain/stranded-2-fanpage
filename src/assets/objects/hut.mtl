@@ -9,7 +9,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\planks.jpg
+map_Kd ../textures/.\planks.jpg
 
 newmtl Material02
 illum 2
@@ -18,7 +18,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\wood01.jpg
+map_Kd ../textures/.\wood01.jpg
 
 newmtl thatch
 illum 2
@@ -27,7 +27,7 @@ Ka 0.141176 0.141176 0.141176
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\thatch.jpg
+map_Kd ../textures/.\thatch.jpg
 
 newmtl thatch border
 illum 2
@@ -36,4 +36,4 @@ Ka 0.152941 0.152941 0.152941
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\thatch_border_a.png
+map_Kd ../textures/.\thatch_border_a.png

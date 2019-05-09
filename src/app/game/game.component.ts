@@ -33,6 +33,11 @@ export class GameComponent implements AfterViewInit {
 
   public activeMenu: string;
 
+  // REMOVE AGAIN LATER
+  public temp: {
+    z: number
+  };
+
   public game: {
     units: any[],
     objects: any[],
@@ -75,12 +80,16 @@ export class GameComponent implements AfterViewInit {
 
   @HostListener('document:keydown', ['$event'])
   public handleKeyboardEvent(event: KeyboardEvent): void {
-    console.log(`[KEY DOWN] ${event}`);
+    console.log(`[KEY DOWN]`, event);
   }
 
   constructor(
     private http: HttpClient
   ) {
+    this.temp = {
+      z: 0
+    };
+
     this.activeMenu = 'main';
 
     this.game = {
@@ -168,8 +177,6 @@ export class GameComponent implements AfterViewInit {
     this.createSkyBox();
     this.createTerrain();
     this.createOcean();
-
-    this.loadObjects();
   }
 
   createScene(): void {
@@ -198,32 +205,41 @@ export class GameComponent implements AfterViewInit {
 
     // Register Assets Manager
     this.assetsManager = new AssetsManager(this.scene);
-    const meshTask = this.assetsManager.addMeshTask('skull task', '', '/assets/objects/', 'palmtree01.obj');
-
-    meshTask.onSuccess = (task: MeshAssetTask) => {
-      task.loadedMeshes.forEach((mesh: Mesh) => {
-        mesh.position = new Vector3(0, 0, 50);
-        mesh.scaling = new Vector3(0.25, 0.25, 0.25);
-        const material: StandardMaterial = mesh.material as StandardMaterial;
-        material.backFaceCulling = false;
-        material.diffuseTexture.hasAlpha = true;
-
-        // Cast Shadow
-        this.shadowGenerator.addShadowCaster(mesh);
-      });
-    };
-
-    this.assetsManager.onFinish = () => {
-      // Register a render loop to repeatedly render the scene
-      this.engine.runRenderLoop(() => this.mainLoop());
-    };
-
-    this.assetsManager.load();
+    this.loadObjects();
   }
 
   loadObjects() {
-    this.http.get('/assets/objects/objects.json').subscribe((objects: any[]) => {
-      console.info('[OBJECTS]', objects);
+    this.http.get('/assets/objects/objects.json').subscribe((objects: any) => {
+      for (const group in objects) {
+        if (objects.hasOwnProperty(group)) {
+          objects[group].forEach((obj: any) => {
+            const meshTask = this.assetsManager.addMeshTask(`Object #${obj.id}`, '', '/assets/objects/', obj.model);
+            meshTask.onSuccess = (task: MeshAssetTask) => {
+              console.info('[LOADED MESH]', task);
+
+              task.loadedMeshes.forEach((mesh: Mesh) => {
+                mesh.position = new Vector3(0, 0, this.temp.z);
+                mesh.scaling = new Vector3(0.25, 0.25, 0.25);
+                const material: StandardMaterial = mesh.material as StandardMaterial;
+                material.backFaceCulling = false;
+                material.diffuseTexture.hasAlpha = true;
+
+                // Cast Shadow
+                this.shadowGenerator.addShadowCaster(mesh);
+              });
+
+              this.temp.z += 10;
+            };
+          });
+        }
+      }
+
+      this.assetsManager.onFinish = () => {
+        // Register a render loop to repeatedly render the scene
+        this.engine.runRenderLoop(() => this.mainLoop());
+      };
+
+      this.assetsManager.load();
     });
   }
 

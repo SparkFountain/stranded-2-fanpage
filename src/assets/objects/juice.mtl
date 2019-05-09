@@ -9,7 +9,7 @@ Ka 0.752941 0.752941 0.752941
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 804.687500
-map_Kd .\struc3.bmp
+map_Kd ../textures/.\struc3.bmp
 
 newmtl cork
 illum 2
@@ -18,7 +18,7 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\struc2.bmp
+map_Kd ../textures/.\struc2.bmp
 
 newmtl glass
 illum 2
@@ -27,4 +27,4 @@ Ka 0.200000 0.200000 0.200000
 Ks 0.000000 0.000000 0.000000
 Ke 0.000000 0.000000 0.000000
 Ns 0.000000
-map_Kd .\struc3.bmp
+map_Kd ../textures/.\struc3.bmp
