@@ -3,6 +3,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, ViewChild, Output, 
 import { Camera, CubeTexture, Engine, MeshBuilder, Scene, StandardMaterial, Texture, Vector3, AssetsManager, MeshAssetTask, Color3, Mesh, DirectionalLight, FlyCamera, HemisphericLight, ShadowGenerator, Color4 } from '@babylonjs/core';
 import '@babylonjs/loaders/OBJ';
 import { Climate, Weather } from './enums';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-game',
@@ -77,7 +78,9 @@ export class GameComponent implements AfterViewInit {
     console.log(`[KEY DOWN] ${event}`);
   }
 
-  constructor() {
+  constructor(
+    private http: HttpClient
+  ) {
     this.activeMenu = 'main';
 
     this.game = {
@@ -129,7 +132,7 @@ export class GameComponent implements AfterViewInit {
         this.game.time = 0;
         this.game.day++;
       }
-      this.dayNightCycle();
+      // this.dayNightCycle();
     }, 1000);
   }
 
@@ -165,6 +168,8 @@ export class GameComponent implements AfterViewInit {
     this.createSkyBox();
     this.createTerrain();
     this.createOcean();
+
+    this.loadObjects();
   }
 
   createScene(): void {
@@ -217,7 +222,9 @@ export class GameComponent implements AfterViewInit {
   }
 
   loadObjects() {
-    // todo
+    this.http.get('/assets/objects/objects.json').subscribe((objects: any[]) => {
+      console.info('[OBJECTS]', objects);
+    });
   }
 
   mainLoop() {

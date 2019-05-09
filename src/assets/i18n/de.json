@@ -518,6 +518,63 @@
       }
     },
     "objects": {
+      "8": {
+        "info": "Hier wachsen Bananen."
+      },
+      "9": {
+        "info": "Hier wachsen Kokosnüsse."
+      },
+      "18": {
+        "info": "Hier wachsen Kakaofrüchte."
+      },
+      "19": {
+        "info": "Hier wachsen Kaffeekirschen."
+      },
+      "35": {
+        "info": "Liefert Blaublüten."
+      },
+      "44": {
+        "info": "Hier wachsen Weintrauben."
+      },
+      "46": {
+        "info": "Hier wachsen Beeren."
+      },
+      "47": {
+        "info": "Liefert Wolle."
+      },
+      "49": {
+        "info": "Der Spieler bekommt neue Luft, wenn er es beim Tauchen benutzt."
+      },
+      "70": {
+        "info": "Liefert Eisen. Mit einer Spitzhacke kann dieses besonders gut abgebaut werden."
+      },
+      "71": {
+        "info": "Mit einer Spitzhacke kann hier Gold abgebaut werden."
+      },
+      "72": {
+        "info": "Mit einer Spitzhacke können hier Kristalle abgebaut werden."
+      },
+      "73": {
+        "info": "Ein mit Regenwasser gefüllter Felsen. Ist nach 5x trinken leer, bis es wieder regnet."
+      },
+      "74": {
+        "info": "Ein Felsen, in dem sich Regenwasser sammelt, sobald es regnet."
+      },
+      "75": {
+        "info": "Eine Quelle, welche unbegrenzt Wasser liefert."
+      },
+      "121": {
+        "info": "Liefert Körner, welche angefplanzt werden können. Viel Getreide verursacht Heuschreckenplagen."
+      },
+      "134": {
+        "info": "Liefert Hanfblätter und kann angepflanzt werden. Aus den Hanfblättern können Joints gedreht werden."
+      },
+      "139": {
+        "info": "Explodiert, wenn es zerstört wird."
+      },
+      "148": {
+        "info": "Bietet Schutz zum Schlafen."
+      },
       "160": {
         "info": "Bietet Schutz zum Schlafen."
       },
@@ -529,7 +586,100 @@
       },
       "165": {
         "info": "Bietet Schutz zum Schlafen."
-      }
+      },
+      "171": {
+        "info": "Hier kann Feuer zum Braten oder Backen gemacht werden."
+      },
+      "172": {
+        "info": "Hier kann Feuer zum Braten oder Backen gemacht werden."
+      },
+      "181": {
+        "info": "Ermöglicht das Einlagern von Gegenständen."
+      },
+      "184": {
+        "info": "Bietet Schutz zum Schlafen und kann abgebaut werden, um es an einem anderen Ort wieder aufzubauen."
+      },
+      "186": {
+        "info": "Explodiert, sobald der Spieler in der Nähe ist."
+      },
+      "189": {
+        "info": "Bietet Trinkwasser."
+      },
+      "190": {
+        "info": "Bietet Schutz zum Schlafen."
+      },
+      "191": {
+        "info": "Fängt automatisch über Nacht Fische und andere Dinge."
+      },
+      "194": {
+        "info": "Bietet Schutz zum Schlafen."
+      },
+      "195": {
+        "info": "Hier wachsen Pflaumen."
+      },
+      "196": {
+        "info": "Erzeugt über Nacht einen Raptor, wenn noch keiner in der Nähe ist."
+      },
+      "197": {
+        "info": "Erzeugt über Nacht einen Kiwi-Vogel, wenn noch keiner in der Nähe ist."
+      },
+      "198": {
+        "info": "Erzeugt über Nacht einen Papagei, wenn noch keiner in der Nähe ist."
+      },
+      "199": {
+        "info": "Erzeugt über Nacht einen Löwen, wenn noch keiner in der Nähe ist."
+      },
+      "200": {
+        "info": "Bietet Schutz zum Schlafen und kann als Aussichtsturm genutzt werden."
+      },
+      "201": {
+        "info": "Hier entsteht alle zwei Nächte ein Kiwi-Vogel, bis maximal drei vorhanden sind."
+      },
+      "202": {
+        "info": "Erzeugt über Nacht Pilze und Schnecken."
+      },
+      "204": {
+        "info": "Erzeugt über Nacht einen Vogel, wenn noch keiner in der Nähe ist."
+      },
+      "205": {
+        "info": "Kann über Nacht ein kleines Tier fangen, wenn sie offen steht."
+      },
+      "206": {
+        "info": "Bietet Schutz zum Schlafen."
+      },
+      "207": {
+        "info": "Hier wachsen über Nacht Kräuter."
+      },
+      "208": {
+        "info": "Ein Brunnen, welcher erst freigeschaufelt werden muss, bevor er genutzt werden kann."
+      },
+      "209": {
+        "info": "Ist nicht funktionstüchtig, aber bringt bei Benutzung ein paar Gegenstände."
+      },
+      "210": {
+        "info": "Erzeugt über Nacht einen Fisch, wenn noch keiner in der Nähe ist."
+      },
+      "214": {
+        "info": "Ermöglicht das Einlagern von Gegenständen."
+      },
+      "215": {
+        "info": "Erzeugt Schmetterlinge"
+      },
+      "216": {
+        "info": "Ein super Schlafplatz"
+      },
+      "220": {
+        "info": "Hier können Baumstämme, Äste und Rinde gelagert werden."
+      },
+      "221": {
+        "info": "Erzeugt über Nacht einen Adler, wenn noch keiner in der Nähe ist."
+      },
+      "222": {
+        "info": "Hier können Steine gelagert werden."
+      },
+      "223": {
+        "info": "Nimmt automatisch Feinde im Umkreis unter Beschuss."
+      },
     }
   }
 }

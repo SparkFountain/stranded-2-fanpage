@@ -26,7 +26,7 @@
     },
     {
       "id": 160,
-      "name": "Bambush¸tte",
+      "name": "Bambushütte",
       "icon": "bamboohut01.bmp",
       "model": "bamboohut01.obj",
       "fx": 16,
@@ -36,7 +36,7 @@
     },
     {
       "id": 161,
-      "name": "Bambush¸tte",
+      "name": "Bambushütte",
       "icon": "bamboohut02.bmp",
       "model": "bamboohut02.obj",
       "health": 200,
@@ -45,7 +45,7 @@
     },
     {
       "id": 162,
-      "name": "Bambush¸tte",
+      "name": "Bambushütte",
       "icon": "bamboohut03.bmp",
       "model": "bamboohut03.obj",
       "health": 200,
@@ -91,7 +91,11 @@
       "health": 100,
       "mat": "wood",
       "behaviour": "torch",
-"state": [0, 39, 0]
+      "state": [
+        0,
+        39,
+        0
+      ]
     },
     {
       "id": 167,
@@ -100,13 +104,17 @@
       "model": "torch02.obj",
       "scale": 0.6,
       "fx": 16,
-"state": [random]
-"health": 100,
+      "state": [
+        "random"
+      ],
+      "health": 100,
       "mat": "wood",
       "behaviour": "torch",
-"state": [0,
-      43,
-      0
+      "state": [
+        0,
+        43,
+        0
+      ]
     },
     {
       "id": 168,
@@ -143,14 +151,14 @@
       "icon": "fire01.bmp",
       "model": "fire01.obj",
       "scale": 1.6,
-"state": [0,
-      5,
-      0
-"health": 250,
+      "state": [
+        0,
+        5,
+        0
+      ],
+      "health": 250,
       "mat": "wood",
-      "behaviour": "fireplace",
-
-Hier kann Feuer zum Braten/Backen gemacht werden.
+      "behaviour": "fireplace"
     },
     {
       "id": 172,
@@ -158,14 +166,14 @@ Hier kann Feuer zum Braten/Backen gemacht werden.
       "icon": "fire02.bmp",
       "model": "fire02.obj",
       "scale": 1.6,
-"state": [0,
-      5,
-      0
-"health": 300,
+      "state": [
+        0,
+        5,
+        0
+      ],
+      "health": 300,
       "mat": "wood",
-      "behaviour": "fireplace",
-
-Hier kann Feuer zum Braten/Backen gemacht werden.
+      "behaviour": "fireplace"
     },
     {
       "id": 173,
@@ -237,8 +245,6 @@ Hier kann Feuer zum Braten/Backen gemacht werden.
       "scale": 2.2,
       "mat": "wood",
       "maxweight": 50000
-
-Ermöglicht das Einlagern von Gegenst‰nden.
     },
     {
       "id": 182,
@@ -269,8 +275,6 @@ Ermöglicht das Einlagern von Gegenst‰nden.
       "health": 150,
       "mat": "none",
       "behaviour": "cover"
-
-Bietet Schutz zum Schlafen und kann abgebaut werden, um es an einem anderen Wort wieder aufzubauen.
     },
     {
       "id": 187,
@@ -301,8 +305,6 @@ Bietet Schutz zum Schlafen und kann abgebaut werden, um es an einem anderen Wort
       "health": 2000,
       "mat": "stone",
       "behaviour": "watersource"
-
-Bietet Trinkwasser.
     },
     {
       "id": 190,
@@ -313,8 +315,6 @@ Bietet Trinkwasser.
       "health": 500,
       "mat": "wood",
       "behaviour": "cover"
-
-Bietet Schutz zum Schlafen.
     },
     {
       "id": 191,
@@ -327,19 +327,17 @@ Bietet Schutz zum Schlafen.
       "swaypower": 5,
       "mat": "wood",
       "fx": 16,
-      "behaviour": "aligntowater",
-
-F‰ngt automatisch ¸ber Nacht Fische und andere Dinge.
+      "behaviour": "aligntowater"
     },
     {
       "id": 192,
       "name": "Zielscheibe",
       "icon": "target.bmp",
       "model": "target.obj",
-detailtex=1
-"health": 5,
+      "detailtex": 1,
+      "health": 5,
       "mat": "wood",
-      "scale": 1.0,
+      "scale": 1.0
     },
     {
       "id": 193,
@@ -348,8 +346,8 @@ detailtex=1
       "model": "bambootower.obj",
       "health": 50000,
       "mat": "wood",
-y=1.4
-"fx": 16,
+      "y": 1.4,
+      "fx": 16
     },
     {
       "id": 194,
@@ -359,10 +357,8 @@ y=1.4
       "health": 100000,
       "mat": "stone",
       "scale": 2.4,
-autofade=3000
-"behaviour": "cover",
-
-Bietet Schutz zum Schlafen.
+      "autofade": 3000,
+      "behaviour": "cover"
     },
     {
       "id": 200,
@@ -372,9 +368,7 @@ Bietet Schutz zum Schlafen.
       "health": 500,
       "mat": "wood",
       "col": 4,
-      "behaviour": "cover",
-
-Bietet Schutz zum Schlafen und kann als Aussichtsturm genutzt werden.
+      "behaviour": "cover"
     },
     {
       "id": 201,
@@ -383,9 +377,7 @@ Bietet Schutz zum Schlafen und kann als Aussichtsturm genutzt werden.
       "model": "kiwibreeding.obj",
       "health": 100,
       "mat": "wood",
-      "fx": 16,
-
-Hier entsteht alle zwei N‰chte ein Kiwi-Vogel, bis maximal 3 vorhanden sind.
+      "fx": 16
     },
     {
       "id": 203,
@@ -394,7 +386,7 @@ Hier entsteht alle zwei N‰chte ein Kiwi-Vogel, bis maximal 3 vorhanden sind.
       "model": "covering.obj",
       "health": 100,
       "mat": "wood",
-      "fx": 16,
+      "fx": 16
     },
     {
       "id": 205,
@@ -404,33 +396,27 @@ Hier entsteht alle zwei N‰chte ein Kiwi-Vogel, bis maximal 3 vorhanden sind.
       "health": 300,
       "mat": "wood",
       "fx": 16,
-      "scale": 1.3,
-
-Kann ¸ber Nacht ein kleines Tier fangen, wenn sie offen steht.
+      "scale": 1.3
     },
     {
       "id": 206,
-      "name": "H¸tte",
+      "name": "Hütte",
       "icon": "hut.bmp",
       "model": "hut.obj",
       "health": 5000,
       "mat": "wood",
       "scale": 1.7,
-      "behaviour": "cover",
-
-Bietet Schutz zum Schlafen.
+      "behaviour": "cover"
     },
     {
       "id": 207,
-      "name": "Kr‰uterbeet",
+      "name": "Kräuterbeet",
       "icon": "herbalgarden.bmp",
       "model": "herbalgarden.obj",
       "health": 1000,
       "mat": "dirt",
       "col": 3,
-      "scale": 1.5,
-
-Hier wachsen ¸ber Nacht Kr‰uter.
+      "scale": 1.5
     },
     {
       "id": 208,
@@ -439,9 +425,7 @@ Hier wachsen ¸ber Nacht Kr‰uter.
       "model": "broken_well.obj",
       "scale": 0.9,
       "health": 2000,
-      "mat": "stone",
-
-Ein Brunnen, welcher erst freigeschaufelt werden muss, bevor er genutzt werden kann.
+      "mat": "stone"
     },
     {
       "id": 209,
@@ -454,9 +438,7 @@ Ein Brunnen, welcher erst freigeschaufelt werden muss, bevor er genutzt werden k
       "swaypower": 5,
       "mat": "wood",
       "fx": 16,
-      "behaviour": "aligntowater",
-
-Ist nicht funktionst¸chtig aber bringt bei Benutzung ein paar Gegenst‰nde.
+      "behaviour": "aligntowater"
     },
     {
       "id": 211,
@@ -465,7 +447,7 @@ Ist nicht funktionst¸chtig aber bringt bei Benutzung ein paar Gegenst‰nde.
       "model": "table.obj",
       "health": 300,
       "mat": "wood",
-      "col": 3,
+      "col": 3
     },
     {
       "id": 212,
@@ -474,7 +456,7 @@ Ist nicht funktionst¸chtig aber bringt bei Benutzung ein paar Gegenst‰nde.
       "model": "desk.obj",
       "health": 300,
       "mat": "wood",
-      "col": 3,
+      "col": 3
     },
     {
       "id": 214,
@@ -484,9 +466,7 @@ Ist nicht funktionst¸chtig aber bringt bei Benutzung ein paar Gegenst‰nde.
       "health": 700,
       "scale": 2.2,
       "mat": "wood",
-      "maxweight": 250000,
-
-Ermöglicht das Einlagern von Gegenst‰nden.
+      "maxweight": 250000
     },
     {
       "id": 215,
@@ -496,22 +476,18 @@ Ermöglicht das Einlagern von Gegenst‰nden.
       "health": 1000,
       "mat": "dirt",
       "fx": 16,
-      "scale": 1.5,
-
-Erzeugt Schmetterlinge
+      "scale": 1.5
     },
     {
       "id": 216,
-      "name": "H‰ngematte",
+      "name": "Hängematte",
       "icon": "hammock.bmp",
       "model": "hammock.obj",
       "scale": 2,
       "health": 150,
       "mat": "none",
       "behaviour": "cover",
-      "fx": 16,
-
-Ein super Schlafplatz
+      "fx": 16
     },
     {
       "id": 217,
@@ -520,7 +496,7 @@ Ein super Schlafplatz
       "model": "monkeyschool.obj",
       "scale": 2,
       "health": 500,
-      "mat": "wood",
+      "mat": "wood"
     },
     {
       "id": 218,
@@ -530,7 +506,7 @@ Ein super Schlafplatz
       "scale": 2,
       "health": 8000,
       "mat": "wood",
-      "col": 3,
+      "col": 3
     },
     {
       "id": 219,
@@ -540,7 +516,7 @@ Ein super Schlafplatz
       "scale": 2,
       "health": 8000,
       "mat": "wood",
-      "col": 3,
+      "col": 3
     },
     {
       "id": 220,
@@ -550,9 +526,7 @@ Ein super Schlafplatz
       "fx": 16,
       "health": 3000,
       "mat": "wood",
-      "maxweight": 500000,
-
-Hier können Baumst‰mme, ƒste und Rinde gelagert werden
+      "maxweight": 500000
     },
     {
       "id": 222,
@@ -562,9 +536,7 @@ Hier können Baumst‰mme, ƒste und Rinde gelagert werden
       "fx": 16,
       "health": 3000,
       "mat": "wood",
-      "maxweight": 300000,
-
-Hier können Steine gelagert werden
+      "maxweight": 300000
     },
     {
       "id": 223,
@@ -572,14 +544,14 @@ Hier können Steine gelagert werden
       "icon": "defensetower.bmp",
       "model": "defensetower.obj",
       "scale": 1.2,
-y=2
-"health": 3000,
+      "y": 2,
+      "health": 3000,
       "mat": "wood",
-"state": [0,
-      28,
-      0
-
-Nimmt automatisch Feinde im Umkreis unter Beschuss
+      "state": [
+        0,
+        28,
+        0
+      ]
     }
   ],
   "bush": [
@@ -591,12 +563,14 @@ Nimmt automatisch Feinde im Umkreis unter Beschuss
       "fx": 16,
       "col": 2,
       "health": 100,
-"find": [24,
-      90,
-      5
-autofade=300
-"mat": "leaf",
-growtime=5
+      "find": [
+        24,
+        90,
+        5
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 31,
@@ -606,14 +580,16 @@ growtime=5
       "fx": 16,
       "col": 2,
       "health": 50,
-"find": [15,
-      50,
-      1
-autofade=300
-"mat": "leaf",
+      "find": [
+        15,
+        50,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
       "swayspeed": 2,
       "swaypower": 1,
-growtime=5
+      "growtime": 5
     },
     {
       "id": 32,
@@ -623,14 +599,16 @@ growtime=5
       "fx": 16,
       "col": 2,
       "health": 90,
-"find": [15,
-      50,
-      1
-autofade=300
-"mat": "leaf",
+      "find": [
+        15,
+        50,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
       "swayspeed": 2,
       "swaypower": 1,
-growtime=5
+      "growtime": 5
     },
     {
       "id": 33,
@@ -640,14 +618,16 @@ growtime=5
       "fx": 16,
       "col": 2,
       "health": 50,
-"find": [15,
-      50,
-      1
-autofade=300
-"mat": "leaf",
+      "find": [
+        15,
+        50,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
       "swayspeed": 2,
       "swaypower": 1,
-growtime=5
+      "growtime": 5
     },
     {
       "id": 34,
@@ -657,17 +637,23 @@ growtime=5
       "fx": 16,
       "col": 2,
       "health": 70,
-"find": [15,
-      50,
-      3
-"find": [24,
-      40,
-      2
-autofade=300
-"mat": "leaf",
+      "find": [
+        [
+          15,
+          50,
+          3
+        ],
+        [
+          24,
+          40,
+          2
+        ]
+      ],
+      "autofade": 300,
+      "mat": "leaf",
       "swayspeed": 2,
       "swaypower": 1,
-growtime=5
+      "growtime": 5
     },
     {
       "id": 35,
@@ -677,17 +663,21 @@ growtime=5
       "fx": 16,
       "col": 2,
       "health": 30,
-"find": [15,
-      20,
-      1
-"find": [13,
-      50,
-      1
-autofade=300
-"mat": "leaf",
-growtime=5
-
-Liefert Blaubl¸ten.
+      "find": [
+        [
+          15,
+          20,
+          1
+        ],
+        [
+          13,
+          50,
+          1
+        ]
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 36,
@@ -697,12 +687,14 @@ Liefert Blaubl¸ten.
       "fx": 16,
       "col": 2,
       "health": 70,
-"find": [15,
-      50,
-      1
-autofade=300
-"mat": "leaf",
-growtime=5
+      "find": [
+        15,
+        50,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 37,
@@ -712,12 +704,14 @@ growtime=5
       "fx": 16,
       "col": 0,
       "health": 50,
-"find": [15,
-      50,
-      1
-autofade=300
-"mat": "leaf",
-growtime=5
+      "find": [
+        15,
+        50,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 38,
@@ -727,12 +721,14 @@ growtime=5
       "fx": 16,
       "col": 2,
       "health": 70,
-"find": [15,
-      50,
-      1
-autofade=300
-"mat": "leaf",
-growtime=5
+      "find": [
+        15,
+        50,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 39,
@@ -742,12 +738,14 @@ growtime=5
       "fx": 16,
       "col": 2,
       "health": 70,
-"find": [15,
-      20,
-      1
-autofade=300
-"mat": "leaf",
-growtime=5
+      "find": [
+        15,
+        20,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 40,
@@ -758,12 +756,14 @@ growtime=5
       "scale": 0.5,
       "col": 2,
       "health": 70,
-"find": [15,
-      50,
-      1
-autofade=300
-"mat": "leaf",
-growtime=5
+      "find": [
+        15,
+        50,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 41,
@@ -774,15 +774,21 @@ growtime=5
       "scale": 0.65,
       "col": 2,
       "health": 70,
-"find": [15,
-      40,
-      1
-"find": [24,
-      40,
-      1
-autofade=300
-"mat": "leaf",
-growtime=5
+      "find": [
+        [
+          15,
+          40,
+          1
+        ],
+        [
+          24,
+          40,
+          1
+        ]
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 42,
@@ -793,12 +799,14 @@ growtime=5
       "scale": 0.5,
       "col": 2,
       "health": 50,
-"find": [15,
-      15,
-      1
-autofade=300
-"mat": "leaf",
-growtime=5
+      "find": [
+        15,
+        15,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 43,
@@ -808,12 +816,14 @@ growtime=5
       "fx": 16,
       "col": 2,
       "health": 60,
-"find": [15,
-      20,
-      1
-autofade=300
-"mat": "leaf",
-growtime=5
+      "find": [
+        15,
+        20,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 44,
@@ -824,18 +834,18 @@ growtime=5
       "scale": 1.15,
       "col": 2,
       "health": 100,
-autofade=300
-spawn=45,
-      3,
-      4,
-      5,
-      18,
-      3,
-      5
-"mat": "leaf",
-growtime=5
-
-Hier wachsen Weintrauben.
+      "autofade": 300,
+      "spawn": [
+        45,
+        3,
+        4,
+        5,
+        18,
+        3,
+        5
+      ],
+      "mat": "leaf",
+      "growtime": 5
     },
     {
       "id": 45,
@@ -845,14 +855,16 @@ Hier wachsen Weintrauben.
       "fx": 16,
       "col": 2,
       "health": 200,
-"find": [15,
-      40,
-      1
-autofade=300
-"swayspeed": 2.5,
+      "find": [
+        15,
+        40,
+        1
+      ],
+      "autofade": 300,
+      "swayspeed": 2.5,
       "swaypower": 2,
       "mat": "leaf",
-growtime=5
+      "growtime": 5
     },
     {
       "id": 46,
@@ -863,21 +875,23 @@ growtime=5
       "scale": 0.5,
       "col": 0,
       "health": 150,
-"find": [15,
-      20,
-      1
-autofade=300
-spawn=46,
-      3,
-      10,
-      5,
-      10,
-      3,
-      5
-"mat": "leaf",
-growtime=10
-
-Hier wachsen Beeren.
+      "find": [
+        15,
+        20,
+        1
+      ],
+      "autofade": 300,
+      "spawn": [
+        46,
+        3,
+        10,
+        5,
+        10,
+        3,
+        5
+      ],
+      "mat": "leaf",
+      "growtime": 10
     },
     {
       "id": 47,
@@ -888,16 +902,16 @@ Hier wachsen Beeren.
       "scale": 2.3,
       "col": 2,
       "health": 150,
-"find": [48,
-      75,
-      5
-autofade=300
-"mat": "leaf",
+      "find": [
+        48,
+        75,
+        5
+      ],
+      "autofade": 300,
+      "mat": "leaf",
       "swayspeed": 3,
       "swaypower": 2,
-growtime=5
-
-Liefert Wolle.
+      "growtime": 5
     },
     {
       "id": 48,
@@ -907,26 +921,19 @@ Liefert Wolle.
       "fx": 16,
       "scale": 2.3,
       "col": 2,
-shine=0.2
-alpha=0.6
-"health": 100,
-autofade=300
-"mat": "leaf",
+      "shine": 0.2,
+      "alpha": 0.6,
+      "health": 100,
+      "autofade": 300,
+      "mat": "leaf",
       "swayspeed": 6,
       "swaypower": 10,
-"find": [109,
-      25,
-      1
-script=start
-	// Spawn Seaweed Item
-	on:kill {
-		create "item",
-        109,getx("self"),getz("self"),
-        5;
-		corona getx("self"),getz("self");
-      }
-script=end
-growtime=5
+      "find": [
+        109,
+        25,
+        1
+      ],
+      "growtime": 5
     },
     {
       "id": 49,
@@ -936,28 +943,18 @@ growtime=5
       "fx": 16,
       "scale": 2.3,
       "col": 2,
-shine=0.2
-"health": 100,
-autofade=300
-"mat": "leaf",
-color=0,
-      50,
-      255
-alpha=0.6
-"swayspeed": 7,
-      "swaypower": 15,
-script=start
-	on:load {
-		blend 3;
-      }
-
-	on:use {
-		air 20000;
-		play "blubber.wav";
-      }
-script=end
-
-Der Spieler bekommt neue Luft, wenn er es beim Tauchen benutzt.
+      "shine": 0.2,
+      "health": 100,
+      "autofade": 300,
+      "mat": "leaf",
+      "color": [
+        0,
+        50,
+        255
+      ],
+      "alpha": 0.6,
+      "swayspeed": 7,
+      "swaypower": 15
     },
     {
       "id": 185,
@@ -968,34 +965,32 @@ Der Spieler bekommt neue Luft, wenn er es beim Tauchen benutzt.
       "fx": 16,
       "col": 2,
       "health": 200,
-"find": [15,
-      40,
-      1
-autofade=300
-"mat": "leaf",
+      "find": [
+        15,
+        40,
+        1
+      ],
+      "autofade": 300,
+      "mat": "leaf",
       "swayspeed": 2,
       "swaypower": 1,
-growtime=5
+      "growtime": 5
     },
     {
       "id": 186,
       "name": "Knallpilz",
       "icon": "bangfungus.bmp",
       "model": "bangfungus.obj",
-      "scale": 2.,
+      "scale": 2,
       "health": 1,
-autofade=300
-"mat": "leaf",
+      "autofade": 300,
+      "mat": "leaf",
       "behaviour": "closekill",
-var=radius,Explosionsradius,
-      65,
-      0
-var=damage,Schaden,
-      25,
-      0
-growtime=3
-
-Explodiert, sobald der Spieler in der N‰he ist.
+      "var": [
+        "radius,Explosionsradius, 65, 0",
+        "var=damage,Schaden,25,0"
+      ],
+      "growtime": 3
     }
   ],
   "flower": [
@@ -1008,7 +1003,7 @@ Explodiert, sobald der Spieler in der N‰he ist.
       "scale": 0.5,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 101,
@@ -1019,7 +1014,7 @@ autofade=200
       "scale": 0.5,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 102,
@@ -1030,7 +1025,7 @@ autofade=200
       "scale": 0.5,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 103,
@@ -1041,7 +1036,7 @@ autofade=200
       "scale": 0.5,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 104,
@@ -1052,7 +1047,7 @@ autofade=200
       "scale": 0.5,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 105,
@@ -1063,7 +1058,7 @@ autofade=200
       "scale": 0.35,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 106,
@@ -1074,7 +1069,7 @@ autofade=200
       "scale": 0.35,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 107,
@@ -1085,7 +1080,7 @@ autofade=200
       "scale": 0.35,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 108,
@@ -1096,7 +1091,7 @@ autofade=200
       "scale": 0.35,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 109,
@@ -1107,7 +1102,7 @@ autofade=200
       "scale": 0.35,
       "col": 0,
       "health": 5,
-autofade=200
+      "autofade": 200
     },
     {
       "id": 110,
@@ -1117,12 +1112,14 @@ autofade=200
       "fx": 16,
       "scale": 1.1,
       "health": 70,
-"state": [0,
-      5,
-      0
-"col": 2,
+      "state": [
+        0,
+        5,
+        0
+      ],
+      "col": 2,
       "mat": "leaf",
-      "behaviour": "closetrigger",
+      "behaviour": "closetrigger"
     }
   ],
   "grass": [
@@ -1131,40 +1128,40 @@ autofade=200
       "name": "Gras",
       "icon": "gras01.bmp",
       "model": "gras01.obj",
-alpha=0.4
-"fx": 16,
+      "alpha": 0.4,
+      "fx": 16,
       "col": 0,
-      "health": 5,
+      "health": 5
     },
     {
       "id": 51,
       "name": "Gras",
       "icon": "gras02.bmp",
       "model": "gras02.obj",
-alpha=0.4
-"fx": 16,
+      "alpha": 0.4,
+      "fx": 16,
       "col": 0,
-      "health": 5,
+      "health": 5
     },
     {
       "id": 52,
       "name": "Gras",
       "icon": "gras02.bmp",
       "model": "gras03.obj",
-alpha=0.4
-"fx": 16,
+      "alpha": 0.4,
+      "fx": 16,
       "col": 0,
-      "health": 5,
+      "health": 5
     },
     {
       "id": 53,
       "name": "Wiese",
       "icon": "meadow01.bmp",
       "model": "meadow01.obj",
-alpha=0.4
-"fx": 16,
+      "alpha": 0.4,
+      "fx": 16,
       "col": 0,
-      "health": 30,
+      "health": 30
     }
   ],
   "palm": [
@@ -1179,9 +1176,13 @@ alpha=0.4
       "scale": 2.3,
       "mat": "wood",
       "health": 300,
-"find": [15, 15, 3]
-"behaviour": "tree",
-"healthchange": 15
+      "find": [
+        15,
+        15,
+        3
+      ],
+      "behaviour": "tree",
+      "healthchange": 15
     },
     {
       "id": 2,
@@ -1194,11 +1195,13 @@ alpha=0.4
       "scale": 2.5,
       "mat": "wood",
       "health": 200,
-"find": [15,
-      10,
-      3
-"behaviour": "tree",
-"healthchange": 15
+      "find": [
+        15,
+        10,
+        3
+      ],
+      "behaviour": "tree",
+      "healthchange": 15
     },
     {
       "id": 3,
@@ -1211,11 +1214,13 @@ alpha=0.4
       "scale": 2.5,
       "mat": "wood",
       "health": 300,
-"find": [15,
-      20,
-      3
-"behaviour": "tree",
-"healthchange": 15
+      "find": [
+        15,
+        20,
+        3
+      ],
+      "behaviour": "tree",
+      "healthchange": 15
     },
     {
       "id": 4,
@@ -1228,11 +1233,13 @@ alpha=0.4
       "scale": 2.5,
       "mat": "wood",
       "health": 350,
-"find": [15,
-      20,
-      3
-"behaviour": "tree",
-"healthchange": 15
+      "find": [
+        15,
+        20,
+        3
+      ],
+      "behaviour": "tree",
+      "healthchange": 15
     },
     {
       "id": 5,
@@ -1245,11 +1252,13 @@ alpha=0.4
       "scale": 2.5,
       "mat": "wood",
       "health": 300,
-"find": [15,
-      15,
-      3
-"behaviour": "tree",
-"healthchange": 15
+      "find": [
+        15,
+        15,
+        3
+      ],
+      "behaviour": "tree",
+      "healthchange": 15
     },
     {
       "id": 6,
@@ -1263,7 +1272,7 @@ alpha=0.4
       "mat": "wood",
       "health": 400,
       "behaviour": "tree",
-"healthchange": 15
+      "healthchange": 15
     },
     {
       "id": 7,
@@ -1276,7 +1285,7 @@ alpha=0.4
       "mat": "wood",
       "health": 500,
       "behaviour": "tree",
-"healthchange": 15
+      "healthchange": 15
     },
     {
       "id": 8,
@@ -1285,27 +1294,29 @@ alpha=0.4
       "model": "bananapalm.obj",
       "fx": 16,
       "scale": 2.5,
-y=4
-"mat": "wood",
+      "y": 4,
+      "mat": "wood",
       "health": 300,
-"find": [15,
-      10,
-      3
-spawn=14,
-      3,
-      15,
-      3,
-      125,
-      3,
-      1
-"behaviour": "tree",
-"healthchange": 15
-growtime=15
-var=max,Affen maximal,
-      1,
-      0
-
-Hier wachsen Bananen.
+      "find": [
+        15,
+        10,
+        3
+      ],
+      "spawn": [
+        14,
+        3,
+        15,
+        3,
+        125,
+        3,
+        1
+      ],
+      "behaviour": "tree",
+      "healthchange": 15,
+      "growtime": 15,
+      "var": [
+        "max,Affen maximal,1,0"
+      ]
     },
     {
       "id": 9,
@@ -1316,21 +1327,23 @@ Hier wachsen Bananen.
       "scale": 1.5,
       "mat": "wood",
       "health": 300,
-"find": [15,
-      10,
-      3
-spawn=27,
-      3,
-      15,
-      5,
-      126,
-      3,
-      1
-"behaviour": "tree",
-"healthchange": 15
-growtime=15
-
-Hier wachsen Kokosn¸sse.
+      "find": [
+        15,
+        10,
+        3
+      ],
+      "spawn": [
+        27,
+        3,
+        15,
+        5,
+        126,
+        3,
+        1
+      ],
+      "behaviour": "tree",
+      "healthchange": 15,
+      "growtime": 15
     },
     {
       "id": 213,
@@ -1343,14 +1356,20 @@ Hier wachsen Kokosn¸sse.
       "scale": 2.3,
       "mat": "wood",
       "health": 300,
-"find": [15,
-      15,
-      3
-"find": [26,
-      60,
-      3
-"behaviour": "tree",
-"healthchange": 15
+      "find": [
+        [
+          15,
+          15,
+          3
+        ],
+        [
+          26,
+          60,
+          3
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 15
     }
   ],
   "stone": [
@@ -1362,7 +1381,7 @@ Hier wachsen Kokosn¸sse.
       "scale": 1.3,
       "mat": "stone",
       "health": 150,
-autofade=350
+      "autofade": 350
     },
     {
       "id": 61,
@@ -1372,7 +1391,7 @@ autofade=350
       "scale": 1.3,
       "mat": "stone",
       "health": 200,
-autofade=350
+      "autofade": 350
     },
     {
       "id": 62,
@@ -1382,7 +1401,7 @@ autofade=350
       "scale": 1.3,
       "mat": "stone",
       "health": 100,
-autofade=350
+      "autofade": 350
     },
     {
       "id": 63,
@@ -1390,40 +1409,56 @@ autofade=350
       "icon": "rock01.bmp",
       "model": "rock01.obj",
       "scale": 4,
-detailtex=1
-"mat": "stone",
+      "detailtex": 1,
+      "mat": "stone",
       "health": 1500,
-"find": [23,
-      90,
-      2
-"find": [21,
-      90,
-      7
-"find": [23,
-      300,
-      1,
-      1,
-      88
+      "find": [
+        [
+          23,
+          90,
+          2
+        ],
+        [
+          21,
+          90,
+          7
+        ],
+        [
+          23,
+          300,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 64,
       "name": "Felsen",
       "icon": "rock02.bmp",
       "model": "rock02.obj",
-detailtex=1
-"mat": "stone",
+      "detailtex": 1,
+      "mat": "stone",
       "health": 30000,
-"find": [23,
-      90,
-      2
-"find": [21,
-      90,
-      7
-"find": [23,
-      300,
-      1,
-      1,
-      88
+      "find": [
+        [
+          23,
+          90,
+          2
+        ],
+        [
+          21,
+          90,
+          7
+        ],
+        [
+          23,
+          300,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 65,
@@ -1431,20 +1466,28 @@ detailtex=1
       "icon": "rock03.bmp",
       "model": "rock03.obj",
       "scale": 0.8,
-detailtex=1
-"mat": "stone",
+      "detailtex": 1,
+      "mat": "stone",
       "health": 1500,
-"find": [23,
-      90,
-      2
-"find": [21,
-      90,
-      7
-"find": [23,
-      300,
-      1,
-      1,
-      88
+      "find": [
+        [
+          23,
+          90,
+          2
+        ],
+        [
+          21,
+          90,
+          7
+        ],
+        [
+          23,
+          300,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 66,
@@ -1453,7 +1496,7 @@ detailtex=1
       "model": "stone05.obj",
       "scale": 0.55,
       "health": 1500,
-      "mat": "stone",
+      "mat": "stone"
     },
     {
       "id": 67,
@@ -1461,20 +1504,28 @@ detailtex=1
       "icon": "rock04.bmp",
       "model": "rock04.obj",
       "scale": 1.1,
-detailtex=1
-"mat": "stone",
+      "detailtex": 1,
+      "mat": "stone",
       "health": 3000,
-"find": [23,
-      90,
-      2
-"find": [21,
-      90,
-      7
-"find": [23,
-      300,
-      1,
-      1,
-      88
+      "find": [
+        [
+          23,
+          90,
+          2
+        ],
+        [
+          21,
+          90,
+          7
+        ],
+        [
+          23,
+          300,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 68,
@@ -1482,40 +1533,56 @@ detailtex=1
       "icon": "rock05.bmp",
       "model": "rock05.obj",
       "scale": 1.2,
-detailtex=1
-"mat": "stone",
+      "detailtex": 1,
+      "mat": "stone",
       "health": 3000,
-"find": [23,
-      90,
-      2
-"find": [21,
-      90,
-      7
-"find": [23,
-      300,
-      1,
-      1,
-      88
+      "find": [
+        [
+          23,
+          90,
+          2
+        ],
+        [
+          21,
+          90,
+          7
+        ],
+        [
+          23,
+          300,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 69,
       "name": "Felsen",
       "icon": "rock06.bmp",
       "model": "rock06.obj",
-detailtex=1
-"mat": "stone",
+      "detailtex": 1,
+      "mat": "stone",
       "health": 3000,
-"find": [23,
-      90,
-      2
-"find": [21,
-      90,
-      7
-"find": [23,
-      300,
-      1,
-      1,
-      88
+      "find": [
+        [
+          23,
+          90,
+          2
+        ],
+        [
+          21,
+          90,
+          7
+        ],
+        [
+          23,
+          300,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 70,
@@ -1524,22 +1591,30 @@ detailtex=1
       "model": "metalrock.obj",
       "mat": "stone",
       "health": 10000,
-"find": [23,
-      40,
-      1
-"find": [21,
-      50,
-      5
-"find": [85,
-      30,
-      1
-"find": [85,
-      200,
-      1,
-      1,
-      88
-
-Liefert Eisen. Mit einer Spitzhacke kann dieses besonders gut abgebaut werden.
+      "find": [
+        [
+          23,
+          40,
+          1
+        ],
+        [
+          21,
+          50,
+          5
+        ],
+        [
+          85,
+          30,
+          1
+        ],
+        [
+          85,
+          200,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 71,
@@ -1548,19 +1623,25 @@ Liefert Eisen. Mit einer Spitzhacke kann dieses besonders gut abgebaut werden.
       "model": "goldrock.obj",
       "mat": "stone",
       "health": 1000,
-"find": [23,
-      40,
-      1
-"find": [21,
-      60,
-      5
-"find": [4,
-      30,
-      1,
-      1,
-      88
-
-Mit einer Spitzhacke kann hier Gold abgebaut werden.
+      "find": [
+        [
+          23,
+          40,
+          1
+        ],
+        [
+          21,
+          60,
+          5
+        ],
+        [
+          4,
+          30,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 72,
@@ -1569,19 +1650,25 @@ Mit einer Spitzhacke kann hier Gold abgebaut werden.
       "model": "crystalrock.obj",
       "mat": "stone",
       "health": 1000,
-"find": [23,
-      40,
-      1
-"find": [21,
-      60,
-      5
-"find": [3,
-      30,
-      1,
-      1,
-      88
-
-Mit einer Spitzhacke können hier Kristalle abgebaut werden.
+      "find": [
+        [
+          23,
+          40,
+          1
+        ],
+        [
+          21,
+          60,
+          5
+        ],
+        [
+          3,
+          30,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 73,
@@ -1591,23 +1678,29 @@ Mit einer Spitzhacke können hier Kristalle abgebaut werden.
       "mat": "stone",
       "scale": 1.6,
       "health": 1000,
-"find": [23,
-      90,
-      2
-"find": [21,
-      90,
-      7
-"find": [23,
-      300,
-      1,
-      1,
-      88
-var=water,Wasser,
-      5,
-      0
-"behaviour": "watersource",
-
-Ein mit Regenwasser gef¸llter Felsen. Ist nach 5x trinken leer, bis es wieder regnet.
+      "find": [
+        [
+          23,
+          90,
+          2
+        ],
+        [
+          21,
+          90,
+          7
+        ],
+        [
+          23,
+          300,
+          1,
+          1,
+          88
+        ]
+      ],
+      "var": [
+        "water,Wasser, 5, 0"
+      ],
+      "behaviour": "watersource"
     },
     {
       "id": 74,
@@ -1617,19 +1710,25 @@ Ein mit Regenwasser gef¸llter Felsen. Ist nach 5x trinken leer, bis es wieder r
       "mat": "stone",
       "scale": 1.6,
       "health": 1000,
-"find": [23,
-      90,
-      2
-"find": [21,
-      90,
-      7
-"find": [23,
-      300,
-      1,
-      1,
-      88
-
-Ein mit Felsen, in dem sich Regenwasser sammelt, sobald es regnet.
+      "find": [
+        [
+          23,
+          90,
+          2
+        ],
+        [
+          21,
+          90,
+          7
+        ],
+        [
+          23,
+          300,
+          1,
+          1,
+          88
+        ]
+      ]
     },
     {
       "id": 75,
@@ -1639,113 +1738,117 @@ Ein mit Felsen, in dem sich Regenwasser sammelt, sobald es regnet.
       "mat": "stone",
       "scale": 1.6,
       "health": 5000,
-"find": [23,
-      90,
-      2
-"find": [21,
-      90,
-      7
-"find": [23,
-      300,
-      1,
-      1,
-      88
-"behaviour": "fountain",
-
-Eine Quelle, welche unbegrenzt Wasser liefert.
+      "find": [
+        [
+          23,
+          90,
+          2
+        ],
+        [
+          21,
+          90,
+          7
+        ],
+        [
+          23,
+          300,
+          1,
+          1,
+          88
+        ]
+      ],
+      "behaviour": "fountain"
     },
     {
       "id": 140,
       "name": "Ruinen",
       "icon": "ruins01.bmp",
       "model": "ruins01.obj",
-detailtex=1
-"health": 2000,
+      "detailtex": 1,
+      "health": 2000,
       "mat": "stone",
-      "scale": 2,
+      "scale": 2
     },
     {
       "id": 141,
       "name": "Ruinen",
       "icon": "ruins02.bmp",
       "model": "ruins02.obj",
-detailtex=1
-"health": 2000,
+      "detailtex": 1,
+      "health": 2000,
       "mat": "stone",
-      "scale": 2,
+      "scale": 2
     },
     {
       "id": 142,
       "name": "Ruinen",
       "icon": "ruins03.bmp",
       "model": "ruins03.obj",
-detailtex=1
-"health": 2000,
+      "detailtex": 1,
+      "health": 2000,
       "mat": "stone",
-      "scale": 2,
+      "scale": 2
     },
     {
       "id": 143,
       "name": "Ruinen",
       "icon": "ruins04.bmp",
       "model": "ruins04.obj",
-detailtex=1
-"health": 2000,
+      "detailtex": 1,
+      "health": 2000,
       "mat": "stone",
-      "scale": 2,
+      "scale": 2
     },
     {
       "id": 144,
       "name": "Ruinen",
       "icon": "ruins05.bmp",
       "model": "ruins05.obj",
-detailtex=1
-"health": 2000,
+      "detailtex": 1,
+      "health": 2000,
       "mat": "stone",
-      "scale": 2,
+      "scale": 2
     },
     {
       "id": 145,
       "name": "Ruinen",
       "icon": "ruins06.bmp",
       "model": "ruins06.obj",
-detailtex=1
-"health": 2000,
+      "detailtex": 1,
+      "health": 2000,
       "mat": "stone",
-      "scale": 2,
+      "scale": 2
     },
     {
       "id": 146,
       "name": "Ruinen",
       "icon": "ruins07.bmp",
       "model": "ruins07.obj",
-detailtex=1
-"health": 2000,
+      "detailtex": 1,
+      "health": 2000,
       "mat": "stone",
-      "scale": 2,
+      "scale": 2
     },
     {
       "id": 147,
       "name": "Ruinen",
       "icon": "ruins08.bmp",
       "model": "ruins08.obj",
-detailtex=1
-"health": 2000,
+      "detailtex": 1,
+      "health": 2000,
       "mat": "stone",
-      "scale": 2,
+      "scale": 2
     },
     {
       "id": 148,
       "name": "Hoehle",
       "icon": "cave.bmp",
       "model": "cave.obj",
-detailtex=1
-"health": 3000,
+      "detailtex": 1,
+      "health": 3000,
       "mat": "stone",
       "scale": 1.8,
-      "behaviour": "cover",
-
-Bietet Schutz zum Schlafen.
+      "behaviour": "cover"
     }
   ],
   "stuff": [
@@ -1756,10 +1859,12 @@ Bietet Schutz zum Schlafen.
       "model": "bamboo.obj",
       "fx": 16,
       "health": 100,
-"find": [8,
-      100,
-      3
-"mat": "wood",
+      "find": [
+        8,
+        100,
+        3
+      ],
+      "mat": "wood"
     },
     {
       "id": 121,
@@ -1774,9 +1879,7 @@ Bietet Schutz zum Schlafen.
       "col": 2,
       "health": 45,
       "mat": "leaf",
-growtime=5
-
-Liefert Körner, welche angefplanzt werden können. Viel Getreide verursacht Heuschreckenplagen.
+      "growtime": 5
     },
     {
       "id": 122,
@@ -1785,7 +1888,7 @@ Liefert Körner, welche angefplanzt werden können. Viel Getreide verursacht Heu
       "model": "marble01.obj",
       "scale": 0.9,
       "health": 300,
-      "mat": "stone",
+      "mat": "stone"
     },
     {
       "id": 123,
@@ -1794,7 +1897,7 @@ Liefert Körner, welche angefplanzt werden können. Viel Getreide verursacht Heu
       "model": "marble02.obj",
       "scale": 0.8,
       "health": 500,
-      "mat": "stone",
+      "mat": "stone"
     },
     {
       "id": 124,
@@ -1803,7 +1906,7 @@ Liefert Körner, welche angefplanzt werden können. Viel Getreide verursacht Heu
       "model": "marble03.obj",
       "scale": 0.6,
       "health": 100,
-      "mat": "stone",
+      "mat": "stone"
     },
     {
       "id": 125,
@@ -1812,7 +1915,7 @@ Liefert Körner, welche angefplanzt werden können. Viel Getreide verursacht Heu
       "model": "marble04.obj",
       "scale": 0.6,
       "health": 300,
-      "mat": "stone",
+      "mat": "stone"
     },
     {
       "id": 130,
@@ -1822,8 +1925,8 @@ Liefert Körner, welche angefplanzt werden können. Viel Getreide verursacht Heu
       "fx": 16,
       "scale": 0.85,
       "health": 50,
-autofade=200
-"mat": "wood",
+      "autofade": 200,
+      "mat": "wood"
     },
     {
       "id": 131,
@@ -1833,8 +1936,8 @@ autofade=200
       "fx": 16,
       "scale": 0.85,
       "health": 50,
-autofade=200
-"mat": "wood",
+      "autofade": 200,
+      "mat": "wood"
     },
     {
       "id": 132,
@@ -1843,8 +1946,8 @@ autofade=200
       "model": "stump01.obj",
       "scale": 0.9,
       "health": 100,
-autofade=400
-"mat": "wood",
+      "autofade": 400,
+      "mat": "wood"
     },
     {
       "id": 133,
@@ -1852,8 +1955,8 @@ autofade=400
       "icon": "stump02.bmp",
       "model": "stump02.obj",
       "health": 100,
-autofade=400
-"mat": "wood",
+      "autofade": 400,
+      "mat": "wood"
     },
     {
       "id": 134,
@@ -1862,11 +1965,9 @@ autofade=400
       "model": "hemp.obj",
       "col": 2,
       "health": 100,
-autofade=400
-"mat": "leaf",
-growtime=3
-
-Liefert Hanfbl‰tter und kann angepflanzt werden. Aus den Hanfbl‰ttern können Joints gedreht werden.
+      "autofade": 400,
+      "mat": "leaf",
+      "growtime": 3
     },
     {
       "id": 135,
@@ -1874,8 +1975,8 @@ Liefert Hanfbl‰tter und kann angepflanzt werden. Aus den Hanfbl‰ttern könne
       "icon": "stump03.bmp",
       "model": "stump03.obj",
       "health": 50,
-autofade=400
-"mat": "wood",
+      "autofade": 400,
+      "mat": "wood"
     },
     {
       "id": 136,
@@ -1883,11 +1984,13 @@ autofade=400
       "icon": "crate01.bmp",
       "model": "crate01.obj",
       "health": 15,
-color=300,
-      300,
-      300
-"mat": "wood",
-      "maxweight": 30000,
+      "color": [
+        300,
+        300,
+        300
+      ],
+      "mat": "wood",
+      "maxweight": 30000
     },
     {
       "id": 137,
@@ -1895,11 +1998,13 @@ color=300,
       "icon": "barrel.bmp",
       "model": "barrel.obj",
       "health": 15,
-color=300,
-      300,
-      300
-"mat": "wood",
-      "maxweight": 30000,
+      "color": [
+        300,
+        300,
+        300
+      ],
+      "mat": "wood",
+      "maxweight": 30000
     },
     {
       "id": 138,
@@ -1908,7 +2013,7 @@ color=300,
       "model": "wreck01.obj",
       "health": 300,
       "mat": "wood",
-      "scale": 3,
+      "scale": 3
     },
     {
       "id": 139,
@@ -1916,18 +2021,16 @@ color=300,
       "icon": "explosivebarrel.bmp",
       "model": "explosivebarrel.obj",
       "health": 5,
-color=300,
-      300,
-      300
-"mat": "wood",
-var=radius,Explosionsradius,
-      100,
-      0
-var=damage,Schaden,
-      50,
-      0
-
-Explodiert, wenn es zerstört wird.
+      "color": [
+        300,
+        300,
+        300
+      ],
+      "mat": "wood",
+      "var": [
+        "radius,Explosionsradius,100,0",
+        "var=damage,Schaden,50,0"
+      ]
     },
     {
       "id": 196,
@@ -1938,17 +2041,11 @@ Explodiert, wenn es zerstört wird.
       "mat": "leaf",
       "fx": 16,
       "scale": 1.6,
-var=radius,Radius,
-      500,
-      0
-var=count,Raptoren pro Tag,
-      1,
-      0
-var=max,Raptoren maximal,
-      1,
-      0
-
-Erzeugt ¸ber Nacht einen Raptor, wenn noch keiner in der N‰he ist.
+      "var": [
+        "radius,Radius,500,0",
+        "var=count,Raptoren pro Tag,1,0",
+        "var=max,Raptoren maximal, 1, 0"
+      ]
     },
     {
       "id": 197,
@@ -1959,17 +2056,11 @@ Erzeugt ¸ber Nacht einen Raptor, wenn noch keiner in der N‰he ist.
       "mat": "leaf",
       "fx": 16,
       "scale": 0.5,
-var=radius,Radius,
-      500,
-      0
-var=count,Kiwis pro Tag,
-      1,
-      0
-var=max,Kiwis maximal,
-      1,
-      0
-
-Erzeugt ¸ber Nacht einen Kiwi-Vogel, wenn noch keiner in der N‰he ist.
+      "var": [
+        "radius,Radius,500,0",
+        "count,Kiwis pro Tag,1,0",
+        "max,Kiwis maximal,1,0"
+      ]
     },
     {
       "id": 198,
@@ -1980,17 +2071,11 @@ Erzeugt ¸ber Nacht einen Kiwi-Vogel, wenn noch keiner in der N‰he ist.
       "mat": "leaf",
       "fx": 16,
       "scale": 0.6,
-var=radius,Radius,
-      700,
-      0
-var=count,Papageien pro Tag,
-      1,
-      0
-var=max,Papageien maximal,
-      1,
-      0
-
-Erzeugt ¸ber Nacht einen Papagei, wenn noch keiner in der N‰he ist.
+      "var": [
+        "radius,Radius,700,0",
+        "count,Papageien pro Tag,1,0",
+        "max,Papageien maximal,1,0"
+      ]
     },
     {
       "id": 199,
@@ -1999,28 +2084,32 @@ Erzeugt ¸ber Nacht einen Papagei, wenn noch keiner in der N‰he ist.
       "model": "lionstone.obj",
       "health": 300,
       "mat": "stone",
-"find": [23,
-      60,
-      1
-"find": [21,
-      60,
-      10
-"find": [11,
-      20
-"find": [71,
-      15
-"scale": 1,
-var=radius,Radius,
-      500,
-      0
-var=count,Löwen pro Tag,
-      1,
-      0
-var=max,Löwen maximal,
-      1,
-      0
-
-Erzeugt ¸ber Nacht einen Löwen, wenn noch keiner in der N‰he ist.
+      "find": [
+        [
+          23,
+          60,
+          1
+        ],
+        [
+          21,
+          60,
+          10
+        ],
+        [
+          11,
+          20
+        ],
+        [
+          71,
+          15
+        ]
+      ],
+      "scale": 1,
+      "var": [
+        "radius,Radius,500,0",
+        "count,Löwen pro Tag,1,0",
+        "max,Löwen maximal,1,0"
+      ]
     },
     {
       "id": 202,
@@ -2030,17 +2119,13 @@ Erzeugt ¸ber Nacht einen Löwen, wenn noch keiner in der N‰he ist.
       "health": 300,
       "col": 0,
       "mat": "plant",
-alpha=0.35
-"scale": 1.5,
+      "alpha": 0.35,
+      "scale": 1.5,
       "fx": 16,
-var=max,Pilze maximal,
-      3,
-      0
-var=max2,Schnecken maximal,
-      1,
-      0
-
-Erzeugt ¸ber Nacht Pilze und Schnecken.
+      "var": [
+        "max,Pilze maximal,3,0",
+        "max2,Schnecken maximal,1,0"
+      ]
     },
     {
       "id": 204,
@@ -2051,17 +2136,11 @@ Erzeugt ¸ber Nacht Pilze und Schnecken.
       "mat": "leaf",
       "fx": 16,
       "scale": 0.6,
-var=radius,Radius,
-      700,
-      0
-var=count,Vögel pro Tag,
-      1,
-      0
-var=max,Vögel maximal,
-      1,
-      0
-
-Erzeugt ¸ber Nacht einen Vogel, wenn noch keiner in der N‰he ist.
+      "var": [
+        "radius,Radius,700,0",
+        "count,Vögel pro Tag,1,0",
+        "Vögel maximal,1,0"
+      ]
     },
     {
       "id": 210,
@@ -2075,17 +2154,11 @@ Erzeugt ¸ber Nacht einen Vogel, wenn noch keiner in der N‰he ist.
       "col": 2,
       "swayspeed": 2,
       "swaypower": 15,
-var=radius,Radius,
-      400,
-      0
-var=count,Fische pro Tag,
-      1,
-      0
-var=max,Fische maximal,
-      1,
-      0
-
-Erzeugt ¸ber Nacht einen Fisch, wenn noch keiner in der N‰he ist.
+      "var": [
+        "radius,Radius,400,0",
+        "count,Fische pro Tag,1,0",
+        "max,Fische maximal,1,0"
+      ]
     },
     {
       "id": 221,
@@ -2096,17 +2169,11 @@ Erzeugt ¸ber Nacht einen Fisch, wenn noch keiner in der N‰he ist.
       "mat": "stone",
       "fx": 16,
       "scale": 1.6,
-var=radius,Radius,
-      1000,
-      0
-var=count,Adler pro Tag,
-      1,
-      0
-var=max,Adler maximal,
-      1,
-      0
-
-Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
+      "var": [
+        "radius,Radius, 1000, 0",
+        "count,Adler pro Tag, 1, 0",
+        "max,Adler maximal, 1, 0"
+      ]
     }
   ],
   "tree": [
@@ -2121,25 +2188,37 @@ Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
       "scale": 1.6,
       "mat": "wood",
       "health": 600,
-"find": [15,
-      20,
-      3
-"find": [24,
-      40,
-      5
-"find": [26,
-      15,
-      1
-"find": [107,
-      5,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 300
+      "find": [
+        [
+          15,
+          20,
+          3
+        ],
+        [
+          24,
+          40,
+          5
+        ],
+        [
+          26,
+          15,
+          1
+        ],
+        [
+          107,
+          5,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 300
     },
     {
       "id": 11,
@@ -2152,19 +2231,27 @@ Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
       "scale": 1.3,
       "mat": "wood",
       "health": 150,
-"find": [26,
-      20,
-      3
-"find": [107,
-      5,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 75
+      "find": [
+        [
+          26,
+          20,
+          3
+        ],
+        [
+          107,
+          5,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 75
     },
     {
       "id": 12,
@@ -2177,22 +2264,32 @@ Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
       "scale": 2,
       "mat": "wood",
       "health": 300,
-"find": [15,
-      25,
-      3
-"find": [24,
-      40,
-      3
-"find": [107,
-      5,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 150
+      "find": [
+        [
+          15,
+          25,
+          3
+        ],
+        [
+          24,
+          40,
+          3
+        ],
+        [
+          107,
+          5,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 150
     },
     {
       "id": 13,
@@ -2205,25 +2302,37 @@ Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
       "scale": 2,
       "mat": "wood",
       "health": 400,
-"find": [15,
-      10,
-      3
-"find": [24,
-      25,
-      3
-"find": [26,
-      10,
-      1
-"find": [107,
-      5,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 200
+      "find": [
+        [
+          15,
+          10,
+          3
+        ],
+        [
+          24,
+          25,
+          3
+        ],
+        [
+          26,
+          10,
+          1
+        ],
+        [
+          107,
+          5,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 200
     },
     {
       "id": 14,
@@ -2232,30 +2341,41 @@ Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
       "model": "tree05.obj",
       "swayspeed": 1,
       "swaypower": 2,
-      "scale": 0.8,
       "fx": 16,
       "scale": 1.6,
       "mat": "wood",
       "health": 600,
-"find": [15,
-      20,
-      3
-"find": [24,
-      40,
-      5
-"find": [26,
-      10,
-      1
-"find": [107,
-      5,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 300
+      "find": [
+        [
+          15,
+          20,
+          3
+        ],
+        [
+          24,
+          40,
+          5
+        ],
+        [
+          26,
+          10,
+          1
+        ],
+        [
+          107,
+          5,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 300
     },
     {
       "id": 15,
@@ -2268,22 +2388,32 @@ Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
       "scale": 3,
       "mat": "wood",
       "health": 400,
-"find": [15,
-      25,
-      3
-"find": [24,
-      40,
-      5
-"find": [107,
-      10,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 200
+      "find": [
+        [
+          15,
+          25,
+          3
+        ],
+        [
+          24,
+          40,
+          5
+        ],
+        [
+          107,
+          10,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 200
     },
     {
       "id": 16,
@@ -2292,27 +2422,36 @@ Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
       "model": "tree07.obj",
       "swayspeed": 1,
       "swaypower": 2,
-      "scale": 0.9,
       "fx": 16,
       "scale": 1.7,
       "mat": "wood",
       "health": 500,
-"find": [15,
-      25,
-      3
-"find": [24,
-      40,
-      5
-"find": [107,
-      10,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 250
+      "find": [
+        [
+          15,
+          25,
+          3
+        ],
+        [
+          24,
+          40,
+          5
+        ],
+        [
+          107,
+          10,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 250
     },
     {
       "id": 17,
@@ -2325,19 +2464,27 @@ Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
       "fx": 16,
       "mat": "wood",
       "health": 350,
-"find": [26,
-      40,
-      4
-"find": [107,
-      10,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 175
+      "find": [
+        [
+          26,
+          40,
+          4
+        ],
+        [
+          107,
+          10,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 175
     },
     {
       "id": 18,
@@ -2348,70 +2495,90 @@ Erzeugt ¸ber Nacht einen Adler, wenn noch keiner in der N‰he ist.
       "fx": 16,
       "mat": "wood",
       "health": 300,
-"find": [15,
-      10,
-      3
-"find": [24,
-      10,
-      5
-"find": [107,
-      5,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-spawn=67,
-      3,
-      15,
-      30,
-      75,
-      3,
-      1
-"behaviour": "tree",
-"healthchange": 150
-growtime=10
-
-Hier wachsen Kakaofr¸chte.
+      "find": [
+        [
+          15,
+          10,
+          3
+        ],
+        [
+          24,
+          10,
+          5
+        ],
+        [
+          107,
+          5,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ],
+        [
+          67,
+          3,
+          15,
+          30,
+          75,
+          3,
+          1
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 150,
+      "growtime": 10
     },
     {
       "id": 19,
       "name": "Kaffeebaum",
       "icon": "coffeetree.bmp",
       "model": "coffeetree.obj",
-y=1.75
-x=3
-z=3
-"fx": 16,
+      "y": 1.75,
+      "x": 3,
+      "z": 3,
+      "fx": 16,
       "mat": "wood",
       "health": 300,
-"find": [15,
-      10,
-      3
-"find": [24,
-      10,
-      5
-"find": [107,
-      5,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-spawn=70,
-      3,
-      30,
-      30,
-      45,
-      3,
-      5
-"behaviour": "tree",
-"healthchange": 150
-growtime=10
-
-Hier wachsen Kaffeekirschen.
+      "find": [
+        [
+          15,
+          10,
+          3
+        ],
+        [
+          24,
+          10,
+          5
+        ],
+        [
+          107,
+          5,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "spawn": [
+        70,
+        3,
+        30,
+        30,
+        45,
+        3,
+        5
+      ],
+      "behaviour": "tree",
+      "healthchange": 150,
+      "growtime": 10
     },
     {
       "id": 195,
@@ -2422,32 +2589,42 @@ Hier wachsen Kaffeekirschen.
       "fx": 16,
       "mat": "wood",
       "health": 300,
-"find": [15,
-      10,
-      3
-"find": [24,
-      10,
-      5
-"find": [107,
-      5,
-      1
-"find": [107,
-      150,
-      3,
-      1,
-      28
-spawn=116,
-      3,
-      15,
-      30,
-      75,
-      3,
-      1
-"behaviour": "tree",
-"healthchange": 150
-growtime=10
-
-Hier wachsen Pflaumen.
+      "find": [
+        [
+          15,
+          10,
+          3
+        ],
+        [
+          24,
+          10,
+          5
+        ],
+        [
+          107,
+          5,
+          1
+        ],
+        [
+          107,
+          150,
+          3,
+          1,
+          28
+        ]
+      ],
+      "spawn": [
+        116,
+        3,
+        15,
+        30,
+        75,
+        3,
+        1
+      ],
+      "behaviour": "tree",
+      "healthchange": 150,
+      "growtime": 10
     },
     {
       "id": 20,
@@ -2460,19 +2637,32 @@ Hier wachsen Pflaumen.
       "scale": 2,
       "mat": "wood",
       "health": 300,
-"find": [24,
-      15,
-      3
-"find": [107,
-      20,
-      1
-"find": [107,
-      200,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 300
+      "find": [
+        [
+          24,
+          15,
+          3
+        ],
+        [
+          107,
+          20,
+          1
+        ],
+        [
+          107,
+          20,
+          1
+        ],
+        [
+          107,
+          200,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 300
     },
     {
       "id": 21,
@@ -2485,19 +2675,27 @@ Hier wachsen Pflaumen.
       "scale": 3.5,
       "mat": "wood",
       "health": 300,
-"find": [24,
-      15,
-      3
-"find": [107,
-      20,
-      1
-"find": [107,
-      200,
-      3,
-      1,
-      28
-"behaviour": "tree",
-"healthchange": 300
+      "find": [
+        [
+          24,
+          15,
+          3
+        ],
+        [
+          107,
+          20,
+          1
+        ],
+        [
+          107,
+          200,
+          3,
+          1,
+          28
+        ]
+      ],
+      "behaviour": "tree",
+      "healthchange": 300
     }
   ]
 }
