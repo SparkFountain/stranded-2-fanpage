@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, ViewChild, Output, 
 // tslint:disable-next-line: max-line-length
 import { Camera, CubeTexture, Engine, MeshBuilder, Scene, StandardMaterial, Texture, Vector3, AssetsManager, MeshAssetTask, Color3, Mesh, DirectionalLight, FlyCamera, HemisphericLight, ShadowGenerator, Color4 } from '@babylonjs/core';
 import '@babylonjs/loaders/OBJ';
-import { Climate, Weather } from './enums';
+import { S2Climate, S2Weather } from './enums';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -45,8 +45,8 @@ export class GameComponent implements AfterViewInit {
     sounds: any[],
     variables: Array<any>,
     map: {
-      climate: Climate;
-      weather: Weather;
+      climate: S2Climate;
+      weather: S2Weather;
     },
     time: number,
     day: number
@@ -99,8 +99,8 @@ export class GameComponent implements AfterViewInit {
       sounds: [],
       variables: [],
       map: {
-        climate: Climate.SUN_AND_RAIN,
-        weather: Weather.SUN
+        climate: S2Climate.SUN_AND_RAIN,
+        weather: S2Weather.SUN
       },
       time: 8 * this.hourFactor,
       day: 1
@@ -226,6 +226,10 @@ export class GameComponent implements AfterViewInit {
 
                 // Cast Shadow
                 this.shadowGenerator.addShadowCaster(mesh);
+
+                if (this.temp.z >= 10) {
+                  mesh.setEnabled(false);
+                }
               });
 
               this.temp.z += 10;
@@ -690,7 +694,7 @@ export class GameComponent implements AfterViewInit {
   }
   snowratio(percent: number) { }
   spawntimer(objectId: number, value?: number) { }
-  speech(file: string, cancel?: any, number?: any) { }
+  speech(file: string, cancel?: any, value?: any) { }
   split(term: string, delimiter: string, part: number): string {
     return term.split(delimiter)[part];
   }
@@ -745,7 +749,7 @@ export class GameComponent implements AfterViewInit {
   vomit(unitId: number) { }
   wateralpha(alpha: number) { }
   watertexture(textureName: string) { }
-  weather(value: Weather) {
+  weather(value: S2Weather) {
     this.game.map.weather = value;
   }
 

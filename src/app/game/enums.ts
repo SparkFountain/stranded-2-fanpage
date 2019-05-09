@@ -1,12 +1,13 @@
-export interface Behavior {
+export enum S2Behavior {
+  BUILDING_SITE,
 
 }
 
-export interface Material {
+export enum S2Material {
 
 }
 
-export enum Climate {
+export enum S2Climate {
   SUN_AND_RAIN = 0,
   SUN_AND_SNOW = 1,
   SUN = 2,
@@ -15,14 +16,14 @@ export enum Climate {
   THUNDERSTORM = 5
 }
 
-export enum Weather {
+export enum S2Weather {
   SUN = 0,
   RAIN = 1,
   SNOW = 2,
   THUNDERSTORM = 3
 }
 
-export enum Particle {
+export enum S2Particle {
   BUBBLES = 10,
   WAVE_RING = 11,
   WATER_SPLASHES = 12,
