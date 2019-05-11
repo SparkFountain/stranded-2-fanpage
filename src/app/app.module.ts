@@ -16,6 +16,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { GameComponent } from './game/game.component';
+import { EditorComponent } from './editor/editor.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { GameComponent } from './game/game.component';
     DownloadContentComponent,
     ModificationsComponent,
     TipsTutorialsComponent,
-    GameComponent
+    GameComponent,
+    EditorComponent
   ],
   imports: [
     BrowserModule,

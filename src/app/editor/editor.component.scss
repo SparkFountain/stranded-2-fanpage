@@ -1,0 +1,59 @@
+.left-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background: url('/assets/gfx/sys/woodback-dark.png');
+}
+
+.menu-headline-border-horizontal {
+    position: absolute;
+    width: calc(100% - 32px);
+    height: 16px;
+    background: url('/assets/gfx/sys/border-horizontal.png');
+    z-index: 101;
+    left: 16px;
+    right: 16px;
+  }
+  
+  .menu-content-border-vertical {
+      position: absolute;
+      width: 16px;
+      height: calc(100% - 32px);
+      background: url('/assets/gfx/sys/border-vertical.png');
+      z-index: 101;
+      top: 16px;
+  }
+  
+  .menu-corner {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: url('/assets/gfx/sys/border-corner.png');
+      z-index: 101;
+  }
+
+  .ui-top {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    padding-top: 23px;
+    width: 300px;
+    height: 70px;
+    box-sizing: border-box;
+  }
+  
+  .top {
+    top: 0;
+  }
+  .bottom {
+    bottom: 0;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+  

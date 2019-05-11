@@ -1,4 +1,4 @@
-<canvas #gameCanvas touch-action="none" oncontextmenu="return false;"></canvas>
+<canvas #gameCanvas touch-action="none" oncontextmenu="return false;" *ngIf="false"></canvas>
 
 <div id="main" class="menu" *ngIf="activeMenu === 'main'">
   <div id="buttons-top">
@@ -39,3 +39,5 @@
     <app-content [tab]="'options'"></app-content>
   </div>
 </div>
+
+<app-editor *ngIf="true"></app-editor>
