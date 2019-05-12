@@ -7,6 +7,13 @@
     "tips-and-tutorials": "Tipps und Tutorials",
     "options": "Optionen"
   },
+  "editor": {
+    "terrain": "Terrain",
+    "objects": "Objekte",
+    "units": "Einheiten",
+    "items": "Items",
+    "infos": "Infos"
+  },
   "game": {
     "button": {
       "cancel": "Abbrechen",

@@ -20,6 +20,14 @@
     <button class="button-small"></button>
   </div>
 
+  <ul class="options" [ngStyle]="{'top': '64px'}">
+    <li>{{'editor.terrain' | translate}}</li>
+    <li>{{'editor.objects' | translate}}</li>
+    <li>{{'editor.units' | translate}}</li>
+    <li>{{'editor.items' | translate}}</li>
+    <li>{{'editor.infos' | translate}}</li>
+  </ul>
+
   <div class="menu-headline-border-horizontal" [ngStyle]="{'top': '200px'}"></div>
   <div class="menu-corner left" [ngStyle]="{'top': '200px'}"></div>
   <div class="menu-corner right" [ngStyle]="{'top': '200px'}"></div>
