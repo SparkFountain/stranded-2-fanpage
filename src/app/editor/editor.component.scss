@@ -17,49 +17,54 @@
     z-index: 101;
     left: 16px;
     right: 16px;
-  }
-  
-  .menu-content-border-vertical {
-      position: absolute;
-      width: 16px;
-      height: calc(100% - 32px);
-      background: url('/assets/gfx/sys/border-vertical.png');
-      z-index: 101;
-      top: 16px;
-  }
-  
-  .menu-corner {
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      background: url('/assets/gfx/sys/border-corner.png');
-      z-index: 101;
-  }
+}
 
-  .ui-top {
+.menu-content-border-vertical {
+    position: absolute;
+    width: 16px;
+    height: calc(100% - 32px);
+    background: url('/assets/gfx/sys/border-vertical.png');
+    z-index: 101;
+    top: 16px;
+}
+
+.menu-corner {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url('/assets/gfx/sys/border-corner.png');
+    z-index: 101;
+}
+
+.ui-top {
     display: flex;
     justify-content: space-evenly;
     position: absolute;
     padding-top: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 300px;
     height: 70px;
     box-sizing: border-box;
-  }
-  
-  .top {
+}
+
+.top {
     top: 0;
-  }
-  .bottom {
+}
+
+.bottom {
     bottom: 0;
-  }
-  .left {
+}
+
+.left {
     left: 0;
-  }
-  .right {
+}
+
+.right {
     right: 0;
-  }
-  
-  ul.options {
+}
+
+ul.options {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -70,6 +75,31 @@
     box-sizing: border-box;
 
     li {
-      color: $white;
+        color: $white;
     }
-  }
+}
+
+.terrain-buttons-right {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40px;
+    height: 120px;
+}
+
+.terrain-buttons-bottom {
+    position: absolute;
+    box-sizing: border-box;
+    top: 216px;
+    left: 16px;
+    width: calc(100% - 32px);
+    height: calc(100vh - 266px);
+    padding: 6px;
+
+    button {
+      margin: 5px;
+    }
+}

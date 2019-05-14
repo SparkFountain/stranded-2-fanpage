@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, ViewChild, Output, EventEmitter } from '@angular/core';
 // tslint:disable-next-line: max-line-length
-import { Camera, CubeTexture, Engine, MeshBuilder, Scene, StandardMaterial, Texture, Vector3, AssetsManager, MeshAssetTask, Color3, Mesh, DirectionalLight, FlyCamera, HemisphericLight, ShadowGenerator, Color4 } from '@babylonjs/core';
+import { Camera, CubeTexture, Engine, MeshBuilder, Scene, StandardMaterial, Texture, Vector3, AssetsManager, MeshAssetTask, Color3, Mesh, DirectionalLight, FlyCamera, HemisphericLight, ShadowGenerator, Color4, Material } from '@babylonjs/core';
 import '@babylonjs/loaders/OBJ';
 import { S2Climate, S2Weather, S2Class, S2State } from './enums';
 import { HttpClient } from '@angular/common/http';
@@ -39,6 +39,10 @@ export class GameComponent implements AfterViewInit {
   public temp: {
     z: number
   };
+
+  public debugModeEnabled: boolean;
+  public viewRange: number;
+  public goreMode: boolean;
 
   public game: {
     sounds: any[],
@@ -104,6 +108,10 @@ export class GameComponent implements AfterViewInit {
 
     this.activeMenu = 'main';
 
+    this.debugModeEnabled = false;
+    this.viewRange = 2000;  // TODO might be changed for BabylonJS
+    this.goreMode = false;
+
     this.game = {
       sounds: [],
       variables: [],
@@ -118,7 +126,7 @@ export class GameComponent implements AfterViewInit {
       day: 1,
       rainRatio: 0.3,
       snowRatio: 0.1,
-      music: new HTMLAudioElement()
+      music: new Audio()
     };
 
     this.player = {
@@ -223,7 +231,7 @@ export class GameComponent implements AfterViewInit {
 
     // Register Assets Manager
     this.assetsManager = new AssetsManager(this.scene);
-    this.loadObjects();
+    // this.loadObjects();
   }
 
   loadObjects() {
@@ -560,7 +568,24 @@ export class GameComponent implements AfterViewInit {
     return this.player.weapon;
   }
   getroll(s2Class: S2Class, id: number) { }
-  getsetting(settingName: string) { }
+  getsetting(settingName: string) {
+    switch (settingName) {
+      case 'xres': return this.canvas.nativeElement.width;
+      case 'yres': return this.canvas.nativeElement.height;
+      case 'depth': return 32;
+      case 'debug': return this.debugModeEnabled;
+      case 'viewrange': return this.viewRange;
+      case 'gore': return this.goreMode;
+      case 'commandline': return '';  // TODO
+      case 'time': return '';  // TODO
+      case 'date': return '';  // TODO
+      case 'version': return '0.0.1';  // TODO
+      default: {
+        console.error('[getsetting] Setting not found:', settingName);
+        return null;
+      }
+    }
+  }
   getstatevalue(s2Class: S2Class, id: number, state: any, value?: number) { }
   getstored(s2Class: S2Class, id: number, type?: any) { }
   getweather() {
@@ -673,7 +698,9 @@ export class GameComponent implements AfterViewInit {
   loop_id() { }
   map() { }
   mapsize() { }
-  maxhealth(s2Class: S2Class, id: number, change?: number) { }
+  maxhealth(s2Class: S2Class, id: number, change?: number) {
+
+  }
   menu() { }
   minute(): number {
     return this.game.time % 60;
@@ -877,7 +904,10 @@ export class GameComponent implements AfterViewInit {
   varexists(variableName: string) { }
   viewline(x1: number, y1: number, z1: number, x2: number, y2: number, z2: number) { }
   vomit(unitId: number) { }
-  wateralpha(alpha: number) { }
+  wateralpha(alpha: number) {
+    const material: StandardMaterial = this.ocean.material as StandardMaterial;
+    material.alpha = alpha;
+  }
   watertexture(textureName: string) { }
   weather(value: S2Weather) {
     this.game.map.weather = value;
