@@ -37,7 +37,7 @@ export class GameComponent implements AfterViewInit {
 
   // REMOVE AGAIN LATER
   public temp: {
-    z: number
+
   };
 
   public debugModeEnabled: boolean;
@@ -112,6 +112,10 @@ export class GameComponent implements AfterViewInit {
     this.debugModeEnabled = false;
     this.viewRange = 2000;  // TODO might be changed for BabylonJS
     this.goreMode = false;
+
+    this.objects = [];
+    this.units = [];
+    this.items = [];
 
     this.game = {
       sounds: [],
@@ -238,14 +242,10 @@ export class GameComponent implements AfterViewInit {
 
   loadObjects() {
     this.http.get('/assets/objects/objects.json').subscribe((groupedObjects: object) => {
-      let tempLimit: number = 10;
-
       for (const group in groupedObjects) {
         if (groupedObjects.hasOwnProperty(group)) {
-          tempLimit++;
-
           groupedObjects[group].forEach((obj: S2Object) => {
-            console.info('[OBJECT]', obj);
+            // console.info('[OBJECT]', obj);
 
             const gameObject: S2Object = new S2Object();
             gameObject.id = obj.id;
@@ -283,22 +283,15 @@ export class GameComponent implements AfterViewInit {
                 material.backFaceCulling = obj.backFaceCulling;
                 material.diffuseTexture.hasAlpha = true;
 
+                mesh.setEnabled(false);
+                mesh.visibility = 0;
+
                 // Cast Shadow
                 // TODO only activate if enabled in settings
                 // this.shadowGenerator.addShadowCaster(mesh);
-
-                if (this.temp.z >= 10) {
-                  mesh.setEnabled(false);
-                }
               });
-
-              this.temp.z += 10;
             };
           });
-
-          if (tempLimit > 10) {
-            break;
-          }
         }
       }
 
@@ -324,6 +317,8 @@ export class GameComponent implements AfterViewInit {
     skyboxMaterial.reflectionTexture.coordinatesMode = Texture.SKYBOX_MODE;
     skyboxMaterial.disableLighting = true;
     this.skyBox.material = skyboxMaterial;
+
+    // TODO move skybox if player moves
   }
 
   createTerrain() {
