@@ -4,8 +4,8 @@ import { Camera, CubeTexture, Engine, MeshBuilder, Scene, StandardMaterial, Text
 import '@babylonjs/loaders/OBJ';
 import { S2Climate, S2Weather, S2Class, S2State } from './enums';
 import { HttpClient } from '@angular/common/http';
-import { S2Object, S2Unit, S2Item, S2PlayerItem } from './interfaces';
-import { number } from 'prop-types';
+import { S2PlayerItem, S2Instance } from './interfaces';
+import { S2Object, S2Unit, S2Item } from './classes';
 
 @Component({
   selector: 'app-game',
@@ -48,9 +48,10 @@ export class GameComponent implements AfterViewInit {
     sounds: any[],
     variables: Array<any>,
     map: {
-      units: S2Unit[],
-      objects: S2Object[],
-      items: S2Item[],
+      units: S2Instance[],
+      objects: S2Instance[],
+      items: S2Instance[],
+      infos: S2Instance[],
       climate: S2Climate;
       weather: S2Weather;
     },
@@ -96,7 +97,7 @@ export class GameComponent implements AfterViewInit {
 
   @HostListener('document:keydown', ['$event'])
   public handleKeyboardEvent(event: KeyboardEvent): void {
-    console.log(`[KEY DOWN]`, event);
+    // console.log(`[KEY DOWN]`, event);
   }
 
   constructor(
@@ -119,6 +120,7 @@ export class GameComponent implements AfterViewInit {
         units: [],
         objects: [],
         items: [],
+        infos: [],
         climate: S2Climate.SUN_AND_RAIN,
         weather: S2Weather.SUN
       },
@@ -231,27 +233,59 @@ export class GameComponent implements AfterViewInit {
 
     // Register Assets Manager
     this.assetsManager = new AssetsManager(this.scene);
-    // this.loadObjects();
+    this.loadObjects();
   }
 
   loadObjects() {
-    this.http.get('/assets/objects/objects.json').subscribe((objects: any) => {
-      for (const group in objects) {
-        if (objects.hasOwnProperty(group)) {
-          objects[group].forEach((obj: any) => {
+    this.http.get('/assets/objects/objects.json').subscribe((groupedObjects: object) => {
+      let tempLimit: number = 10;
+
+      for (const group in groupedObjects) {
+        if (groupedObjects.hasOwnProperty(group)) {
+          tempLimit++;
+
+          groupedObjects[group].forEach((obj: S2Object) => {
+            console.info('[OBJECT]', obj);
+
+            const gameObject: S2Object = new S2Object();
+            gameObject.id = obj.id;
+            gameObject.icon = null; // TODO load image
+            gameObject.model = null;  // TODO
+            gameObject.health = obj.health;
+            gameObject.behaviour = null;  // TODO
+            gameObject.col = null;  // TODO
+            gameObject.mat = null;  // TODO
+            gameObject.maxWeight = obj.maxWeight || 25000;
+            gameObject.swaySpeed = obj.swaySpeed || 0;
+            gameObject.swayPower = obj.swayPower || 0;
+            gameObject.scale = obj.scale || {
+              x: 1,
+              y: 1,
+              z: 1
+            };
+            /* r ?: number;
+            g ?: number;
+            b ?: number;
+            backFaceCulling ?: boolean;
+            autofade ?: number;
+            alpha ?: number;
+            shine ?: number; */
+            this.objects.push(gameObject);
+
             const meshTask = this.assetsManager.addMeshTask(`Object #${obj.id}`, '', '/assets/objects/', obj.model);
             meshTask.onSuccess = (task: MeshAssetTask) => {
               console.info('[LOADED MESH]', task);
 
               task.loadedMeshes.forEach((mesh: Mesh) => {
-                mesh.position = new Vector3(0, 0, this.temp.z);
-                mesh.scaling = new Vector3(0.25, 0.25, 0.25);
+                mesh.scaling = new Vector3(gameObject.scale.x, gameObject.scale.y, gameObject.scale.z);
+
                 const material: StandardMaterial = mesh.material as StandardMaterial;
-                material.backFaceCulling = false;
+                material.backFaceCulling = obj.backFaceCulling;
                 material.diffuseTexture.hasAlpha = true;
 
                 // Cast Shadow
-                this.shadowGenerator.addShadowCaster(mesh);
+                // TODO only activate if enabled in settings
+                // this.shadowGenerator.addShadowCaster(mesh);
 
                 if (this.temp.z >= 10) {
                   mesh.setEnabled(false);
@@ -261,6 +295,10 @@ export class GameComponent implements AfterViewInit {
               this.temp.z += 10;
             };
           });
+
+          if (tempLimit > 10) {
+            break;
+          }
         }
       }
 
@@ -379,7 +417,8 @@ export class GameComponent implements AfterViewInit {
   ai_typesignal(aiSignal: any, type: any, radius?: number, s2Class?: S2Class, id?: number) { }
   alpha(value: number, s2Class: S2Class, id: number): void {
     const e = this.getInstance(s2Class, id);
-    e.alpha = value;
+    const material: StandardMaterial = e.mesh.material as StandardMaterial;
+    material.alpha = value;
   }
   alteritem(amount: number, type: number, newAmount?: number, newType?: number): void {
     // TODO this is a tricky command...
@@ -387,7 +426,7 @@ export class GameComponent implements AfterViewInit {
     if (item.amount >= amount) { }
   }
   alterobject(objectId: number, objectType: any): void {
-    const o: S2Object = this.getInstance(S2Class.OBJECT, objectId) as S2Object;
+    const o: S2Instance = this.getInstance(S2Class.OBJECT, objectId);
     o.id = objectType;
   }
   ambientsfx(fileName: string) { }
@@ -413,10 +452,8 @@ export class GameComponent implements AfterViewInit {
   }
   closemenu() { }
   color(red: number, green: number, blue: number, s2Class?: S2Class, id?: number) {
-    const instance: (S2Object | S2Unit | S2Item) = this.getInstance(s2Class, id);
-    instance.r = red;
-    instance.g = green;
-    instance.b = blue;
+    const instance: S2Instance = this.getInstance(s2Class, id);
+    // TODO color mesh
   }
   compare_behaviour(s2Class: S2Class, id: number, behaviour: any) { }
   compare_material(s2Class: S2Class, id: number, material: any) { }
@@ -441,17 +478,17 @@ export class GameComponent implements AfterViewInit {
   count_state(state: S2State) {
     let result: number = 0;
 
-    this.game.map.objects.forEach((o: S2Object) => {
+    this.game.map.objects.forEach((o: S2Instance) => {
       if (o.states.indexOf(state) > -1) {
         result++;
       }
     });
-    this.game.map.units.forEach((u: S2Unit) => {
+    this.game.map.units.forEach((u: S2Instance) => {
       if (u.states.indexOf(state) > -1) {
         result++;
       }
     });
-    this.game.map.items.forEach((i: S2Item) => {
+    this.game.map.items.forEach((i: S2Instance) => {
       if (i.states.indexOf(state) > -1) {
         result++;
       }
@@ -676,7 +713,7 @@ export class GameComponent implements AfterViewInit {
     this.player.jump.time = time;
   }
   kill(id: number) {
-    const unit: S2Unit = this.game.map.units.find((currentUnit: S2Unit) => unit.id === id);
+    const unit: S2Instance = this.game.map.units.find((currentUnit: S2Instance) => unit.id === id);
     unit.health = 0;
   }
   lastbuildingsite() { }
@@ -925,9 +962,17 @@ export class GameComponent implements AfterViewInit {
       }
     }
   }
-  getInstance(s2Class: S2Class, id: number): S2Object | S2Unit | S2Item {
-    const classProperty: string = this.getS2ClassProperty(s2Class);
-    return this.game[classProperty].find((currentElement: S2Object | S2Unit | S2Item) => currentElement.id === id);
+  getInstance(s2Class: S2Class, id: number): S2Instance {
+    switch (s2Class) {
+      case S2Class.OBJECT: return this.game.map.objects.find((o: S2Instance) => o.id === id);
+      case S2Class.UNIT: return this.game.map.units.find((u: S2Instance) => u.id === id);
+      case S2Class.ITEM: return this.game.map.items.find((i: S2Instance) => i.id === id);
+      case S2Class.INFO: return this.game.map.infos.find((i: S2Instance) => i.id === id);
+      default: {
+        console.error('[getInstance] Invalid S2Class:', s2Class);
+        return null;
+      }
+    }
   }
 
 
