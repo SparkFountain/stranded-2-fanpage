@@ -144,3 +144,11 @@ export enum S2State {
   SPEED_MODIFICATION = 54,
   AI_STICK = 60
 }
+
+export enum S2Collision {
+  NONE = 0,
+  NEAR_COLLISION = 1,
+  SELECTABLE = 2,
+  FAR_COLLISION = 3,
+  CLIMB = 4
+}

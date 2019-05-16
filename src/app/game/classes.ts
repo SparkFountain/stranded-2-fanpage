@@ -1,4 +1,4 @@
-import { S2Class, S2Behavior, S2Material, S2State } from './enums';
+import { S2Class, S2Behavior, S2Material, S2State, S2Collision } from './enums';
 import { S2Instance } from './interfaces';
 import { InstancedMesh } from '@babylonjs/core';
 
@@ -50,27 +50,44 @@ export class S2Item {
 
 export class S2Object {
   id: number;
+  name: string;
   icon: string;
   model: string;
-  health: number;
-  behaviour?: S2Behavior;
-  col?: number;
-  mat?: string;
-  maxWeight?: number;
-  swaySpeed?: number;
-  swayPower?: number;
   scale?: {
-    x?: number;
-    y?: number;
-    z?: number;
+    x: number;
+    y: number;
+    z: number;
   };
-  r?: number;
-  g?: number;
-  b?: number;
-  backFaceCulling?: boolean;
+  color?: number[];
   autofade?: number;
   alpha?: number;
   shine?: number;
+  detailTexture?: any;  // TODO
+  collision?: S2Collision;
+  material?: string;
+  health: number;
+  healthChange?: number;
+  sway?: {
+    speed?: number;
+    power?: number;
+  };
+  maxWeight?: number;
+  state?: {
+    x: number;
+    y: number;
+    z: number;
+  };
+  behaviour?: S2Behavior;
+  findRatio?: number;
+  find?: {
+    item: number;
+    probability?: number;
+    max?: number;
+    min?: number;
+    requiredItem?: number;
+  }[];
+  growTime?: number;
+  backFaceCulling?: boolean;
 }
 
 export class S2Unit {

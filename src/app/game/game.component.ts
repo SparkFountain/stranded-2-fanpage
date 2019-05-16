@@ -283,8 +283,8 @@ export class GameComponent implements AfterViewInit {
                 material.backFaceCulling = obj.backFaceCulling;
                 material.diffuseTexture.hasAlpha = true;
 
-                mesh.setEnabled(false);
-                mesh.visibility = 0;
+                // mesh.setEnabled(false);
+                // mesh.visibility = 0;
 
                 // Cast Shadow
                 // TODO only activate if enabled in settings
@@ -305,7 +305,6 @@ export class GameComponent implements AfterViewInit {
   }
 
   mainLoop() {
-    // Render Scene
     this.scene.render();
   }
 
@@ -1001,5 +1000,13 @@ export class GameComponent implements AfterViewInit {
   saveOptions() {
     // todo
     this.activeMenu = 'main';
+  }
+
+  loadGameMap() {
+
+  }
+
+  saveGameMap() {
+
   }
 }
