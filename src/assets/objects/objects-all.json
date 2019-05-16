@@ -2,7 +2,6 @@
   "building": [
     {
       "id": 150,
-      "name": "Baustelle",
       "icon": "buildplace.png",
       "model": "buildplace.obj",
       "behaviour": "buildingsite",
@@ -13,7 +12,6 @@
     },
     {
       "id": 151,
-      "name": "Baustelle",
       "icon": "buildplace_water.png",
       "model": "buildplace_water.obj",
       "behaviour": "buildingsite_water",
@@ -28,7 +26,6 @@
     },
     {
       "id": 160,
-      "name": "Bambushütte",
       "icon": "bamboohut01.png",
       "model": "bamboohut01.obj",
       "backfaceCulling": false,
@@ -38,7 +35,6 @@
     },
     {
       "id": 161,
-      "name": "Bambushütte",
       "icon": "bamboohut02.png",
       "model": "bamboohut02.obj",
       "health": 200,
@@ -47,7 +43,6 @@
     },
     {
       "id": 162,
-      "name": "Bambushütte",
       "icon": "bamboohut03.png",
       "model": "bamboohut03.obj",
       "health": 200,
@@ -56,7 +51,6 @@
     },
     {
       "id": 163,
-      "name": "Zaun",
       "icon": "fence01.png",
       "model": "fence01.obj",
       "health": 150,
@@ -65,7 +59,6 @@
     },
     {
       "id": 164,
-      "name": "Zaun",
       "icon": "fence02.png",
       "model": "fence02.obj",
       "health": 150,
@@ -74,7 +67,6 @@
     },
     {
       "id": 165,
-      "name": "Unterstand",
       "icon": "shelter01.png",
       "model": "shelter01.obj",
       "backfaceCulling": false,
@@ -84,7 +76,6 @@
     },
     {
       "id": 166,
-      "name": "Fackel",
       "icon": "torch01.png",
       "model": "torch01.obj",
       "scale": {
@@ -103,7 +94,6 @@
     },
     {
       "id": 167,
-      "name": "Fackel",
       "icon": "torch02.png",
       "model": "torch02.obj",
       "scale": {
@@ -123,7 +113,6 @@
     },
     {
       "id": 168,
-      "name": "Bretterwand",
       "icon": "boardwall.png",
       "model": "boardwall.obj",
       "scale": {
@@ -137,7 +126,6 @@
     },
     {
       "id": 169,
-      "name": "Bretterwand",
       "icon": "boardwallpart.png",
       "model": "boardwallpart.obj",
       "scale": {
@@ -151,7 +139,6 @@
     },
     {
       "id": 170,
-      "name": "Bretter",
       "icon": "boards.png",
       "model": "boards.obj",
       "scale": {
@@ -164,7 +151,6 @@
     },
     {
       "id": 171,
-      "name": "Lagerfeuer",
       "icon": "fire01.png",
       "model": "fire01.obj",
       "scale": {
@@ -183,7 +169,6 @@
     },
     {
       "id": 172,
-      "name": "Lagerfeuer",
       "icon": "fire02.png",
       "model": "fire02.obj",
       "scale": {
@@ -202,7 +187,6 @@
     },
     {
       "id": 173,
-      "name": "Schild",
       "icon": "sign.png",
       "model": "sign.obj",
       "scale": {
@@ -216,7 +200,6 @@
     },
     {
       "id": 174,
-      "name": "Wegweiser",
       "icon": "guidepost01.png",
       "model": "guidepost01.obj",
       "scale": {
@@ -229,7 +212,6 @@
     },
     {
       "id": 175,
-      "name": "Wegweiser",
       "icon": "guidepost02.png",
       "model": "guidepost02.obj",
       "scale": {
@@ -242,7 +224,6 @@
     },
     {
       "id": 178,
-      "name": "Steg",
       "icon": "jetty01.png",
       "model": "jetty01.obj",
       "scale": {
@@ -257,7 +238,6 @@
     },
     {
       "id": 179,
-      "name": "Steg",
       "icon": "jetty02.png",
       "model": "jetty02.obj",
       "scale": {
@@ -272,7 +252,6 @@
     },
     {
       "id": 180,
-      "name": "Steg",
       "icon": "jetty03.png",
       "model": "jetty03.obj",
       "scale": {
@@ -287,7 +266,6 @@
     },
     {
       "id": 181,
-      "name": "Lager",
       "icon": "storage.png",
       "model": "storage.obj",
       "health": 400,
@@ -301,7 +279,6 @@
     },
     {
       "id": 182,
-      "name": "groﬂer Zaun",
       "icon": "fence03.png",
       "model": "fence03.obj",
       "health": 500,
@@ -310,7 +287,6 @@
     },
     {
       "id": 183,
-      "name": "Metall Zaun",
       "icon": "fence04.png",
       "model": "fence04.obj",
       "scale": {
@@ -324,7 +300,6 @@
     },
     {
       "id": 184,
-      "name": "Zelt",
       "icon": "tent.png",
       "model": "tent.obj",
       "scale": {
@@ -338,7 +313,6 @@
     },
     {
       "id": 187,
-      "name": "Wasserleitung",
       "icon": "waterpipe_empty.png",
       "model": "waterpipe_empty.obj",
       "scale": {
@@ -352,7 +326,6 @@
     },
     {
       "id": 188,
-      "name": "Wasserleitung",
       "icon": "waterpipe_full.png",
       "model": "waterpipe_full.obj",
       "scale": {
@@ -366,7 +339,6 @@
     },
     {
       "id": 189,
-      "name": "Brunnen",
       "icon": "well.png",
       "model": "well.obj",
       "scale": {
@@ -380,7 +352,6 @@
     },
     {
       "id": 190,
-      "name": "Baumhaus",
       "icon": "treehouse.png",
       "model": "treehouse.obj",
       "scale": {
@@ -394,7 +365,6 @@
     },
     {
       "id": 191,
-      "name": "Reuse",
       "icon": "bownet.png",
       "model": "bownet.obj",
       "scale": {
@@ -413,7 +383,6 @@
     },
     {
       "id": 192,
-      "name": "Zielscheibe",
       "icon": "target.png",
       "model": "target.obj",
       "detailtex": 1,
@@ -422,7 +391,6 @@
     },
     {
       "id": 193,
-      "name": "Bambusturm",
       "icon": "bambootower.png",
       "model": "bambootower.obj",
       "health": 50000,
@@ -436,7 +404,6 @@
     },
     {
       "id": 194,
-      "name": "Haus",
       "icon": "house.png",
       "model": "house.obj",
       "health": 100000,
@@ -451,7 +418,6 @@
     },
     {
       "id": 200,
-      "name": "Hochsitz",
       "icon": "stance.png",
       "model": "stance.obj",
       "health": 500,
@@ -461,7 +427,6 @@
     },
     {
       "id": 201,
-      "name": "Kiwizucht",
       "icon": "kiwibreeding.png",
       "model": "kiwibreeding.obj",
       "health": 100,
@@ -470,7 +435,6 @@
     },
     {
       "id": 203,
-      "name": "Abdeckung",
       "icon": "covering.png",
       "model": "covering.obj",
       "health": 100,
@@ -479,7 +443,6 @@
     },
     {
       "id": 205,
-      "name": "Falle",
       "icon": "trap.png",
       "model": "trap.obj",
       "health": 300,
@@ -493,7 +456,6 @@
     },
     {
       "id": 206,
-      "name": "Hütte",
       "icon": "hut.png",
       "model": "hut.obj",
       "health": 5000,
@@ -507,7 +469,6 @@
     },
     {
       "id": 207,
-      "name": "Kräuterbeet",
       "icon": "herbalgarden.png",
       "model": "herbalgarden.obj",
       "health": 1000,
@@ -521,7 +482,6 @@
     },
     {
       "id": 208,
-      "name": "kaputter Brunnen",
       "icon": "broken_well.png",
       "model": "broken_well.obj",
       "scale": {
@@ -534,7 +494,6 @@
     },
     {
       "id": 209,
-      "name": "kaputte Reuse",
       "icon": "broken_bownet.png",
       "model": "broken_bownet.obj",
       "scale": {
@@ -553,7 +512,6 @@
     },
     {
       "id": 211,
-      "name": "Tisch",
       "icon": "table.png",
       "model": "table.obj",
       "health": 300,
@@ -562,7 +520,6 @@
     },
     {
       "id": 212,
-      "name": "Schreibtisch",
       "icon": "desk.png",
       "model": "desk.obj",
       "health": 300,
@@ -571,7 +528,6 @@
     },
     {
       "id": 214,
-      "name": "groﬂes Lager",
       "icon": "bigstorage.png",
       "model": "bigstorage.obj",
       "health": 700,
@@ -585,7 +541,6 @@
     },
     {
       "id": 215,
-      "name": "Garten",
       "icon": "butterflygarden.png",
       "model": "butterflygarden.obj",
       "health": 1000,
@@ -599,7 +554,6 @@
     },
     {
       "id": 216,
-      "name": "Hängematte",
       "icon": "hammock.png",
       "model": "hammock.obj",
       "scale": {
@@ -614,7 +568,6 @@
     },
     {
       "id": 217,
-      "name": "Affen-Schule",
       "icon": "monkeyschool.png",
       "model": "monkeyschool.obj",
       "scale": {
@@ -627,7 +580,6 @@
     },
     {
       "id": 218,
-      "name": "Palisadenwall",
       "icon": "palisade.png",
       "model": "palisade.obj",
       "scale": {
@@ -641,7 +593,6 @@
     },
     {
       "id": 219,
-      "name": "Tor",
       "icon": "gate.png",
       "model": "gate.obj",
       "scale": {
@@ -655,7 +606,6 @@
     },
     {
       "id": 220,
-      "name": "Holzlager",
       "icon": "woodstorage.png",
       "model": "woodstorage.obj",
       "backfaceCulling": false,
@@ -665,7 +615,6 @@
     },
     {
       "id": 222,
-      "name": "Steinlager",
       "icon": "stonestorage.png",
       "model": "stonestorage.obj",
       "backfaceCulling": false,
@@ -675,7 +624,6 @@
     },
     {
       "id": 223,
-      "name": "Abwehrturm",
       "icon": "defensetower.png",
       "model": "defensetower.obj",
       "scale": {
@@ -695,7 +643,6 @@
   "bush": [
     {
       "id": 30,
-      "name": "kahler Busch",
       "icon": "baldbush01.png",
       "model": "baldbush01.obj",
       "backfaceCulling": false,
@@ -714,7 +661,6 @@
     },
     {
       "id": 31,
-      "name": "Busch",
       "icon": "bush01.png",
       "model": "bush01.obj",
       "backfaceCulling": false,
@@ -737,7 +683,6 @@
     },
     {
       "id": 32,
-      "name": "Busch",
       "icon": "bush02.png",
       "model": "bush02.obj",
       "backfaceCulling": false,
@@ -760,7 +705,6 @@
     },
     {
       "id": 33,
-      "name": "Busch",
       "icon": "bush03.png",
       "model": "bush03.obj",
       "backfaceCulling": false,
@@ -783,7 +727,6 @@
     },
     {
       "id": 34,
-      "name": "Busch",
       "icon": "bush04.png",
       "model": "bush04.obj",
       "backfaceCulling": false,
@@ -811,7 +754,6 @@
     },
     {
       "id": 35,
-      "name": "Blaubluete",
       "icon": "bush05.png",
       "model": "bush05.obj",
       "backfaceCulling": false,
@@ -835,7 +777,6 @@
     },
     {
       "id": 36,
-      "name": "Busch",
       "icon": "bush06.png",
       "model": "bush06.obj",
       "backfaceCulling": false,
@@ -854,7 +795,6 @@
     },
     {
       "id": 37,
-      "name": "Busch",
       "icon": "bush07.png",
       "model": "bush07.obj",
       "backfaceCulling": false,
@@ -873,7 +813,6 @@
     },
     {
       "id": 38,
-      "name": "Busch",
       "icon": "bush08.png",
       "model": "bush08.obj",
       "backfaceCulling": false,
@@ -892,7 +831,6 @@
     },
     {
       "id": 39,
-      "name": "Busch",
       "icon": "bush09.png",
       "model": "bush09.obj",
       "backfaceCulling": false,
@@ -911,7 +849,6 @@
     },
     {
       "id": 40,
-      "name": "Busch",
       "icon": "bush10.png",
       "model": "bush10.obj",
       "backfaceCulling": false,
@@ -935,7 +872,6 @@
     },
     {
       "id": 41,
-      "name": "Busch",
       "icon": "bush11.png",
       "model": "bush11.obj",
       "backfaceCulling": false,
@@ -964,7 +900,6 @@
     },
     {
       "id": 42,
-      "name": "Busch",
       "icon": "bush12.png",
       "model": "bush12.obj",
       "backfaceCulling": false,
@@ -988,7 +923,6 @@
     },
     {
       "id": 43,
-      "name": "Schilf",
       "icon": "reed.png",
       "model": "reed.obj",
       "backfaceCulling": false,
@@ -1007,7 +941,6 @@
     },
     {
       "id": 44,
-      "name": "Weinrebe",
       "icon": "grapevine.png",
       "model": "grapevine.obj",
       "backfaceCulling": false,
@@ -1033,7 +966,6 @@
     },
     {
       "id": 45,
-      "name": "Busch",
       "icon": "bush13.png",
       "model": "bush13.obj",
       "backfaceCulling": false,
@@ -1056,7 +988,6 @@
     },
     {
       "id": 46,
-      "name": "Beerenbusch",
       "icon": "berrybush.png",
       "model": "bush12.obj",
       "backfaceCulling": false,
@@ -1089,7 +1020,6 @@
     },
     {
       "id": 47,
-      "name": "Baumwollpflanze",
       "icon": "cottonplant.png",
       "model": "cottonplant.obj",
       "backfaceCulling": false,
@@ -1117,7 +1047,6 @@
     },
     {
       "id": 48,
-      "name": "Seetang",
       "icon": "seaweed.png",
       "model": "seaweed.obj",
       "backfaceCulling": false,
@@ -1147,7 +1076,6 @@
     },
     {
       "id": 49,
-      "name": "Luftalge",
       "icon": "airweed.png",
       "model": "seaweed.obj",
       "backfaceCulling": false,
@@ -1174,7 +1102,6 @@
     },
     {
       "id": 185,
-      "name": "Busch",
       "icon": "bush14.png",
       "model": "bush14.obj",
       "scale": {
@@ -1202,7 +1129,6 @@
     },
     {
       "id": 186,
-      "name": "Knallpilz",
       "icon": "bangfungus.png",
       "model": "bangfungus.obj",
       "scale": {
@@ -1224,7 +1150,6 @@
   "flower": [
     {
       "id": 100,
-      "name": "Blumen",
       "icon": "flowers01.png",
       "model": "flowers01.obj",
       "backfaceCulling": false,
@@ -1239,7 +1164,6 @@
     },
     {
       "id": 101,
-      "name": "Blumen",
       "icon": "flowers02.png",
       "model": "flowers02.obj",
       "backfaceCulling": false,
@@ -1254,7 +1178,6 @@
     },
     {
       "id": 102,
-      "name": "Blumen",
       "icon": "flowers03.png",
       "model": "flowers03.obj",
       "backfaceCulling": false,
@@ -1269,7 +1192,6 @@
     },
     {
       "id": 103,
-      "name": "Blumen",
       "icon": "flowers04.png",
       "model": "flowers04.obj",
       "backfaceCulling": false,
@@ -1284,7 +1206,6 @@
     },
     {
       "id": 104,
-      "name": "Blumen",
       "icon": "flowers05.png",
       "model": "flowers05.obj",
       "backfaceCulling": false,
@@ -1299,7 +1220,6 @@
     },
     {
       "id": 105,
-      "name": "Blumen",
       "icon": "flowers06.png",
       "model": "flowers06.obj",
       "backfaceCulling": false,
@@ -1314,7 +1234,6 @@
     },
     {
       "id": 106,
-      "name": "Blumen",
       "icon": "flowers07.png",
       "model": "flowers07.obj",
       "backfaceCulling": false,
@@ -1329,7 +1248,6 @@
     },
     {
       "id": 107,
-      "name": "Blumen",
       "icon": "flowers08.png",
       "model": "flowers08.obj",
       "backfaceCulling": false,
@@ -1344,7 +1262,6 @@
     },
     {
       "id": 108,
-      "name": "Blumen",
       "icon": "flowers09.png",
       "model": "flowers09.obj",
       "backfaceCulling": false,
@@ -1359,7 +1276,6 @@
     },
     {
       "id": 109,
-      "name": "Blumen",
       "icon": "flowers10.png",
       "model": "flowers10.obj",
       "backfaceCulling": false,
@@ -1374,7 +1290,6 @@
     },
     {
       "id": 110,
-      "name": "Giftblume",
       "icon": "poisonflower.png",
       "model": "poisonflower.obj",
       "backfaceCulling": false,
@@ -1397,7 +1312,6 @@
   "grass": [
     {
       "id": 50,
-      "name": "Gras",
       "icon": "gras01.png",
       "model": "gras01.obj",
       "alpha": 0.4,
@@ -1407,7 +1321,6 @@
     },
     {
       "id": 51,
-      "name": "Gras",
       "icon": "gras02.png",
       "model": "gras02.obj",
       "alpha": 0.4,
@@ -1417,7 +1330,6 @@
     },
     {
       "id": 52,
-      "name": "Gras",
       "icon": "gras02.png",
       "model": "gras03.obj",
       "alpha": 0.4,
@@ -1427,7 +1339,6 @@
     },
     {
       "id": 53,
-      "name": "Wiese",
       "icon": "meadow01.png",
       "model": "meadow01.obj",
       "alpha": 0.4,
@@ -1439,7 +1350,6 @@
   "palm": [
     {
       "id": 1,
-      "name": "Palme",
       "icon": "palm01.png",
       "model": "palm01.obj",
       "sway": {
@@ -1466,7 +1376,6 @@
     },
     {
       "id": 2,
-      "name": "Palme",
       "icon": "palm02.png",
       "model": "palm02.obj",
       "sway": {
@@ -1493,7 +1402,6 @@
     },
     {
       "id": 3,
-      "name": "Palme",
       "icon": "palm03.png",
       "model": "palm03.obj",
       "sway": {
@@ -1520,7 +1428,6 @@
     },
     {
       "id": 4,
-      "name": "Palme",
       "icon": "palm04.png",
       "model": "palm04.obj",
       "sway": {
@@ -1547,7 +1454,6 @@
     },
     {
       "id": 5,
-      "name": "Palme",
       "icon": "palm05.png",
       "model": "palm05.obj",
       "sway": {
@@ -1574,7 +1480,6 @@
     },
     {
       "id": 6,
-      "name": "Palme",
       "icon": "palm06.png",
       "model": "palm06.obj",
       "sway": {
@@ -1594,7 +1499,6 @@
     },
     {
       "id": 7,
-      "name": "grosse Palme",
       "icon": "hugepalm01.png",
       "model": "hugepalm01.obj",
       "sway": {
@@ -1609,7 +1513,6 @@
     },
     {
       "id": 8,
-      "name": "Bananenpalme",
       "icon": "bananapalm.png",
       "model": "bananapalm.obj",
       "backfaceCulling": false,
@@ -1645,7 +1548,6 @@
     },
     {
       "id": 9,
-      "name": "Kokosnusspalme",
       "icon": "coconutpalm.png",
       "model": "coconutpalm.obj",
       "backfaceCulling": false,
@@ -1678,7 +1580,6 @@
     },
     {
       "id": 213,
-      "name": "Lianenpalme",
       "icon": "lianapalm.png",
       "model": "lianapalm.obj",
       "sway": {
@@ -1712,7 +1613,6 @@
   "stone": [
     {
       "id": 60,
-      "name": "Stein",
       "icon": "stone01.png",
       "model": "stone01.obj",
       "scale": {
@@ -1726,7 +1626,6 @@
     },
     {
       "id": 61,
-      "name": "Stein",
       "icon": "stone02.png",
       "model": "stone02.obj",
       "scale": {
@@ -1740,7 +1639,6 @@
     },
     {
       "id": 62,
-      "name": "Stein",
       "icon": "stone03.png",
       "model": "stone03.obj",
       "scale": {
@@ -1754,7 +1652,6 @@
     },
     {
       "id": 63,
-      "name": "Felsen",
       "icon": "rock01.png",
       "model": "rock01.obj",
       "scale": {
@@ -1787,7 +1684,6 @@
     },
     {
       "id": 64,
-      "name": "Felsen",
       "icon": "rock02.png",
       "model": "rock02.obj",
       "detailtex": 1,
@@ -1815,7 +1711,6 @@
     },
     {
       "id": 65,
-      "name": "Felsen",
       "icon": "rock03.png",
       "model": "rock03.obj",
       "scale": {
@@ -1848,7 +1743,6 @@
     },
     {
       "id": 66,
-      "name": "Stein",
       "icon": "stone05.png",
       "model": "stone05.obj",
       "scale": {
@@ -1861,7 +1755,6 @@
     },
     {
       "id": 67,
-      "name": "Felsen",
       "icon": "rock04.png",
       "model": "rock04.obj",
       "scale": {
@@ -1894,7 +1787,6 @@
     },
     {
       "id": 68,
-      "name": "Felsen",
       "icon": "rock05.png",
       "model": "rock05.obj",
       "scale": {
@@ -1927,7 +1819,6 @@
     },
     {
       "id": 69,
-      "name": "Felsen",
       "icon": "rock06.png",
       "model": "rock06.obj",
       "detailtex": 1,
@@ -1955,7 +1846,6 @@
     },
     {
       "id": 70,
-      "name": "Metall-Felsen",
       "icon": "metalrock.png",
       "model": "metalrock.obj",
       "material": "stone",
@@ -1987,7 +1877,6 @@
     },
     {
       "id": 71,
-      "name": "Gold-Felsen",
       "icon": "goldrock.png",
       "model": "goldrock.obj",
       "material": "stone",
@@ -2014,7 +1903,6 @@
     },
     {
       "id": 72,
-      "name": "Kristall-Felsen",
       "icon": "crystalrock.png",
       "model": "crystalrock.obj",
       "material": "stone",
@@ -2041,7 +1929,6 @@
     },
     {
       "id": 73,
-      "name": "Wasser-Felsen",
       "icon": "waterrock.png",
       "model": "waterrock.obj",
       "material": "stone",
@@ -2077,7 +1964,6 @@
     },
     {
       "id": 74,
-      "name": "Wasser-Felsen (leer)",
       "icon": "waterrock0.png",
       "model": "waterrock0.obj",
       "material": "stone",
@@ -2109,7 +1995,6 @@
     },
     {
       "id": 75,
-      "name": "Quelle",
       "icon": "fountain.png",
       "model": "fountain.obj",
       "material": "stone",
@@ -2142,7 +2027,6 @@
     },
     {
       "id": 140,
-      "name": "Ruinen",
       "icon": "ruins01.png",
       "model": "ruins01.obj",
       "detailtex": 1,
@@ -2156,7 +2040,6 @@
     },
     {
       "id": 141,
-      "name": "Ruinen",
       "icon": "ruins02.png",
       "model": "ruins02.obj",
       "detailtex": 1,
@@ -2170,7 +2053,6 @@
     },
     {
       "id": 142,
-      "name": "Ruinen",
       "icon": "ruins03.png",
       "model": "ruins03.obj",
       "detailtex": 1,
@@ -2184,7 +2066,6 @@
     },
     {
       "id": 143,
-      "name": "Ruinen",
       "icon": "ruins04.png",
       "model": "ruins04.obj",
       "detailtex": 1,
@@ -2198,7 +2079,6 @@
     },
     {
       "id": 144,
-      "name": "Ruinen",
       "icon": "ruins05.png",
       "model": "ruins05.obj",
       "detailtex": 1,
@@ -2212,7 +2092,6 @@
     },
     {
       "id": 145,
-      "name": "Ruinen",
       "icon": "ruins06.png",
       "model": "ruins06.obj",
       "detailtex": 1,
@@ -2226,7 +2105,6 @@
     },
     {
       "id": 146,
-      "name": "Ruinen",
       "icon": "ruins07.png",
       "model": "ruins07.obj",
       "detailtex": 1,
@@ -2240,7 +2118,6 @@
     },
     {
       "id": 147,
-      "name": "Ruinen",
       "icon": "ruins08.png",
       "model": "ruins08.obj",
       "detailtex": 1,
@@ -2254,7 +2131,6 @@
     },
     {
       "id": 148,
-      "name": "Hoehle",
       "icon": "cave.png",
       "model": "cave.obj",
       "detailtex": 1,
@@ -2271,7 +2147,6 @@
   "stuff": [
     {
       "id": 120,
-      "name": "Bambus",
       "icon": "bamboo.png",
       "model": "bamboo.obj",
       "backfaceCulling": false,
@@ -2287,7 +2162,6 @@
     },
     {
       "id": 121,
-      "name": "Getreide",
       "icon": "grain.png",
       "model": "grain.obj",
       "behaviour": "plague_target",
@@ -2308,7 +2182,6 @@
     },
     {
       "id": 122,
-      "name": "Marmorzylinder",
       "icon": "marble01.png",
       "model": "marble01.obj",
       "scale": {
@@ -2321,7 +2194,6 @@
     },
     {
       "id": 123,
-      "name": "Marmorsäule",
       "icon": "marble02.png",
       "model": "marble02.obj",
       "scale": {
@@ -2334,7 +2206,6 @@
     },
     {
       "id": 124,
-      "name": "Marmorplatte",
       "icon": "marble03.png",
       "model": "marble03.obj",
       "scale": {
@@ -2347,7 +2218,6 @@
     },
     {
       "id": 125,
-      "name": "Marmor Boden",
       "icon": "marble04.png",
       "model": "marble04.obj",
       "scale": {
@@ -2360,7 +2230,6 @@
     },
     {
       "id": 130,
-      "name": "Wurzeln",
       "icon": "roots01.png",
       "model": "roots01.obj",
       "backfaceCulling": false,
@@ -2375,7 +2244,6 @@
     },
     {
       "id": 131,
-      "name": "Wurzeln",
       "icon": "roots02.png",
       "model": "roots02.obj",
       "backfaceCulling": false,
@@ -2390,7 +2258,6 @@
     },
     {
       "id": 132,
-      "name": "Baumstumpf",
       "icon": "stump01.png",
       "model": "stump01.obj",
       "scale": {
@@ -2404,7 +2271,6 @@
     },
     {
       "id": 133,
-      "name": "Palmenstumpf",
       "icon": "stump02.png",
       "model": "stump02.obj",
       "health": 100,
@@ -2413,7 +2279,6 @@
     },
     {
       "id": 134,
-      "name": "Hemp",
       "icon": "hemp.png",
       "model": "hemp.obj",
       "collision": 2,
@@ -2424,7 +2289,6 @@
     },
     {
       "id": 135,
-      "name": "Langer Baumstumpf",
       "icon": "stump03.png",
       "model": "stump03.obj",
       "health": 50,
@@ -2433,7 +2297,6 @@
     },
     {
       "id": 136,
-      "name": "Kiste",
       "icon": "crate01.png",
       "model": "crate01.obj",
       "health": 15,
@@ -2447,7 +2310,6 @@
     },
     {
       "id": 137,
-      "name": "Fass",
       "icon": "barrel.png",
       "model": "barrel.obj",
       "health": 15,
@@ -2461,7 +2323,6 @@
     },
     {
       "id": 138,
-      "name": "Wrack",
       "icon": "wreck01.png",
       "model": "wreck01.obj",
       "health": 300,
@@ -2474,7 +2335,6 @@
     },
     {
       "id": 139,
-      "name": "Explosives Fass",
       "icon": "explosivebarrel.png",
       "model": "explosivebarrel.obj",
       "health": 5,
@@ -2491,7 +2351,6 @@
     },
     {
       "id": 196,
-      "name": "Raptornest",
       "icon": "raptornest.png",
       "model": "raptornest.obj",
       "health": 100,
@@ -2510,7 +2369,6 @@
     },
     {
       "id": 197,
-      "name": "Kiwinest",
       "icon": "kiwinest.png",
       "model": "kiwinest.obj",
       "health": 30,
@@ -2529,7 +2387,6 @@
     },
     {
       "id": 198,
-      "name": "Papageinest",
       "icon": "parrotnest.png",
       "model": "parrotnest.obj",
       "health": 50,
@@ -2548,7 +2405,6 @@
     },
     {
       "id": 199,
-      "name": "Löwenstein",
       "icon": "lionstone.png",
       "model": "lionstone.obj",
       "health": 300,
@@ -2581,7 +2437,6 @@
     },
     {
       "id": 202,
-      "name": "Moos",
       "icon": "moss.png",
       "model": "moss.obj",
       "health": 300,
@@ -2601,7 +2456,6 @@
     },
     {
       "id": 204,
-      "name": "Vogelnest",
       "icon": "birdnest.png",
       "model": "birdnest.obj",
       "health": 50,
@@ -2620,7 +2474,6 @@
     },
     {
       "id": 210,
-      "name": "Koralle",
       "icon": "coral01.png",
       "model": "coral01.obj",
       "health": 50,
@@ -2644,7 +2497,6 @@
     },
     {
       "id": 221,
-      "name": "Adlerhorst",
       "icon": "aerie.png",
       "model": "aerie.obj",
       "health": 500,
@@ -2665,7 +2517,6 @@
   "tree": [
     {
       "id": 10,
-      "name": "Baum",
       "icon": "tree01.png",
       "model": "tree01.obj",
       "sway": {
@@ -2714,7 +2565,6 @@
     },
     {
       "id": 11,
-      "name": "Baum",
       "icon": "tree02.png",
       "model": "tree02.obj",
       "sway": {
@@ -2753,7 +2603,6 @@
     },
     {
       "id": 12,
-      "name": "Baum",
       "icon": "tree03.png",
       "model": "tree03.obj",
       "sway": {
@@ -2792,7 +2641,6 @@
     },
     {
       "id": 13,
-      "name": "Baum",
       "icon": "tree04.png",
       "model": "tree04.obj",
       "sway": {
@@ -2841,7 +2689,6 @@
     },
     {
       "id": 14,
-      "name": "Baum",
       "icon": "tree05.png",
       "model": "tree05.obj",
       "sway": {
@@ -2890,7 +2737,6 @@
     },
     {
       "id": 15,
-      "name": "Baum",
       "icon": "tree06.png",
       "model": "tree06.obj",
       "sway": {
@@ -2934,7 +2780,6 @@
     },
     {
       "id": 16,
-      "name": "Baum",
       "icon": "tree07.png",
       "model": "tree07.obj",
       "sway": {
@@ -2978,7 +2823,6 @@
     },
     {
       "id": 17,
-      "name": "Lianenbaum",
       "icon": "lianatree.png",
       "model": "lianatree.obj",
       "sway": {
@@ -3017,7 +2861,6 @@
     },
     {
       "id": 18,
-      "name": "Kakaobaum",
       "icon": "cacaotree.png",
       "model": "cacaotree.obj",
       "scale": {
@@ -3067,7 +2910,6 @@
     },
     {
       "id": 19,
-      "name": "Kaffeebaum",
       "icon": "coffeetree.png",
       "model": "coffeetree.obj",
       "scale": {
@@ -3117,7 +2959,6 @@
     },
     {
       "id": 195,
-      "name": "Pflaumenbaum",
       "icon": "cacaotree.png",
       "model": "cacaotree.obj",
       "scale": {
@@ -3167,7 +3008,6 @@
     },
     {
       "id": 20,
-      "name": "Tanne",
       "icon": "fir01.png",
       "model": "fir01.obj",
       "sway": {
@@ -3211,7 +3051,6 @@
     },
     {
       "id": 21,
-      "name": "Tanne",
       "icon": "fir01.png",
       "model": "fir02.obj",
       "sway": {

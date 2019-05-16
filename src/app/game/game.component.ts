@@ -35,6 +35,8 @@ export class GameComponent implements AfterViewInit {
 
   public activeMenu: string;
 
+  public settings: any;
+
   // REMOVE AGAIN LATER
   public temp: {
 
@@ -103,11 +105,13 @@ export class GameComponent implements AfterViewInit {
   constructor(
     private http: HttpClient
   ) {
-    this.temp = {
-      z: 0
-    };
+    this.temp = {};
 
     this.activeMenu = 'main';
+
+    this.settings = {
+      scaleFactor: 0.2
+    };
 
     this.debugModeEnabled = false;
     this.viewRange = 2000;  // TODO might be changed for BabylonJS
@@ -217,7 +221,7 @@ export class GameComponent implements AfterViewInit {
     this.scene.clearColor = Color4.FromInts(23, 23, 55, 255);
 
     // Create Camera
-    this.camera = new FlyCamera('Camera', new Vector3(0, 20, 0), this.scene);
+    this.camera = new FlyCamera('Camera', new Vector3(0, 20, -70), this.scene);
     this.camera.attachControl(this.canvas.nativeElement, true);
 
     // Create Ambient Light
@@ -251,25 +255,27 @@ export class GameComponent implements AfterViewInit {
             gameObject.id = obj.id;
             gameObject.icon = null; // TODO load image
             gameObject.model = null;  // TODO
-            gameObject.health = obj.health;
-            gameObject.behaviour = null;  // TODO
-            gameObject.col = null;  // TODO
-            gameObject.mat = null;  // TODO
-            gameObject.maxWeight = obj.maxWeight || 25000;
-            gameObject.swaySpeed = obj.swaySpeed || 0;
-            gameObject.swayPower = obj.swayPower || 0;
             gameObject.scale = obj.scale || {
               x: 1,
               y: 1,
               z: 1
             };
-            /* r ?: number;
-            g ?: number;
-            b ?: number;
-            backFaceCulling ?: boolean;
-            autofade ?: number;
-            alpha ?: number;
-            shine ?: number; */
+            gameObject.color = obj.color || null;
+
+            gameObject.health = obj.health;
+            gameObject.behaviour = null;  // TODO
+            gameObject.collision = null;  // TODO
+            gameObject.material = null;  // TODO
+            gameObject.maxWeight = obj.maxWeight || 25000;
+            if (gameObject.sway) {
+              gameObject.sway.speed = obj.sway.speed || 0;
+              gameObject.sway.power = obj.sway.power || 0;
+            } else {
+              gameObject.sway = {
+                speed: 0,
+                power: 0
+              };
+            }
             this.objects.push(gameObject);
 
             const meshTask = this.assetsManager.addMeshTask(`Object #${obj.id}`, '', '/assets/objects/', obj.model);
@@ -277,7 +283,14 @@ export class GameComponent implements AfterViewInit {
               console.info('[LOADED MESH]', task);
 
               task.loadedMeshes.forEach((mesh: Mesh) => {
-                mesh.scaling = new Vector3(gameObject.scale.x, gameObject.scale.y, gameObject.scale.z);
+                mesh.scaling = new Vector3(
+                  gameObject.scale.x * this.settings.scaleFactor,
+                  gameObject.scale.y * this.settings.scaleFactor,
+                  gameObject.scale.z * this.settings.scaleFactor
+                );
+
+                // TODO only for now
+                mesh.position = new Vector3(0, 5, -30);
 
                 const material: StandardMaterial = mesh.material as StandardMaterial;
                 material.backFaceCulling = obj.backFaceCulling;

@@ -1,15 +1,17 @@
 {
   "building": [
     {
-      "id": 150,
-      "name": "Baustelle",
-      "icon": "buildplace.png",
-      "model": "buildplace.obj",
-      "behaviour": "buildingsite",
-      "col": 2,
-      "health": 100,
-      "mat": "wood",
-      "maxWeight": 1000000000
+      "id": 217,
+      "name": "Affen-Schule",
+      "icon": "monkeyschool.png",
+      "model": "monkeyschool.obj",
+      "scale": {
+        "x": 2,
+        "y": 2,
+        "z": 2
+      },
+      "health": 500,
+      "material": "wood"
     }
   ]
 }

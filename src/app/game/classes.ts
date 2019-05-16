@@ -50,7 +50,6 @@ export class S2Item {
 
 export class S2Object {
   id: number;
-  name: string;
   icon: string;
   model: string;
   scale?: {

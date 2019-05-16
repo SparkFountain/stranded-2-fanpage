@@ -525,166 +525,541 @@
       }
     },
     "objects": {
+      "1": {
+        "name": "Palme"
+      },
+      "2": {
+        "name": "Palme"
+      },
+      "3": {
+        "name": "Palme"
+      },
+      "4": {
+        "name": "Palme"
+      },
+      "5": {
+        "name": "Palme"
+      },
+      "6": {
+        "name": "Palme"
+      },
+      "7": {
+        "name": "Große Palme"
+      },
       "8": {
+        "name": "Bananenpalme",
         "info": "Hier wachsen Bananen."
       },
       "9": {
+        "name": "Kokosnusspalme",
         "info": "Hier wachsen Kokosnüsse."
       },
+      "10": {
+        "name": "Baum"
+      },
+      "11": {
+        "name": "Baum"
+      },
+      "12": {
+        "name": "Baum"
+      },
+      "13": {
+        "name": "Baum"
+      },
+      "14": {
+        "name": "Baum"
+      },
+      "15": {
+        "name": "Baum"
+      },
+      "16": {
+        "name": "Baum"
+      },
+      "17": {
+        "name": "Lianenbaum"
+      },
       "18": {
+        "name": "Kakaobaum",
         "info": "Hier wachsen Kakaofrüchte."
       },
       "19": {
+        "name": "Kaffeebaum",
         "info": "Hier wachsen Kaffeekirschen."
       },
+      "20": {
+        "name": "Tanne"
+      },
+      "21": {
+        "name": "Tanne"
+      },
+      "30": {
+        "name": "Kahler Busch"
+      },
+      "31": {
+        "name": "Busch"
+      },
+      "32": {
+        "name": "Busch"
+      },
+      "33": {
+        "name": "Busch"
+      },
+      "34": {
+        "name": "Busch"
+      },
       "35": {
+        "name": "Blaublüte",
         "info": "Liefert Blaublüten."
       },
+      "36": {
+        "name": "Busch"
+      },
+      "37": {
+        "name": "Busch"
+      },
+      "38": {
+        "name": "Busch"
+      },
+      "39": {
+        "name": "Busch"
+      },
+      "40": {
+        "name": "Busch"
+      },
+      "41": {
+        "name": "Busch"
+      },
+      "42": {
+        "name": "Busch"
+      },
+      "43": {
+        "name": "Schilf"
+      },
       "44": {
+        "name": "Weinrebe",
         "info": "Hier wachsen Weintrauben."
       },
+      "45": {
+        "name": "Busch"
+      },
       "46": {
+        "name": "Beerenbusch",
         "info": "Hier wachsen Beeren."
       },
       "47": {
+        "name": "Baumwollpflanze",
         "info": "Liefert Wolle."
       },
+      "48": {
+        "name": "Seetang"
+      },
       "49": {
+        "name": "Luftalge",
         "info": "Der Spieler bekommt neue Luft, wenn er es beim Tauchen benutzt."
       },
+      "50": {
+        "name": "Gras"
+      },
+      "51": {
+        "name": "Gras"
+      },
+      "52": {
+        "name": "Gras"
+      },
+      "53": {
+        "name": "Wiese"
+      },
+      "60": {
+        "name": "Stein"
+      },
+      "61": {
+        "name": "Stein"
+      },
+      "62": {
+        "name": "Stein"
+      },
+      "63": {
+        "name": "Felsen"
+      },
+      "64": {
+        "name": "Felsen"
+      },
+      "65": {
+        "name": "Felsen"
+      },
+      "66": {
+        "name": "Stein"
+      },
+      "67": {
+        "name": "Felsen"
+      },
+      "68": {
+        "name": "Felsen"
+      },
+      "69": {
+        "name": "Felsen"
+      },
       "70": {
+        "name": "Metallfelsen",
         "info": "Liefert Eisen. Mit einer Spitzhacke kann dieses besonders gut abgebaut werden."
       },
       "71": {
+        "name": "Goldfelsen",
         "info": "Mit einer Spitzhacke kann hier Gold abgebaut werden."
       },
       "72": {
+        "name": "Kristallfelsen",
         "info": "Mit einer Spitzhacke können hier Kristalle abgebaut werden."
       },
       "73": {
-        "info": "Ein mit Regenwasser gefüllter Felsen. Ist nach 5x trinken leer, bis es wieder regnet."
+        "name": "Wasserfelsen",
+        "info": "Ein mit Regenwasser gefüllter Felsen. Ist nach fünfmal Trinken leer, bis es wieder regnet."
       },
       "74": {
+        "name": "Wasserfelsen (leer)",
         "info": "Ein Felsen, in dem sich Regenwasser sammelt, sobald es regnet."
       },
       "75": {
+        "name": "Quelle",
         "info": "Eine Quelle, welche unbegrenzt Wasser liefert."
       },
+      "100": {
+        "name": "Blumen"
+      },
+      "101": {
+        "name": "Blumen"
+      },
+      "102": {
+        "name": "Blumen"
+      },
+      "103": {
+        "name": "Blumen"
+      },
+      "104": {
+        "name": "Blumen"
+      },
+      "105": {
+        "name": "Blumen"
+      },
+      "106": {
+        "name": "Blumen"
+      },
+      "107": {
+        "name": "Blumen"
+      },
+      "108": {
+        "name": "Blumen"
+      },
+      "109": {
+        "name": "Blumen"
+      },
+      "110": {
+        "name": "Giftblume"
+      },
+      "120": {
+        "name": "Bambus"
+      },
       "121": {
+        "name": "Getreide",
         "info": "Liefert Körner, welche angefplanzt werden können. Viel Getreide verursacht Heuschreckenplagen."
       },
+      "122": {
+        "name": "Marmorzylinder"
+      },
+      "123": {
+        "name": "Marmorsäule"
+      },
+      "124": {
+        "name": "Marmorplatte"
+      },
+      "125": {
+        "name": "Marmorboden"
+      },
+      "130": {
+        "name": "Wurzeln"
+      },
+      "131": {
+        "name": "Wurzeln"
+      },
+      "132": {
+        "name": "Baumstumpf"
+      },
+      "133": {
+        "name": "Palmenstumpf"
+      },
       "134": {
+        "name": "Hanf",
         "info": "Liefert Hanfblätter und kann angepflanzt werden. Aus den Hanfblättern können Joints gedreht werden."
       },
+      "135": {
+        "name": "Langer Baumstumpf"
+      },
+      "136": {
+        "name": "Kiste"
+      },
+      "137": {
+        "name": "Fass"
+      },
+      "138": {
+        "name": "Wrack"
+      },
       "139": {
+        "name": "Explosives Fass",
         "info": "Explodiert, wenn es zerstört wird."
       },
+      "140": {
+        "name": "Ruinen"
+      },
+      "141": {
+        "name": "Ruinen"
+      },
+      "142": {
+        "name": "Ruinen"
+      },
+      "143": {
+        "name": "Ruinen"
+      },
+      "144": {
+        "name": "Ruinen"
+      },
+      "145": {
+        "name": "Ruinen"
+      },
+      "146": {
+        "name": "Ruinen"
+      },
+      "147": {
+        "name": "Ruinen"
+      },
       "148": {
+        "name": "Höhle",
         "info": "Bietet Schutz zum Schlafen."
       },
+      "150": {
+        "name": "Baustelle"
+      },
+      "151": {
+        "name": "Baustelle"
+      },
       "160": {
+        "name": "Bambushütte",
         "info": "Bietet Schutz zum Schlafen."
       },
       "161": {
+        "name": "Bambushütte",
         "info": "Bietet Schutz zum Schlafen."
       },
       "162": {
+        "name": "Bambushütte",
         "info": "Bietet Schutz zum Schlafen."
+      },
+      "163": {
+        "name": "Zaun"
+      },
+      "164": {
+        "name": "Zaun"
       },
       "165": {
+        "name": "Unterstand",
         "info": "Bietet Schutz zum Schlafen."
       },
+      "166": {
+        "name": "Fackel"
+      },
+      "167": {
+        "name": "Fackel"
+      },
+      "168": {
+        "name": "Bretterwand"
+      },
+      "169": {
+        "name": "Bretterwand"
+      },
+      "170": {
+        "name": "Bretter"
+      },
       "171": {
+        "name": "Lagerfeuer",
         "info": "Hier kann Feuer zum Braten oder Backen gemacht werden."
       },
       "172": {
+        "name": "Lagerfeuer",
         "info": "Hier kann Feuer zum Braten oder Backen gemacht werden."
       },
+      "173": {
+        "name": "Schild"
+      },
+      "174": {
+        "name": "Wegweiser"
+      },
+      "175": {
+        "name": "Wegweiser"
+      },
+      "178": {
+        "name": "Steg"
+      },
+      "179": {
+        "name": "Steg"
+      },
+      "180": {
+        "name": "Steg"
+      },
       "181": {
+        "name": "Lager",
         "info": "Ermöglicht das Einlagern von Gegenständen."
       },
+      "182": {
+        "name": "Großer Zaun"
+      },
+      "183": {
+        "name": "Metallzaun"
+      },
       "184": {
+        "name": "Zelt",
         "info": "Bietet Schutz zum Schlafen und kann abgebaut werden, um es an einem anderen Ort wieder aufzubauen."
       },
+      "185": {
+        "name": "Busch"
+      },
       "186": {
+        "name": "Knallpilz",
         "info": "Explodiert, sobald der Spieler in der Nähe ist."
       },
+      "187": {
+        "name": "Wasserleitung"
+      },
+      "188": {
+        "name": "Wasserleitung"
+      },
       "189": {
+        "name": "Brunnen",
         "info": "Bietet Trinkwasser."
       },
       "190": {
+        "name": "Baumhaus",
         "info": "Bietet Schutz zum Schlafen."
       },
       "191": {
+        "name": "Reuse",
         "info": "Fängt automatisch über Nacht Fische und andere Dinge."
       },
+      "192": {
+        "name": "Zielscheibe"
+      },
+      "193": {
+        "name": "Bambusturm"
+      },
       "194": {
+        "name": "Haus",
         "info": "Bietet Schutz zum Schlafen."
       },
       "195": {
+        "name": "Pflaumenbaum",
         "info": "Hier wachsen Pflaumen."
       },
       "196": {
+        "name": "Raptornest",
         "info": "Erzeugt über Nacht einen Raptor, wenn noch keiner in der Nähe ist."
       },
       "197": {
+        "name": "Kiwinest",
         "info": "Erzeugt über Nacht einen Kiwi-Vogel, wenn noch keiner in der Nähe ist."
       },
       "198": {
+        "name": "Papageinest",
         "info": "Erzeugt über Nacht einen Papagei, wenn noch keiner in der Nähe ist."
       },
       "199": {
+        "name": "Löwenstein",
         "info": "Erzeugt über Nacht einen Löwen, wenn noch keiner in der Nähe ist."
       },
       "200": {
+        "name": "Hochsitz",
         "info": "Bietet Schutz zum Schlafen und kann als Aussichtsturm genutzt werden."
       },
       "201": {
+        "name": "Kiwizucht",
         "info": "Hier entsteht alle zwei Nächte ein Kiwi-Vogel, bis maximal drei vorhanden sind."
       },
       "202": {
+        "name": "Moos",
         "info": "Erzeugt über Nacht Pilze und Schnecken."
       },
+      "203": {
+        "name": "Abdeckung"
+      },
       "204": {
+        "name": "Vogelnest",
         "info": "Erzeugt über Nacht einen Vogel, wenn noch keiner in der Nähe ist."
       },
       "205": {
+        "name": "Falle",
         "info": "Kann über Nacht ein kleines Tier fangen, wenn sie offen steht."
       },
       "206": {
+        "name": "Hütte",
         "info": "Bietet Schutz zum Schlafen."
       },
       "207": {
+        "name": "Kräuterbeet",
         "info": "Hier wachsen über Nacht Kräuter."
       },
       "208": {
+        "name": "Kaputter Brunnen",
         "info": "Ein Brunnen, welcher erst freigeschaufelt werden muss, bevor er genutzt werden kann."
       },
       "209": {
+        "name": "Kaputte Reuse",
         "info": "Ist nicht funktionstüchtig, aber bringt bei Benutzung ein paar Gegenstände."
       },
       "210": {
+        "name": "Koralle",
         "info": "Erzeugt über Nacht einen Fisch, wenn noch keiner in der Nähe ist."
       },
+      "211": {
+        "name": "Tisch"
+      },
+      "212": {
+        "name": "Schreibtisch"
+      },
+      "213": {
+        "name": "Lianenpalme"
+      },
       "214": {
+        "name": "Großes Lager",
         "info": "Ermöglicht das Einlagern von Gegenständen."
       },
       "215": {
+        "name": "Garten",
         "info": "Erzeugt Schmetterlinge"
       },
       "216": {
+        "name": "Hängematte",
         "info": "Ein super Schlafplatz"
       },
+      "217": {
+        "name": "Affen-Schule"
+      },
+      "218": {
+        "name": "Palisadenwall"
+      },
+      "219": {
+        "name": "Tor"
+      },
       "220": {
+        "name": "Holzlager",
         "info": "Hier können Baumstämme, Äste und Rinde gelagert werden."
       },
       "221": {
+        "name": "Adlerhorst",
         "info": "Erzeugt über Nacht einen Adler, wenn noch keiner in der Nähe ist."
       },
       "222": {
+        "name": "Steinlager",
         "info": "Hier können Steine gelagert werden."
       },
       "223": {
+        "name": "Abwehrturm",
         "info": "Nimmt automatisch Feinde im Umkreis unter Beschuss."
       }
     }
