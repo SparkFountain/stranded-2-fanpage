@@ -23,25 +23,11 @@ canvas {
   }
 }
 
-#main {
-  #stranded-ii-logo {
-    position: fixed;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 100;
-    width: 539px;
-    height: 239px;
-
-    background: url('../../assets/gfx/sys/title.png');
-  }
-}
-
 .right-window {
   position: fixed;
   top: 0;
   right: 0;
   width: calc(100vw - 300px);
   height: 100vh;
-  background: red; 
+  background: red;
 }

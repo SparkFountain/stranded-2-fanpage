@@ -21,7 +21,7 @@ export class AppComponent {
       'tips-and-tutorials'
     ];
 
-    this.playingStranded2Online = true;
+    this.playingStranded2Online = false;
 
     this.i18n.addLangs(['en', 'de']);
     this.i18n.setDefaultLang('en');

@@ -229,8 +229,8 @@ export class GameComponent implements AfterViewInit {
     this.ambientLight.groundColor = new Color3(0.5, 0.5, 0.5);
 
     // Create Sun Light and Shadow Generator
-    const sunLightDirection: Vector3 = new Vector3(-1, -1, -1);
-    const sunPosition: Vector3 = new Vector3(0, 30, 50);
+    const sunLightDirection: Vector3 = new Vector3(1, -1, 2);
+    const sunPosition: Vector3 = new Vector3(0, 50, -30);
     this.sun = new DirectionalLight('Sun', sunLightDirection, this.scene);
     this.sun.specular = new Color3(0.2, 0.2, 0.2);
     this.sun.diffuse = new Color3(0.5, 0.5, 0.5);
@@ -301,7 +301,7 @@ export class GameComponent implements AfterViewInit {
 
                 // Cast Shadow
                 // TODO only activate if enabled in settings
-                // this.shadowGenerator.addShadowCaster(mesh);
+                this.shadowGenerator.addShadowCaster(mesh);
               });
             };
           });

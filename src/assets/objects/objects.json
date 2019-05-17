@@ -1,17 +1,17 @@
 {
   "building": [
     {
-      "id": 217,
-      "name": "Affen-Schule",
-      "icon": "monkeyschool.png",
-      "model": "monkeyschool.obj",
+      "id": 189,
+      "icon": "well.png",
+      "model": "well.obj",
       "scale": {
-        "x": 2,
-        "y": 2,
-        "z": 2
+        "x": 0.9,
+        "y": 0.9,
+        "z": 0.9
       },
-      "health": 500,
-      "material": "wood"
+      "health": 2000,
+      "material": "stone",
+      "behaviour": "watersource"
     }
   ]
 }

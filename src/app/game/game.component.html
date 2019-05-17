@@ -1,43 +1,10 @@
 <canvas #gameCanvas touch-action="none" oncontextmenu="return false;"></canvas>
 
-<div id="main" class="menu" *ngIf="activeMenu === 'main'">
-  <div id="buttons-top">
-    <button class="button-large" (click)="adventure()">{{'game.main-menu.adventure' | translate}}</button>
-    <button class="button-large" (click)="randomIsland()">{{'game.main-menu.random-island' | translate}}</button>
-    <button class="button-large" (click)="singleIsland()">{{'game.main-menu.single-island' | translate}}</button>
-    <button class="button-large" (click)="loadIsland()">{{'game.main-menu.load' | translate}}</button>
-  </div>
+<app-main-menu class="menu" *ngIf="activeMenu === 'main'"></app-main-menu>
 
-  <div id="buttons-middle">
-    <button class="button-large" (click)="activeMenu = 'options'">{{'game.main-menu.options' | translate}}</button>
-    <button class="button-large" (click)="activeMenu = 'editor'">{{'game.main-menu.editor' | translate}}</button>
-    <button class="button-large" (click)="credits()">{{'game.main-menu.credits' | translate}}</button>
-  </div>
+<app-options-menu
+  class="menu"
+  *ngIf="activeMenu === 'options'"
+></app-options-menu>
 
-  <div id="buttons-bottom">
-    <button class="button-large" (click)="quit()">{{'game.main-menu.quit' | translate}}</button>
-  </div>
-
-  <div id="stranded-ii-logo"></div>
-</div>
-
-<div id="options" class="menu" *ngIf="activeMenu === 'options'">
-  <div id="buttons-top">
-    <button class="button-large" (click)="adventure()">{{'game.options-menu.controls' | translate}}</button>
-    <button class="button-large" (click)="randomIsland()">{{'game.options-menu.graphics' | translate}}</button>
-    <button class="button-large" (click)="singleIsland()">{{'game.options-menu.sound' | translate}}</button>
-  </div>
-
-
-  <div id="buttons-bottom">
-    <button class="button-large" (click)="activeMenu = 'main'">{{'game.button.cancel' | translate}}</button>
-    <button class="button-large" (click)="saveOptions()">{{'game.button.apply' | translate}}</button>
-  </div>
-
-  <div class="right-window">
-    <app-header [tabs]="['options']"></app-header>
-    <app-content [tab]="'options'"></app-content>
-  </div>
-</div>
-
-<app-editor *ngIf="true"></app-editor>
+<app-editor *ngIf="false"></app-editor>

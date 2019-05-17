@@ -17,6 +17,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { GameComponent } from './game/game.component';
 import { EditorComponent } from './editor/editor.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
+import { OptionsMenuComponent } from './options-menu/options-menu.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { EditorComponent } from './editor/editor.component';
     ModificationsComponent,
     TipsTutorialsComponent,
     GameComponent,
-    EditorComponent
+    EditorComponent,
+    MainMenuComponent,
+    OptionsMenuComponent
   ],
   imports: [
     BrowserModule,

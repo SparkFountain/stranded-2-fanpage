@@ -1,0 +1,25 @@
+<div id="buttons-top">
+  <button class="button-large" (click)="adventure()">
+    {{ "game.options-menu.controls" | translate }}
+  </button>
+  <button class="button-large" (click)="randomIsland()">
+    {{ "game.options-menu.graphics" | translate }}
+  </button>
+  <button class="button-large" (click)="singleIsland()">
+    {{ "game.options-menu.sound" | translate }}
+  </button>
+</div>
+
+<div id="buttons-bottom">
+  <button class="button-large" (click)="activeMenu = 'main'">
+    {{ "game.button.cancel" | translate }}
+  </button>
+  <button class="button-large" (click)="saveOptions()">
+    {{ "game.button.apply" | translate }}
+  </button>
+</div>
+
+<div class="right-window">
+  <app-header [tabs]="['options']"></app-header>
+  <app-content [tab]="'options'"></app-content>
+</div>
