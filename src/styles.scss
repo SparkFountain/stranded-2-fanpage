@@ -5,7 +5,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: $dark;
 
   cursor: url('/assets/gfx/sys/cursor.png'), auto;
@@ -149,4 +149,22 @@ app-content {
   height: calc(100vh - 200px);
   background: url('/assets/gfx/sys/paperback.png');
   background-size: 100% 100%;
+}
+
+app-footer {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100vw;
+  height: 200px;
+  background: url('/assets/gfx/sys/woodback-dark.png');
+}
+
+app-play-online {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 166px;
+  background: url('/assets/gfx/sys/woodback-dark.png');
 }

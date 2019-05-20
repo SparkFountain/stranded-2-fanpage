@@ -19,6 +19,7 @@ import { GameComponent } from './game/game.component';
 import { EditorComponent } from './editor/editor.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { OptionsMenuComponent } from './options-menu/options-menu.component';
+import { PlayOnlineComponent } from './play-online/play-online.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { OptionsMenuComponent } from './options-menu/options-menu.component';
     GameComponent,
     EditorComponent,
     MainMenuComponent,
-    OptionsMenuComponent
+    OptionsMenuComponent,
+    PlayOnlineComponent
   ],
   imports: [
     BrowserModule,

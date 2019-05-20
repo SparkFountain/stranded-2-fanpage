@@ -1,0 +1,63 @@
+@import '../../variables.scss';
+
+.menu-headline-border-horizontal {
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 16px;
+  background: url('/assets/gfx/sys/border-horizontal.png');
+  z-index: 101;
+  left: 16px;
+  right: 16px;
+}
+
+.menu-headline-border-vertical {
+  position: absolute;
+  width: 16px;
+  height: 136px;
+  background: url('/assets/gfx/sys/border-vertical.png');
+  z-index: 101;
+  top: 16px;
+}
+
+.menu-corner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url('/assets/gfx/sys/border-corner.png');
+  z-index: 101;
+}
+
+.top {
+  top: 0;
+}
+.bottom {
+  top: 150px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+
+.play-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 32px;
+}
+
+.play-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.play-text {
+  position: absolute;
+  top: 83px;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  color: $white;
+  font-size: 22px;
+}
