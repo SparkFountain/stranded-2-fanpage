@@ -208,11 +208,11 @@ export class GameComponent implements AfterViewInit {
       { r: 40, g: 40, b: 70 }
     ];
 
-    this.engine = new Engine(this.canvas.nativeElement, true);
+    /* this.engine = new Engine(this.canvas.nativeElement, true);
     this.createScene();
     this.createSkyBox();
     this.createTerrain();
-    this.createOcean();
+    this.createOcean(); */
   }
 
   createScene(): void {

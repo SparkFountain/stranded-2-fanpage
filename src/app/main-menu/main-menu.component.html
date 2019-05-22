@@ -1,32 +1,32 @@
 <div id="buttons-top">
-  <button class="button-large" (click)="adventure()">
+  <button class="button-large" (click)="action.emit('adventure')">
     {{ "game.main-menu.adventure" | translate }}
   </button>
-  <button class="button-large" (click)="randomIsland()">
+  <button class="button-large" (click)="action.emit('randomIsland')">
     {{ "game.main-menu.random-island" | translate }}
   </button>
-  <button class="button-large" (click)="singleIsland()">
+  <button class="button-large" (click)="action.emit('singleIsland')">
     {{ "game.main-menu.single-island" | translate }}
   </button>
-  <button class="button-large" (click)="loadIsland()">
+  <button class="button-large" (click)="action.emit('loadIsland')">
     {{ "game.main-menu.load" | translate }}
   </button>
 </div>
 
 <div id="buttons-middle">
-  <button class="button-large" (click)="activeMenu = 'options'">
+  <button class="button-large" (click)="activeMenu.emit('options')">
     {{ "game.main-menu.options" | translate }}
   </button>
-  <button class="button-large" (click)="activeMenu = 'editor'">
+  <button class="button-large" (click)="activeMenu.emit('editor')">
     {{ "game.main-menu.editor" | translate }}
   </button>
-  <button class="button-large" (click)="credits()">
+  <button class="button-large" (click)="action.emit('credits')">
     {{ "game.main-menu.credits" | translate }}
   </button>
 </div>
 
 <div id="buttons-bottom">
-  <button class="button-large" (click)="quit()">
+  <button class="button-large" (click)="action.emit('quit')">
     {{ "game.main-menu.quit" | translate }}
   </button>
 </div>

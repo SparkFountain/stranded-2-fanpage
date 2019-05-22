@@ -1,13 +1,13 @@
-<app-header [tabs]="tabs" [activeTab]="activeTab" (selectTab)="selectTab($event)"></app-header>
+<app-header [tabs]="tabs" [activeTab]="activeTab" (selectTab)="selectTab($event)" *ngIf="!playingStranded2Online"></app-header>
 
-<app-buttons></app-buttons>
+<app-buttons *ngIf="!playingStranded2Online"></app-buttons>
 
-<app-content [tab]="activeTab">
+<app-content [tab]="activeTab" *ngIf="!playingStranded2Online">
   <router-outlet></router-outlet>
 </app-content>
 
-<app-footer></app-footer>
+<app-footer *ngIf="!playingStranded2Online"></app-footer>
 
-<app-play-online (startGame)="playingStranded2Online = true"></app-play-online>
+<app-play-online *ngIf="!playingStranded2Online" (startGame)="playingStranded2Online = true"></app-play-online>
 
 <app-game *ngIf="playingStranded2Online" (quitGame)="playingStranded2Online = false"></app-game>

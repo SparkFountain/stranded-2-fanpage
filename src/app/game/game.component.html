@@ -1,10 +1,15 @@
-<canvas #gameCanvas touch-action="none" oncontextmenu="return false;"></canvas>
+<!-- <canvas #gameCanvas touch-action="none" oncontextmenu="return false;"></canvas> -->
 
-<app-main-menu class="menu" *ngIf="activeMenu === 'main'"></app-main-menu>
+<app-main-menu
+  class="menu"
+  *ngIf="activeMenu === 'main'"
+  (action)="this[$event];"
+  (activeMenu)="this.activeMenu = $event;">
+</app-main-menu>
 
-<app-options-menu
+<!-- <app-options-menu
   class="menu"
   *ngIf="activeMenu === 'options'"
-></app-options-menu>
+></app-options-menu> -->
 
-<app-editor *ngIf="false"></app-editor>
+<!-- <app-editor *ngIf="false"></app-editor> -->
