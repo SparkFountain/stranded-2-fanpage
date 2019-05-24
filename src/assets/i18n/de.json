@@ -7,6 +7,11 @@
     "tips-and-tutorials": "Tipps und Tutorials",
     "options": "Optionen"
   },
+  "subpage": {
+    "story": "Story",
+    "survive": "Überleben",
+    "animals-and-plants": "Tiere und Pflanzen"
+  },
   "editor": {
     "terrain": "Terrain",
     "objects": "Objekte",
