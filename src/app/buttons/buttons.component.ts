@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Button } from '../interfaces/button.interface';
 
 @Component({
   selector: 'app-buttons',
@@ -6,22 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./buttons.component.scss']
 })
 export class ButtonsComponent implements OnInit {
-  @Input() tab?: string;
+  @Input() buttons: Button[];
 
-  sections: string[];  // TODO remove later again
+  @Output() selectButton: EventEmitter<number> = new EventEmitter();
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-    this.sections = [
-      'Story',
-      'Überleben',
-      'Tiere und Pflanzen',
-      'Bauen',
-      'Kombinationen',
-      'Komplettlösung',
-      'Kompatibilität'
-    ];
+  ngOnInit() {}
+
+  handleSelectButton(buttonIndex: number): void {
+    this.selectButton.emit(buttonIndex);
   }
-
 }

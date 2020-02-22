@@ -7,7 +7,10 @@
 <div class="menu-corner bottom left"></div>
 <div class="menu-corner bottom right"></div>
 
-<div class="content" [ngSwitch]="tab">
+<div class="content">
+  <ng-content></ng-content>
+</div>
+<!-- <div class="content" [ngSwitch]="tab">
   <app-news *ngSwitchCase="'news'"></app-news>
   <app-stranded-ii *ngSwitchCase="'stranded-ii'"></app-stranded-ii>
   <app-download-content *ngSwitchCase="'download-content'"></app-download-content>
@@ -18,15 +21,15 @@
     <table>
       <thead>
         <tr>
-          <th>{{'game.controls.action' | translate}}</th>
-          <th>{{'game.controls.key' | translate}}</th>
+          <th>Aktion</th>
+          <th>Taste</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>{{'game.controls.' | translate}}</td>
+          <td>TODO</td>
         </tr>
       </tbody>
     </table>
   </div>
-</div>
+</div> -->

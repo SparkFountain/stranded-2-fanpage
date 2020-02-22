@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-stranded-ii',
@@ -9,10 +8,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class StrandedIiComponent implements OnInit {
   public subpage: string;
 
-  constructor(public translateService: TranslateService) { }
+  constructor() {}
 
   ngOnInit() {
     this.subpage = 'survival';
   }
-
 }

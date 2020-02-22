@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
+import { Menu } from './interfaces/menu.interface';
+import { Button } from './interfaces/button.interface';
 
 @Component({
   selector: 'app-root',
@@ -7,30 +9,63 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public activeTab: string;
-  public tabs: string[];
-  public playingStranded2Online: boolean;
+  public menus: Menu[];
+  public activeMenuIndex: number;
 
-  constructor(private i18n: TranslateService) {
-    this.activeTab = 'news';
-    this.tabs = [
-      'news',
-      'stranded-ii',
-      'download-content',
-      'modifications',
-      'tips-and-tutorials'
+  public buttons: Array<Button[]>;
+  public activeButtonIndex: number;
+
+  constructor(private router: Router) {
+    this.menus = [
+      { name: 'Neuigkeiten', route: '' },
+      { name: 'Stranded II', route: 'stranded-ii' },
+      { name: 'Download-Material', route: 'download-material' },
+      { name: 'Modifikationen', route: 'modifikationen' },
+      { name: 'Tipps und Tutorials', route: 'tipps-und-tutorials' }
     ];
+    this.activeMenuIndex = 0;
 
-    this.playingStranded2Online = false;
-
-    this.i18n.addLangs(['en', 'de']);
-    this.i18n.setDefaultLang('en');
-
-    const browserLang = this.i18n.getBrowserLang();
-    this.i18n.use(browserLang.match(/en|de/) ? browserLang : 'en');
+    this.buttons = [
+      [],
+      [
+        { name: 'Story', route: 'story' },
+        { name: 'Überleben', route: 'ueberleben' },
+        { name: 'Tiere und Pflanzen', route: 'tiere-und-pflanzen' },
+        { name: 'Bauen', route: 'bauen' },
+        { name: 'Kombinationen', route: 'kombinationen' },
+        { name: 'Komplettlösung', route: 'komplettloesung' },
+        { name: 'Kompatibilität', route: 'kompatibilitaet' }
+      ],
+      [
+        { name: 'Maps', route: 'maps' },
+        { name: 'Skripte', route: 'skripte' },
+        { name: 'Code-Optimierungen', route: 'code-optimierungen' },
+        { name: 'Konfigurations-Tools', route: 'konfigurations-tools' }
+      ],
+      [
+        { name: 'Extension Mod', route: 'extension-mod' },
+        { name: 'Lost in Space', route: 'lost-in-space' },
+        { name: 'Titanium', route: 'titanium' },
+        { name: 'Multiplayer', route: 'multiplayer' }
+      ],
+      [
+        { name: 'Stranded II Editor', route: 'stranded-ii-editor' },
+        { name: 'Skripting', route: 'skripting' },
+        { name: 'Erstelle dein eigenes Adventure', route: 'erstelle-dein-eigenes-adventure' }
+      ]
+    ];
+    this.activeButtonIndex = 0;
   }
 
-  selectTab(tab: string) {
-    this.activeTab = tab;
+  selectMenu(menuIndex: number) {
+    this.activeMenuIndex = menuIndex;
+    this.router.navigateByUrl(this.menus[menuIndex].route);
+  }
+
+  selectButton(buttonIndex: number) {
+    this.activeButtonIndex = buttonIndex;
+    this.router.navigateByUrl(
+      `${this.menus[this.activeMenuIndex].route}/${this.buttons[this.activeMenuIndex][this.activeButtonIndex].route}`
+    );
   }
 }

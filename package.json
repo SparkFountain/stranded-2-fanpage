@@ -23,8 +23,6 @@
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2",
-    "@ngx-translate/core": "12.1.1",
-    "@ngx-translate/http-loader": "4.0.0",
     "@babylonjs/core": "4.0.3",
     "@babylonjs/materials": "4.0.3",
     "@babylonjs/loaders": "4.0.3",

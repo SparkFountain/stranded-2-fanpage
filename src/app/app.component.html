@@ -1,12 +1,8 @@
-<app-header
-  [tabs]="tabs"
-  [activeTab]="activeTab"
-  (selectTab)="selectTab($event)"
-></app-header>
+<app-header [menus]="menus" [activeMenuIndex]="activeMenuIndex" (selectMenu)="selectMenu($event)"></app-header>
 
-<app-buttons></app-buttons>
+<app-buttons [buttons]="buttons[activeMenuIndex]" (selectButton)="selectButton($event)"></app-buttons>
 
-<app-content [tab]="activeTab">
+<app-content>
   <router-outlet></router-outlet>
 </app-content>
 

@@ -7,6 +7,6 @@
 <div class="menu-corner bottom left"></div>
 <div class="menu-corner bottom right"></div>
 
-<div class="navigation" *ngFor="let tab of tabs">
-  <a (click)="handleSelectTab(tab)" [ngClass]="{'active': activeTab === tab}">{{'tab.' + tab | translate}}</a>
+<div class="navigation" *ngFor="let menu of menus; let i = index">
+  <a (click)="handleSelectMenu(i)" [ngClass]="{ active: activeMenuIndex === i }">{{ menu.name }}</a>
 </div>

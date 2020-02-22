@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Menu } from '../interfaces/menu.interface';
 
 @Component({
   selector: 'app-header',
@@ -6,15 +7,15 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Input() tabs: string[];
-  @Input() activeTab: string;
-  @Output() selectTab: EventEmitter<string> = new EventEmitter();
+  @Input() menus: Menu[];
+  @Input() activeMenuIndex: number;
+  @Output() selectMenu: EventEmitter<number> = new EventEmitter();
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
 
-  handleSelectTab(tabName: string): void {
-    this.selectTab.emit(tabName);
+  handleSelectMenu(menuIndex: number): void {
+    this.selectMenu.emit(menuIndex);
   }
 }
