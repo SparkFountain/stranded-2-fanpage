@@ -1,0 +1,17 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+import { LinksComponent } from './links.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: LinksComponent
+  }
+];
+
+@NgModule({
+  declarations: [],
+  imports: [CommonModule, RouterModule.forChild(routes)]
+})
+export class LinksModule {}
