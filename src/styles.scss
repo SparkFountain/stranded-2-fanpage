@@ -10,7 +10,7 @@ body {
   background: $dark;
 
   cursor: url("/assets/gfx/sys/cursor.png"), auto;
-  font-family: $font;
+  font-family: $ui-font;
 
   ::-webkit-scrollbar {
     display: none;
@@ -63,6 +63,10 @@ thead {
 th,
 td {
   padding: 10px 15px;
+}
+
+p {
+  font-family: $handwriting;
 }
 
 .image-container {

@@ -22,6 +22,18 @@ const routes: Routes = [
   {
     path: 'tipps-und-tutorials',
     loadChildren: () => import('./tips-tutorials/tips-tutorials.module').then(m => m.TipsTutorialsModule)
+  },
+  {
+    path: 'links',
+    loadChildren: () => import('./links/links.module').then(m => m.LinksModule)
+  },
+  {
+    path: 'haftungsausschluss',
+    loadChildren: () => import('./disclaimer/disclaimer.module').then(m => m.DisclaimerModule)
+  },
+  {
+    path: 'impressum',
+    loadChildren: () => import('./imprint/imprint.module').then(m => m.ImprintModule)
   }
 ];
 

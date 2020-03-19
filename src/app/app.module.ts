@@ -35,6 +35,9 @@ import { TitaniumComponent } from './modifications/titanium/titanium.component';
 import { MultiplayerComponent } from './modifications/multiplayer/multiplayer.component';
 import { ScriptingComponent } from './tips-tutorials/scripting/scripting.component';
 import { AdventureComponent } from './tips-tutorials/adventure/adventure.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { DisclaimerComponent } from './disclaimer/disclaimer.component';
+import { LinksComponent } from './links/links.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +72,10 @@ import { AdventureComponent } from './tips-tutorials/adventure/adventure.compone
     TitaniumComponent,
     MultiplayerComponent,
     ScriptingComponent,
-    AdventureComponent
+    AdventureComponent,
+    ImprintComponent,
+    DisclaimerComponent,
+    LinksComponent
   ],
   imports: [
     BrowserModule,
