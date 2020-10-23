@@ -38,6 +38,7 @@ import { AdventureComponent } from './tips-tutorials/adventure/adventure.compone
 import { ImprintComponent } from './imprint/imprint.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { LinksComponent } from './links/links.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { LinksComponent } from './links/links.component';
     AdventureComponent,
     ImprintComponent,
     DisclaimerComponent,
-    LinksComponent
+    LinksComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

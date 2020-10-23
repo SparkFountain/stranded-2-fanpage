@@ -2,9 +2,17 @@
 
 <app-buttons [buttons]="buttons[activeMenuIndex]" (selectButton)="selectButton($event)"></app-buttons>
 
-<app-content>
+<div class="cards">
+  <app-card [image]="'story.png'" [title]="'Stranded II'"></app-card>
+  <app-card [image]="'story.png'" [title]="'Stranded III'"></app-card>
+  <app-card [image]="'story.png'" [title]="'Stranded III'"></app-card>
+  <app-card [image]="'story.png'" [title]="'Stranded III'"></app-card>
+  <app-card [image]="'story.png'" [title]="'Stranded III'"></app-card>
+</div>
+
+<!-- <app-content>
   <router-outlet></router-outlet>
-</app-content>
+</app-content> -->
 
 <!-- <app-footer></app-footer> -->
 

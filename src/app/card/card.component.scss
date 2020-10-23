@@ -1,0 +1,59 @@
+@import '../../variables.scss';
+
+img {
+  margin: 8px;
+  width: calc(#{$cardSize} - 16px);
+  height: calc(#{$cardSize} - 16px);
+
+  &:hover {
+    
+  }
+}
+
+p {
+  font-size: 40px;
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  text-align: center;
+}
+
+.border-horizontal {
+  position: absolute;
+  width: calc(#{$cardSize} - 32px);
+  height: 16px;
+  background: url('/assets/gfx/sys/border-horizontal.png');
+  z-index: 101;
+  left: 16px;
+  right: 16px;
+}
+
+.border-vertical {
+  position: absolute;
+  width: 16px;
+  height: calc(#{$cardSize} - 32px);
+  background: url('/assets/gfx/sys/border-vertical.png');
+  z-index: 101;
+  top: 16px;
+}
+
+.corner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url('/assets/gfx/sys/border-corner.png');
+  z-index: 101;
+}
+
+.top {
+  top: 0;
+}
+.bottom {
+  top: calc(#{$cardSize} - 16px);
+}
+.left {
+  left: 0;
+}
+.right {
+  left: calc(#{$cardSize} - 16px);
+}

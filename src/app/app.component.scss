@@ -1,3 +1,21 @@
+@import '../variables.scss';
+
 app-content {
   padding: 16px;
+}
+
+.cards {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: calc(100vh / 2 - #{$cardSize} / 2);
+  // background: orange;
+  width: 100vw;
+  height: 600px;
+
+  app-card {
+    display: flex;
+    width: $cardSize !important;
+    height: $cardSize !important;
+  }
 }
