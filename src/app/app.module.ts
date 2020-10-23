@@ -12,11 +12,8 @@ import { StrandedIiComponent } from './stranded-ii/stranded-ii.component';
 import { DownloadContentComponent } from './download-content/download-content.component';
 import { ModificationsComponent } from './modifications/modifications.component';
 import { TipsTutorialsComponent } from './tips-tutorials/tips-tutorials.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { GameComponent } from './game/game.component';
-import { EditorComponent } from './editor/editor.component';
+import { HttpClientModule } from '@angular/common/http';
 import { MainMenuComponent } from './main-menu/main-menu.component';
-import { OptionsMenuComponent } from './options-menu/options-menu.component';
 import { PlayOnlineComponent } from './play-online/play-online.component';
 import { StoryComponent } from './stranded-ii/story/story.component';
 import { SurviveComponent } from './stranded-ii/survive/survive.component';
@@ -40,6 +37,8 @@ import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { LinksComponent } from './links/links.component';
 import { CardComponent } from './card/card.component';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,10 +51,7 @@ import { CardComponent } from './card/card.component';
     DownloadContentComponent,
     ModificationsComponent,
     TipsTutorialsComponent,
-    GameComponent,
-    EditorComponent,
     MainMenuComponent,
-    OptionsMenuComponent,
     PlayOnlineComponent,
     StoryComponent,
     SurviveComponent,
@@ -79,12 +75,8 @@ import { CardComponent } from './card/card.component';
     LinksComponent,
     CardComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, TranslateModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

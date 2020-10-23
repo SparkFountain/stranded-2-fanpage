@@ -2,6 +2,10 @@ canvas {
   margin: 0 !important;
   width: 100vw;
   height: 100vh;
+
+  &.in-game {
+    cursor: none !important;
+  }
 }
 
 .menu {

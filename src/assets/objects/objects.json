@@ -1,6 +1,30 @@
 {
   "building": [
     {
+      "id": 150,
+      "icon": "buildplace.png",
+      "model": "buildplace.obj",
+      "health": 100,
+      "material": "wood",
+      "behaviour": "buildingsite"
+    },
+    {
+      "id": 151,
+      "icon": "buildplace_water.png",
+      "model": "buildplace_water.obj",
+      "health": 100,
+      "material": "wood",
+      "behaviour": "buildingsite_water"
+    },
+    {
+      "id": 151,
+      "icon": "buildplace_water.png",
+      "model": "buildplace_water.obj",
+      "health": 100,
+      "material": "wood",
+      "behaviour": "buildingsite_water"
+    },
+    {
       "id": 189,
       "icon": "well.png",
       "model": "well.obj",

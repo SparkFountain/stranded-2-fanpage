@@ -1,6 +1,4 @@
-import { S2Class, S2Behavior, S2Material, S2State, S2Collision } from './enums';
-import { S2Instance } from './interfaces';
-import { InstancedMesh } from '@babylonjs/core';
+import { S2Class, S2Behavior, S2Material, S2Collision } from './enums';
 
 export class S2Mesh {
   id: number;
