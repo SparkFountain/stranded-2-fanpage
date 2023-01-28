@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { LostInSpaceComponent } from './lost-in-space.component';
 
@@ -6,7 +6,7 @@ describe('LostInSpaceComponent', () => {
   let component: LostInSpaceComponent;
   let fixture: ComponentFixture<LostInSpaceComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ LostInSpaceComponent ]
     })
