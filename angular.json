@@ -139,7 +139,6 @@
       }
     }
   },
-  "defaultProject": "stranded-fanpage-angular",
   "schematics": {
     "@schematics/angular:component": {
       "style": "scss"
