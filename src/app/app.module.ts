@@ -37,7 +37,8 @@ import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { LinksComponent } from './links/links.component';
 import { CardComponent } from './card/card.component';
 
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslocoRootModule } from './transloco-root.module';
+import { StrandedButtonModule } from './shared/button/button.module';
 
 @NgModule({
   declarations: [
@@ -73,10 +74,15 @@ import { TranslateModule } from '@ngx-translate/core';
     ImprintComponent,
     DisclaimerComponent,
     LinksComponent,
-    CardComponent
+    CardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, TranslateModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    TranslocoRootModule,
+  ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

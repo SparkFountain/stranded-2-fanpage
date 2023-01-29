@@ -1,0 +1,62 @@
+@import '../../../src/variables.scss';
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box !important;
+
+  a {
+    text-decoration: none !important;
+    color: $white;
+    font-size: 22px;
+
+    &.active {
+      color: $active;
+      font-weight: bold;
+    }
+  }
+}
+
+.menu-headline-border-horizontal {
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 16px;
+  background: url('/assets/gfx/sys/border-horizontal.png');
+  z-index: 101;
+  left: 16px;
+  right: 16px;
+}
+
+.menu-headline-border-vertical {
+  position: absolute;
+  width: 16px;
+  height: 48px;
+  background: url('/assets/gfx/sys/border-vertical.png');
+  z-index: 101;
+  top: 16px;
+}
+
+.menu-corner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url('/assets/gfx/sys/border-corner.png');
+  z-index: 101;
+}
+
+.top {
+  top: 0;
+}
+.bottom {
+  top: 64px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}

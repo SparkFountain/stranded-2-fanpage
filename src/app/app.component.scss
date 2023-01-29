@@ -1,5 +1,23 @@
 @import '../variables.scss';
 
+#app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// TODO: Refactor (become stranded-toolbar)
+app-header {
+  display: flex;
+  min-width: $navigation-min-width;
+  width: $navigation-width;
+  max-width: $navigation-max-width;
+  height: 80px;
+  background: url("/assets/gfx/sys/woodback.png");
+  background-repeat: repeat;
+}
+
 app-content {
   padding: 16px;
 }

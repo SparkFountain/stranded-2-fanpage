@@ -1,0 +1,12 @@
+<div class="menu-headline-border-horizontal top"></div>
+<div class="menu-headline-border-horizontal bottom"></div>
+<div class="menu-headline-border-vertical left"></div>
+<div class="menu-headline-border-vertical right"></div>
+<div class="menu-corner top right"></div>
+<div class="menu-corner top left"></div>
+<div class="menu-corner bottom left"></div>
+<div class="menu-corner bottom right"></div>
+
+<div class="navigation" *ngFor="let menu of menus; let i = index">
+  <a (click)="handleSelectMenu(i)" [ngClass]="{ active: activeMenuIndex === i }">{{ menu.name }}</a>
+</div>

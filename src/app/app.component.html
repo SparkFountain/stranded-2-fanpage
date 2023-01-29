@@ -1,10 +1,13 @@
-<router-outlet></router-outlet>
+<div id="app-container">
+  <app-header [menus]="menus" [activeMenuIndex]="activeMenuIndex" (selectMenu)="selectMenu($event)"></app-header>
 
-<!-- <app-header [menus]="menus" [activeMenuIndex]="activeMenuIndex" (selectMenu)="selectMenu($event)"></app-header>
+  <app-buttons [buttons]="buttons[activeMenuIndex]" (selectButton)="selectButton($event)"></app-buttons>
 
-<app-buttons [buttons]="buttons[activeMenuIndex]" (selectButton)="selectButton($event)"></app-buttons>
+  <app-content>
+    <router-outlet></router-outlet>
+  </app-content>
 
-<div class="cards">
+  <!-- <div class="cards">
   <app-card [image]="'story.png'" [title]="'Stranded II'"></app-card>
   <app-card [image]="'story.png'" [title]="'Stranded III'"></app-card>
   <app-card [image]="'story.png'" [title]="'Stranded III'"></app-card>
@@ -12,10 +15,9 @@
   <app-card [image]="'story.png'" [title]="'Stranded III'"></app-card>
 </div> -->
 
-<!-- <app-content>
-  <router-outlet></router-outlet>
-</app-content> -->
 
-<!-- <app-footer></app-footer> -->
 
-<!-- <app-play-online (startGame)="playingStranded2Online = true"></app-play-online> -->
+  <!-- <app-footer></app-footer> -->
+
+  <!-- <app-play-online (startGame)="playingStranded2Online = true"></app-play-online> -->
+</div>

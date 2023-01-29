@@ -18,8 +18,8 @@ body {
 }
 
 body {
-  background: url("/assets/gfx/sys/background.jpg");
-  background-size: cover;
+  // background: url("/assets/gfx/sys/background.jpg");
+  // background-size: cover;
 }
 
 .headline {
@@ -133,19 +133,6 @@ button {
   overflow-y: scroll;
   margin: 0;
   padding: 5px 32px 20px 32px;
-}
-
-app-header {
-  position: absolute;
-  top: 0;
-  left: calc(50% - #{$navigation-width} / 2);
-  display: flex;
-  min-width: $navigation-min-width;
-  width: $navigation-width;
-  max-width: $navigation-max-width;
-  height: 80px;
-  background: url("/assets/gfx/sys/woodback.png");
-  background-repeat: repeat;
 }
 
 app-buttons {

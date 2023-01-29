@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    redirectTo: '/debug',
+  },
+  {
+    path: 'debug',
+    loadChildren: () => import('./debug/debug.module').then((m) => m.DebugModule)
   },
   {
     path: 'spielen',
