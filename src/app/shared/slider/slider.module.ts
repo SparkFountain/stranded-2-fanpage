@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SliderComponent } from './slider.component';
-
-
+import { StrandedSliderComponent } from './slider.component';
+import { StrandedPipesModule } from '../pipes/stranded-pipes.module';
 
 @NgModule({
-  declarations: [
-    SliderComponent
-  ],
+  declarations: [StrandedSliderComponent],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+
+    // Pipes
+    StrandedPipesModule,
+  ],
+  exports: [StrandedSliderComponent],
 })
-export class SliderModule { }
+export class StrandedSliderModule {}

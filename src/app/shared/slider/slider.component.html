@@ -1,1 +1,3 @@
-<p>slider works!</p>
+<div class="slider-container" [style.width.px]="width">
+  <img class="slider-knob" draggable="true" src="/assets/gfx/sys/option-bullet-selected.png" [style.marginLeft.px]="value | interpolate:min:max:width" />
+</div>

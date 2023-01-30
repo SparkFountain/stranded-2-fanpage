@@ -1,0 +1,11 @@
+.slider-container {
+  background: url('/assets/gfx/sys/slider.png');
+  min-width: 50px;
+  height: 16px;
+}
+
+.slider-knob {
+  position: relative;
+  margin-top: 2px;
+  z-index: 100;
+}
