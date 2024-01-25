@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "stranded-fanpage-angular:build"
+            "buildTarget": "stranded-fanpage-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "stranded-fanpage-angular:build:production"
+              "buildTarget": "stranded-fanpage-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "stranded-fanpage-angular:build"
+            "buildTarget": "stranded-fanpage-angular:build"
           }
         },
         "test": {
